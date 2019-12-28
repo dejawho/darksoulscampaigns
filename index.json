@@ -4,6 +4,6 @@
 	"difficulty": 3,
 	"set": ["old_iron_king", "darkroot_iron_tiles"],
 	"dungeons": 4,
-	"resource": "firstcampaign.json",
+	"resource": "ironkingcampaign.json",
 	"id": "728714d6-0fb8-43fc-b5ed-4ef23b06c030"
 }]
