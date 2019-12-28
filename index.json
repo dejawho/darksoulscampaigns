@@ -1,8 +1,8 @@
 [{
-	"title": "first campaign",
-	"description": "first test campaign",
-	"difficulty": 3,
-	"set": ["old_iron_king", "darkroot_iron_tiles"],
+	"title": "Iron King Campaign",
+	"description": "In this adventure you will face various Dark Souls 2 bosses ending with the Old Iron King megaboss. Watch out for the pursuer.",
+	"difficulty": 4,
+	"set": ["old_iron_king", "darkroot_iron_tiles", "explorers_expansion", "ironkeep_expansion", "phatnoms_expansion"],
 	"dungeons": 4,
 	"resource": "ironkingcampaign.json",
 	"id": "728714d6-0fb8-43fc-b5ed-4ef23b06c030"
