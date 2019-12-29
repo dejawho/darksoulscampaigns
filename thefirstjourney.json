@@ -1,0 +1,62 @@
+{
+	"title": "The First Journey",
+	"description": "This is the first campaign defined in the official manual of Dark Souls The Board Game",
+	"set": [],
+	"encounters": [
+		{
+			"id": "dc3601e4-43af-48bb-b314-5a31d40722f8",
+			"level": 1,
+			"set": ["core"],
+			"label": "Gargoyle boss fight",
+			"onEnterEvent":  {
+				"type": "spawn",
+				"id": "b04874a9-9332-47bb-a1cd-508086139f58",
+				"spawnPoint": "spawn1",
+				"spawnedEnemies": [{"enemyId": "gargoyle", "onDeathEvent": {
+					"type": "spawn",
+					"message": "Another Gargoyle has arrived",
+					"spawnPoint": "spawn1",
+					"spawnedEnemies": [{"enemyId": "gargoyle", "onDeathEvent": {
+						"type": "information",
+						"message": "",
+						"brokeEvent": {"id": "b04874a9-9332-47bb-a1cd-508086139f58", "isBroken": true}
+					}}]
+				}}]
+			},
+			"encountersDifficulty": [0.75, 0.25, 0, 0], 
+			"type": "miniboss"
+		}
+	],
+	"dungeons": [
+		[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"room5_a","encounterId":"b672943f-b364-4c84-b959-22bdacc680db"},"exits":[{"direction":"BOTTOM","id":"left"},{"direction":"LEFT","id":"top"},{"direction":"RIGHT","id":"bottom"}]},{"tile":{"id":"room1_b","encounterId":"9a3bc643-c5c0-4250-8c32-41d249b5271d"},"exits":[{"direction":"RIGHT","id":"right"},{"direction":"TOP","id":"top"}]},{"tile":{"id":"room6_b","encounterId":"4bdb7e71-9537-4cfa-8c30-a8923f94ddd5"},"exits":[{"direction":"BOTTOM","id":"left"},{"direction":"LEFT","id":"top"},{"direction":"RIGHT","id":"bottom"}]},null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"bonfire1_a"},"exits":[{"direction":"LEFT","id":"left"},{"direction":"BOTTOM","id":"bottom"}]},{"tile":{"id":"room3_b","encounterId":"2c0aec3e-8747-4cd8-a62e-286dff019077"},"exits":[{"direction":"TOP","id":"left"},{"direction":"BOTTOM","id":"right"},{"direction":"LEFT","id":"bottom"}]},{"tile":{"id":"miniboss1_a","encounterId":"dc3601e4-43af-48bb-b314-5a31d40722f8"},"exits":[{"direction":"TOP","id":"bottom"}],"isBossRoom":true},null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+		[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]] 
+	]
+}

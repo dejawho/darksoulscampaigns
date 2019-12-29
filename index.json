@@ -7,4 +7,14 @@
 	"timestamp": 1577584787,
 	"resource": "ironkingcampaign.json",
 	"id": "728714d6-0fb8-43fc-b5ed-4ef23b06c030"
+},
+{
+	"title": "The First Journey",
+	"description": "This is the first campaign defined in the official manual of Dark Souls The Board Game.",
+	"difficulty": 3,
+	"set": ["core"],
+	"dungeons": 3,
+	"timestamp": 1577584787,
+	"resource": "thefirstjourney.json",
+	"id": "fac1f82b-e60a-43aa-ba4c-0f68ca9b05c8"
 }]
