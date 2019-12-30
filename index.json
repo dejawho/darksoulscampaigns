@@ -14,7 +14,17 @@
 	"difficulty": 3,
 	"set": ["core"],
 	"dungeons": 3,
-	"timestamp": 1577707619,
+	"timestamp": 1577709573,
 	"resource": "thefirstjourney.json",
 	"id": "fac1f82b-e60a-43aa-ba4c-0f68ca9b05c8"
+},
+{
+	"title": "The Coiled Sword",
+	"description": "This is the second campaign defined in the official manual of Dark Souls The Board Game.",
+	"difficulty": 3,
+	"set": ["core"],
+	"dungeons": 3,
+	"timestamp": 1577709573,
+	"resource": "coiledsword.json",
+	"id": "a2ca9f1a-c7ca-4339-af63-a8b4e93cda8c"
 }]
