@@ -1,0 +1,82 @@
+SET IDs: 
+
+'core', 
+'darkroot_expansion', 
+'darkroot_iron_tiles', 
+'explorers_expansion', 
+'ironkeep_expansion',
+'phatnoms_expansion', 
+'chars_expansions',
+'gaping_dragon', 
+'guardian_dragon', 
+'kalameet', 
+'old_iron_king', 
+'vordt_of_the_boreal_valley', 
+'asylum_demon'
+'fourKings'
+
+ITEM IDS:
+chest,
+barrel,
+gravestone,
+npc //new item, you can use something as placeholder on the board like the miniature from the charachter expansion. rules yet to be defined, for now they don't affect the combat
+message ////new item, you can use something as placeholder, it reperesent the classic messages from other players. rules yet to be defined, for now they don't affect the combat
+
+ENEMIES IDs
+
+hollow_soldier,
+hollow_crossbow,
+large_hollow_soldier,
+sk_swordsman,     //this is the silver knight sowrdsman
+sk_greatbowman,
+sentinel,
+mushroom_parent,
+mushroom_child,
+stone_guardian,
+stone_knight,
+demonic_foliage,
+plow_scarecrow,
+shears_scarecrow,
+alonne_sword_knight,
+alonne_bow_knight
+alonne_knight_captain,
+ironclad_soldier,
+crystal_lizard,
+firebomb_hollow,
+sk_spearman,
+great_grey_wolf_sif,
+artorias,
+old_dragonslayer,
+hungry_mimic,
+voracious_mimic,
+the_pursuer,
+titanite_demon,
+dragonslayer_ornstein,
+executioner_smough,
+gargoyle,
+winged_knight,
+sir_alonne,
+smelter_demon
+dancer_of_the_boreal_valley,
+boreal_knight
+
+
+MEGABOSS
+gaping_dragon
+old_iron_king
+kalameet
+four_kings
+
+INVADER IDs
+invader_brylex,
+marvelous_chester,
+armorer_dennis,
+longfinger_kirk,
+paladin_leroy,
+fencer_sharon,
+kirk_knight_of_thorns,
+maldron_the_assassin,
+melinda_the_butcher,
+maneater_mildred,
+oliver_the_collector,
+xanthous_king_jeremiah

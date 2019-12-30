@@ -1,0 +1,496 @@
+
+Table Of Contents
+
+-Typical Structure of An Encounter - .1.
+-Type of events and their parameters - .2.
+-How to Test an Encounter - .3.
+
+
+.1.
+
+
+The typical structure of a simple encounter is
+
+{
+ 	id: 6f37ca33-2f0d-47cd-b510-9d73659e6250 //unique id, you can generate one here https://www.uuidgenerator.net/ (the v4 version is preferred), mandatory
+	level: 2, //level of difficulty between 1 and 4, mandatory
+	set: ['core', 'ironkeep_expansion'], //expansions required to resolve this event, a list of all the identifiers follow, optional, if empty will be used core
+	specialEffects: 'Players cannot heal wounds. Magic attacks deal 1 additional damage. If each player has at least 3 wounds, destroy the barrel to find a Blood Gem.', //special textual effect, optional
+	spawn1: [{enemyId: 'hollow_soldier'}, {enemyId: 'sk_swordsman'}], //enemy to spawn on the one sword position, optional. When you do a spawn you can also specify a custom health for the enemy, like this {enemyId: 'hollow_soldier', health: 30}, this will spawn an hollow soldier with 30 heath
+	spawn2: [{enemyId: 'alonne_knight_captain'}],  //enemy to spawn on the two swords symbol, optional
+	item1: [{itemId:'barrel'}], //item to spawn on the sun position, optional
+	item2: [{itemId:'chest'}], //item to spawn on the second position (the cross like symbol), optional
+	hasTrapTraps: true, //set like this if the encounter has traps, set it to false or don't set it otherwise 
+	onEnterEvent: {an_event} //optional event executed each time the player discover this tile
+	soulsPerPlayer: 10, //optional, this will specify a custom amount of souls per player when all the enemies are dead, it could be set to 0 if this encounter don't give souls and if not specified this will default to the standard rules
+	type: 'common', //the type of the event between common, chained, miniboss, boss and megaboss. Optional, if not defined it will be used as common
+}
+
+this record can be provided in any order. In some places are used IDs of elements, like for the set, spawn and items. These IDs can be found in a separate file 
+
+
+.2.
+
+
+Encounter in this app support events. Events are executed when an item, like a chest or a barrel, is pressed. Also the enemy on their death can trigger an event. There 
+are 4 type of event and they can be chained to create complex sequence of actions.
+The event types are spawn, information, random and question. They are all pretty self explanatory except random, but I will explain them one by one. 
+Each event in its definition has the type of the event and its own parameters, among this parameters some are common for example the type who define the type of 
+the event is common to everyone.
+Also there are other three really important parameters to create complex encounter and quest:
+
+-next: when the parameter next is set with the value of another event it will be execute that event after the current one
+
+-brokeItem: when this is set to an event the event will destroy the item who generated this event, think for example to a chest, you want to destroy it after it was opened
+
+-brokeEncounter : {id: unique_id_of_an_encounter, isBroken: true or false} set an encounter with a specific id broken or not. An encounter broken is never executed when entering into a room, instead a new random encounter is chosen to replace it
+
+-brokeEvent : {id: unique_id_of_an_event, isBroken: true or false} Similar to brokeEncounter but for event, set an event with a specific id broken or not. A broken event is never executed, and also all his child events are skipped too.
+
+-nextEncounter: this will get the id of an encounter and will force the next encounter the player will discover by entering into a non boss room, optionally you can specify this in extended form nextEncounter: {id: '0cfc4d49-85a9-45a9-8b50-a61a874e82bc', stepsToFind: 2} where the id is always the id of the encounter to force and stepsToFind is the number of tile to discover to trigger the encounter, the steps are counted even by going to another dungeon on the same saveslot, so it could happen that the event trigger after the bossfight and the start of another dungeon. When using the compact form and specifying only the id the steps defaults to 0, so the encounter will be forced on the next tile. 
+
+-keepResult: afcd085d-ac4e-4e63-81c2-dfa406b3c2d3 //optional, keep result of the question, random event and wide random event, used when we want that a result stay the same after every spark
+
+
+
+-INFORMATION EVENT PARAMETERS-
+
+This event show a simple popup with informative text and an ok button
+
+type: 'information',				 //the type of this event
+id: '5bba773e-7b39-4c4c-9375-44c45011fb3a' //optional id of the event, used only by the the brokeEvent function
+title: 'Lucky draw', 		//optional title to show on the message box	
+message: 'Draw one card from the item deck',	//the text to show, if it is empty no textbox is shown
+next: {..another event} //this is optional described above
+brokeItem //this is optional described above
+brokeEvent //this is optional described above
+brokeEncounter //this is optional described above
+nextEncounter //this is optional described above
+
+
+-QUESTION EVENT PARAMETERS-
+
+This event show a simple popup with informative text and some choices
+
+type: 'question',				 //the type of this event
+title: 'Patches the Hyena', 		//optional title to show on the message box	
+message: 'Do you like clerics?',				//the text to show
+brokeItem //this is optional described above
+brokeEvent //this is optional described above
+brokeEncounter //this is optional described above
+nextEncounter //this is optional described above
+keepResult: afcd085d-ac4e-4e63-81c2-dfa406b3c2d3 //this is optional described above
+answers: [					
+	//a list of answers, shouldn't gave more than 3 elements
+	{
+		answerLabel: 'yes', 			//the label of the answer
+		next: .../optional event to execute after this answer is chosen
+	},
+	{
+		answerLabel: 'no',
+		//without next nothing happen, simply the message popup is closed
+	},		
+],
+
+-SPAWN EVENT PARAMETERS-
+
+This event spawn one or more enemies into a specific point
+
+type: 'spawn',
+title: 'Argh', 		//optional title to show on the message box	
+message: 'The chest transform into a mimic', //optional message shown to the users
+spawn1: [{enemyId: 'crossbow_hollow',}], //optional list of enemy to spawn on the point 1
+spawn2: [{enemyId: 'crossbow_hollow',}], //optional list of enemy to spawn on the point 2
+spawn3: [{enemyId: 'crossbow_hollow',}], //optional list of enemy to spawn on the point 3
+spawn4: [{enemyId: 'crossbow_hollow',}], //optional list of enemy to spawn on the point 4
+specialSpawn1: [{enemyId: 'hungry_mimic',}], //list of enemy to spawn on the point 4 //the specialSpawn1 and 2 are like the standard spawn but force the enemy to spawn in the item spot 1 and 2, this can be used to spawn a mimic in place of a chest
+specialSpawn2: [{enemyId: 'hungry_mimic', respawn: false}], //respawn is an optional attribute that specify if the enemy should respawn or not when the bonfire is used
+next: {..another event} //this is optional described above
+brokeItem //this is optional described above
+brokeEvent //this is optional described above
+brokeEncounter //this is optional described above
+nextEncounter //this is optional described above
+
+
+-RANDOM EVENT PARAMETERS-
+
+This event will choose randomly between two specified option and you can define
+the probability of each option
+
+type: 'randomEvent',
+brokeItem //this is optional described above
+brokeEvent //this is optional described above
+brokeEncounter //this is optional described above
+nextEncounter //this is optional described above
+keepResult: afcd085d-ac4e-4e63-81c2-dfa406b3c2d3 //this is optional described above
+successValue: 20, //success probability, 20 means 20% of success
+successEvent: {
+		//event to execute when you get a success
+},
+failureEvent: {
+		//event to execute when you get a success
+},
+
+-WIDE RANDOM EVENT PARAMETERS-
+
+This event is an advanced version of the random event and will choose a possibility 
+between a set and not only two. Each branch has its own probability
+
+type: 'wideRandomEvent',
+brokeItem //this is optional described above
+brokeEvent //this is optional described above
+brokeEncounter //this is optional described above
+nextEncounter //this is optional described above
+keepResult: afcd085d-ac4e-4e63-81c2-dfa406b3c2d3 //this is optional described above
+events: [
+	{
+		event:{
+			//event to executed when this branch is chosen
+		},
+		probability: 50 
+	},
+	{
+		event:{
+			//event to executed when this branch is chosen
+		},
+		probability: 30 
+	},
+	{
+		event:{
+			//event to executed when this branch is chosen
+		},
+		probability: 20 
+	}
+]
+
+EXAMPLE
+
+Now those are all the events, lets see a practical example. This event has normally 3
+silver knight swordsman and a chest. When you click on the chest there is 50% of 
+probability it turn into a mimic, if this doesn't happen you draw one card otherwise
+after you defeat the mimic you draw three cards. Both defeating the mimic or opening
+the "untransformed" chest destroy the chest.
+In this example you can see how the event works also when attached to a death of a monster
+(the mimic in this case). Note that brokeItem doesn't do anything when used in an event
+for the death of a standard monster (like the silver knights) but if used on a death 
+event of a monster spawned by the interaction with an item, then it will destroy that item.
+
+
+  {
+        id: 5,
+        level: 2,
+        set: ['core', 'explorers_expansion'],
+        specialEffects: '',
+        hasTraps: true,
+        spawn1: [{enemyId: 'sk_swordsman'}, {enemyId: 'sk_swordsman'}],
+        spawn2: [{enemyId: 'sk_swordsman'}],
+        item1: [{
+            itemId: 'chest',
+            pressEvent: {
+                type: 'question',
+                message: 'Do you want to open the chest?',
+                answers: [
+                    {
+                        answerLabel: 'yes',
+                        next: {
+                            type: 'randomEvent',
+                            successValue: 50,
+                            successEvent: {
+                                type: 'information',
+                                message: 'Draw one card from the item deck',
+                                brokeItem: true,
+                            },
+                            failureEvent: {
+                                type: 'spawn',
+                                message: 'The chest transform into a mimic',
+                                spawn1: [{enemyId: 'hungry_mimic', onDeathEvent:{
+                                    type: 'information',
+                                    message: 'The mimic drops, draw 3 cards from the item deck',
+                                    brokeItem: true,
+                                }}],
+                            },
+                        },
+                    },
+                    {
+                        answerLabel: 'no',
+                        //without next nothing happen, simply the message popup is closed
+                    },
+                ],
+            },
+        }],
+        type: 'common',
+    },
+
+
+In this event you can see an enemy with an onDeathEvent, this is simply something executed when the enemy die.
+
+
+Now another example to show how to chain encounter to make something like quest. In this event an npc will ask a question and 
+with one of the answer the next encounter will be much harder. It will be all pretty self explanatory, we define the main
+encounter and two other encounter that will be usesed in each route. The subencounter have as type 'chained', this is not
+mandatory but will avoid a route of another event to be taken randomly as a main event when a tile is discovered, so it is highly suggested.
+Also the routes of the encounters will way a different number of tiles to happen, it will happen in the next tile with yes, and after two 
+tiles with no.
+However as you can see when on the main encounter whe answer yes to the npc we force the next encounter, and the same 
+happen when answering no. It is not mandatory to force both the route, we can force only one if we want.
+
+     {
+        id: 6,
+        level: 2,
+        set: [CORE_SET_KEY],
+        hasTraps: true,
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'question',
+                title: 'Patches the Hyena',
+                message: 'Good day! You look reasonably sane!\nWhat are you doing here? Are you a Cleric or something?',
+                answers: [
+                    {
+                        answerLabel: 'yes',
+                        next: {
+                            type: 'information',
+                            title: 'Patches the Hyena',
+                            message: 'Yes, I imagined as much. Best of luck with your pilgrimages or missions or whatever you do. In the next room you can find something useful\nHeh heh heh…',
+                            brokeItem: true,
+                             nextEncounter: {id: '6a', stepsToFind: 0},
+                        },
+                    },
+                    {
+                        answerLabel: 'no',
+                        next: {
+                            type: 'information',
+                            title: 'Patches the Hyena',
+                            message: 'No? Well, that\'s strange. \nOhhh, I know what it is. You\'ve come for the trinkets, haven\'t you? Well whatever it is\nThis place is treacherous. Do watch your step.\nHeh heh heh…',
+                            brokeItem: true,
+                             nextEncounter: {id: '6b', stepsToFind: 2},
+                        },
+                    },
+                ],
+            },
+        }],
+        type: 'common',
+    },
+    {
+        id: '6a',
+        level: 2,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        spawn2: [{ enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Patches the Hyena',
+                message: '…Oh, you, I…Let\'s just calm down. Talk about things… I did you wrong.\nBut, I didn\'t mean it. These temptations, they can, well, overcome me…You know what I mean? Don\'t you? \nPlease forgive me. Here a little gift:',
+                next: {
+                    type: 'information',
+                    message: 'You gain 3 treasure card',
+                    brokeItem: true,
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: '6b',
+        level: 2,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'hollow_soldier' }],
+        item1: [{ itemId: 'chest' }],
+        hasTraps: true,
+        type: 'chained',
+    },
+	
+	
+Another example is this encounter that spawn a random invader when the player enter a room, showing a message the first time this happen. The invader is also keep the same between sparks and while it is not defated. There is also a low probabiliy to not spawn anything
+
+ {
+        //this encounter will generate a random low level invader
+        id: '01163208-8c66-4a5a-94d0-0a15020c4f4b',
+        //this encounter doesn't give souls for defeating the invader since they are given on the onDeathEvent
+        soulsPerPlayer: 0,
+        //when entering the tile we spawn the enemy
+        onEnterEvent:  {
+            type: 'wideRandomEvent',
+            keepResult: '5048a28d-5d92-4740-8094-09eae9169c20',
+            events: [
+                {
+                    event:{
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'xanthous_king_jeremiah', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Notched Whip and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: {id: '95fe57f7-d432-433b-a8d6-d3c6baedd4dc', isBroken: false},
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true},
+                            },
+                        }],
+                        next: {
+                            id: '95fe57f7-d432-433b-a8d6-d3c6baedd4dc',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Xanthous King Jeremiah',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: {id: '95fe57f7-d432-433b-a8d6-d3c6baedd4dc', isBroken: true},
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event:{
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'melinda_the_butcher', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Melinda\'s Greataxe and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: {id: 'a6d90f3c-6042-421b-b6d0-b8d29828f466', isBroken: false},
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true},
+                            },
+                        }],
+                        next: {
+                            id: 'a6d90f3c-6042-421b-b6d0-b8d29828f466',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Melinda the Butcher',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: {id: 'a6d90f3c-6042-421b-b6d0-b8d29828f466', isBroken: true},
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event:{
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'maneater_mildred', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Butcher Knife and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: {id: '18f52eff-a9de-4575-99b7-d8e5a99d6086', isBroken: false},
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true},
+                            },
+                        }],
+                        next: {
+                            id: '18f52eff-a9de-4575-99b7-d8e5a99d6086',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Maneater Mildred',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: {id: '18f52eff-a9de-4575-99b7-d8e5a99d6086', isBroken: true},
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event:{
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'oliver_the_collector', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Minotaur Helmet and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: {id: '677d9e97-f36b-4b35-835e-a374f55c8f39', isBroken: false},
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true},
+                            },
+                        }],
+                        next: {
+                            id: '677d9e97-f36b-4b35-835e-a374f55c8f39',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Oliver the Collector',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: {id: '677d9e97-f36b-4b35-835e-a374f55c8f39', isBroken: true},
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event:{
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'maldron_the_assassin', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Royal Swordsman Armour and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: {id: '70cbd690-0332-4199-8ef8-94e2bef5b5d4', isBroken: false},
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true},
+                            },
+                        }],
+                        next: {
+                            id: '70cbd690-0332-4199-8ef8-94e2bef5b5d4',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Maldron the Assassin',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: {id: '70cbd690-0332-4199-8ef8-94e2bef5b5d4', isBroken: true},
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event:{
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'kirk_knight_of_thorns', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Spike Shield and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: {id: '94577abe-bec8-42e7-be80-bb3d4d265e2c', isBroken: false},
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true},
+                            },
+                        }],
+                        next: {
+                            id: '94577abe-bec8-42e7-be80-bb3d4d265e2c',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Kirk Knight of Thorns',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: {id: '94577abe-bec8-42e7-be80-bb3d4d265e2c', isBroken: true},
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event:{
+                        //empty event, nothing happen
+                        type: 'information',
+                        message: '',
+                    },
+                    probability: 10,
+                },
+            ],
+        },
+        level: 2,
+        set: [PHANTOMS_EXPANSION_KEY],
+        type: 'common',
+        item1: [{ itemId: 'chest' }],
+        item2: [{ itemId: 'gravestone' }],
+    },
+}
+
+
+.3.
+
+To test an encounter you can add the variant Developer Mode to your game, when doing this in the board view you will find two new icons, near the magnifier lenses to zoom. One look like a bug and will open the encounter test mode. In this new screen you will able to select and custom encounter and 
+see its definition, write your own and save it and with the button test you can force the selected encounter on the next tile to test it. You can type a new encounter directly in the text area or modify one existing, but it is suggested to to write it on PC and copy paste into the text area for testing.
+Remember to first save the encounter and then test it. When it is saved it is also validated to be sure there are not type on keywords. You can always delete/overwrite the custom encounter you wrote, but you can't delete overwrite the custom encounters emedded in the app.
+When you have finished you can share the encounter with the top right button, send it to me and I will add it permanently on the app.
+
+	
+	
