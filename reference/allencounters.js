@@ -1,9 +1,36 @@
+//tematic encounters, use this id to get an encounter of a specific theme/level
+
+'tematic_core_lv1'
+
+'tematic_core_lv2'
+
+'tematic_core_lv3'
+
+'tematic_darkroot_lv1'
+
+'tematic_darkroot_lv2'
+
+'tematic_darkroot_lv3'
+
+'tematic_iron_keep_lv1'
+
+'tematic_iron_keep_lv2'
+
+'tematic_iron_keep_lv3'
+
+'tematic_explorers_lv1'
+
+'tematic_explorers_lv2'
+
+'tematic_explorers_lv3'
+
 
   //core
 
     //level 1
 
-    [{
+    [
+    {
         id: '89c264b8-a08e-43e9-b52f-a0e09754af4f',
         title: 'Dark Hollow',
         level: 1,
