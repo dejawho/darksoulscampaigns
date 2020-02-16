@@ -1,5 +1,7 @@
 Android Companion App to Dark Souls the board game: https://play.google.com/store/apps/details?id=com.dsdungeons
+
 Web Version: http://bit.ly/dsdungeons
+
 Custom Encounter Guide: https://github.com/dejawho/darksoulscampaigns/tree/master/reference
 
 About Custom Campaigns:
