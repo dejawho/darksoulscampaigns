@@ -1,3 +1,11 @@
+Android Companion App to Dark Souls the board game: https://play.google.com/store/apps/details?id=com.dsdungeons
+
+Web Version: http://bit.ly/dsdungeons
+
+Custom Encounter Guide: https://github.com/dejawho/darksoulscampaigns/tree/master/reference
+
+About Custom Campaigns:
+
 Actually there is not an editor to create custom campaigns, so you need to create manually a text file with the json definition for the campaign. The challange is write the dungeon map, because it could be confusing, but there is a trick to export a random generated map and use it here. I will describe this later.
 
 In this repository there is a folder "reference" which contains an encounter file, containing all the encounters embedded into the application, and some screenshots of all the tiles with their filename. The filename is important because it is also the id (without the extension) of the tile inside the application. The id is used in the dungeon map to identify a specific tile.
