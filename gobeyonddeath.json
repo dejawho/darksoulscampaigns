@@ -1,0 +1,69 @@
+{
+	"title": "Go Beyond Death",
+	"description": "This is the campaign defined in the rulebook of the Old Iron King expansion",
+	"set": ["old_iron_king", "explorers_expansion", "phatnoms_expansion", "ironkeep_expansion"],
+	"encounters": [
+
+	],
+	"dungeons": [
+		{
+			"type": "random",
+			"bossEncounterId": "1823b0dc-d18a-45cf-b4aa-2aa184f59d43",
+			"introMessage": "Rest not as the Old Dragonslayer falls, but instead turn your eye to the Iron Keep. Here lies your true destination, far from the path you already know. Barely past Threshold Bridge shall be your first challenge, the vile Smelter Demon, a creature as responsible for the destruction of this land as the folly of its ruler is. Topple this mighty goliath and your reward will be to encounter the Knightly pursuer of your curse, who stalks you through this monstrous tomb. Finally, should you overcome his challenge, you shall meet your true adversary—none other than the Old Iron King himself",
+			"excludedBiomes": ["darkroot_basin", "castle_old"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1","tematic_random_lv1", "tematic_random_lv2"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "a9182125-6431-4028-affb-c8a39aa160ff",
+			"excludedBiomes": ["darkroot_basin", "castle_old"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv3"]
+		},
+		{
+			"type": "fixed",
+			"dungeon": [
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"room9_a","encounterId":"tematic_iron_keep_lv3"},"exits":[{"direction":"RIGHT","id":"left"},{"direction":"BOTTOM","id":"top"}]},{"tile":{"id":"room10_a","encounterId":"tematic_iron_keep_lv3"},"exits":[{"direction":"TOP","id":"left"},{"direction":"RIGHT","id":"top"},{"direction":"LEFT","id":"bottom"}]},null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"room12_a","encounterId":"tematic_iron_keep_lv2"},"exits":[{"direction":"BOTTOM","id":"left"},{"direction":"RIGHT","id":"bottom"},{"direction":"TOP","id":"right"}]},{"tile":{"id":"bonfire2_a"},"exits":[{"direction":"LEFT","id":"left"},{"direction":"TOP","id":"top"}]},{"tile":{"id":"boss2_a","encounterId":"884e6212-b5ca-4e22-81e0-53791259ef54"},"exits":[{"direction":"LEFT","id":"bottom"}],"isBossRoom":true},null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,{"reservedSpace": true},{"tile":{"id":"megaboss_old_iron_king_a","encounterId":"dee3cbcc-6190-4532-b363-9f1ecaf7bc22"},"exits":[{"direction":"LEFT","id":"bottom"}, {"direction":"RIGHT","id":"top"}]},{"reservedSpace": true},null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"reservedSpace": true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+			],
+			"excludedSets": ["darkroot_expansion"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "f59098e4-104e-4597-922b-5d1d70b5ca90",
+			"preBossEncounterId": "d82b5c6f-0265-40e0-b396-32b6530ba214",
+			"excludedBiomes": ["darkroot_basin", "castle_old"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_iron_keep_lv3"]
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"title": "Treasures of the Ice Cave",
+	"description": "This is the campaign defined in the rulebook of the Vordt of the Boreal Valley expansion",
+	"set": ["vordt_of_the_boreal_valley", "phatnoms_expansion"],
+	"encounters": [
+		{
+			"id": "d0acc585-7ac0-4109-a42c-2270654bec44",
+			"level": 1,
+			"set": ["phatnoms_expansion"],
+			"label": "Dual Invader boss fight",
+			"spawn1": [{ "enemyId": "melinda_the_butcher" }, { "enemyId": "oliver_the_collector" }],
+			"encountersDifficulty": [0.67, 0.34, 0, 0], 
+			"type": "miniboss"
+		},
+		{
+			"id": "419e977a-c517-4cb1-9cee-871f9feb56cd",
+			"set": ["phatnoms_expansion"],
+			"label": "Dual Invader boss fight",
+			"spawn1": [{ "enemyId": "sentinel" }, { "enemyId": "marvelous_chester" }],
+			"spawn2": [{ "enemyId": "hollow_soldier" }, { "enemyId": "hollow_soldier" }, { "enemyId": "hollow_soldier" }],
+			"spawn3": [{ "enemyId": "sentinel" }, { "enemyId": "paladin_leroy" }],
+			"spawn4": [{ "enemyId": "sk_greatbowman" }, { "enemyId": "hollow_crossbow" }, { "enemyId": "hollow_crossbow" }],
+			"item1": [{ "itemId": "barrel" }],
+			"item2": [{ "itemId": "chest" }],
+			"item3": [{ "itemId": "gravestone" }],
+			"item4": [{ "itemId": "barrel" }],
+			"encountersDifficulty": [0.67, 0.34, 0, 0], 
+			"type": "boss",
+			"bossTile": "megaboss_vordt_a"
+		}
+	],
+	"dungeons": [
+		{
+			"type": "random",
+			"bossEncounterId": "d0acc585-7ac0-4109-a42c-2270654bec44",
+			"excludedBiomes": ["darkroot_basin", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
+			"outroMessage": "You can proceed with the campaign but do not shuffle the Transposed and Legendary Treasures into your Treasurs Deck",
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "ad20c9e4-f478-4b6f-a420-3905a95398dc",
+			"excludedBiomes": ["darkroot_basin", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
+			"outroMessage": "Add to your Treasure Deck the Transposed and Legendary treasure Treasures as described in ‘Setup After the Mini Boss’ section of the manual",
+			"commonEncountersIds": ["tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv3"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "419e977a-c517-4cb1-9cee-871f9feb56cd",
+			"excludedBiomes": ["darkroot_basin", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv3", "tematic_random_lv3", "tematic_random_lv2"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "91fb6b0e-f510-473c-8830-ecadb320ee7e",
+			"preBossEncounterId": "5a611a4a-607f-4168-8d0e-74ac33cb1c22",
+			"excludedBiomes": ["darkroot_basin", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv3", "tematic_random_lv3"]
+		}
+	]
+}

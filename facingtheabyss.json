@@ -1,0 +1,69 @@
+{
+	"title": "Facing the Abyss",
+	"description": "This is the campaign defined in the rulebook of the Darkroot expansion",
+	"set": ["darkroot_expansion", "darkroot_iron_tiles"],
+	"encounters": [
+		{
+			"id": "afde5a86-ff8f-4dc7-bd0f-839cca90f22f",
+			"set": ["phatnoms_expansion"],
+			"label": "Darkroot Bossfight",
+			"spawn1": [{ "enemyId": "mushroom_parent" }, { "enemyId": "demonic_foliage" }],
+			"spawn2": [{ "enemyId": "mushroom_child" }, { "enemyId": "stone_knight" }],
+			"item1": [{ "itemId": "chest" }],
+			"item2": [{ "itemId": "barrel" }],
+			"encountersDifficulty": [0.67, 0.34, 0, 0], 
+			"type": "miniboss"
+		}
+	],
+	"dungeons": [
+		{
+			"type": "fixed",
+			"dungeon": [[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"room8_b","encounterId":"tematic_random_lv1"},"exits":[{"direction":"RIGHT","id":"right"},{"direction":"BOTTOM","id":"bottom"}]},{"tile":{"id":"room2_b","encounterId":"tematic_random_lv2"},"exits":[{"direction":"LEFT","id":"right"},{"direction":"TOP","id":"bottom"}]},{"tile":{"id":"room7_b","encounterId":"afde5a86-ff8f-4dc7-bd0f-839cca90f22f"},"exits":[{"direction":"RIGHT","id":"bottom"}],"isBossRoom":true},null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"bonfire1_a"},"exits":[{"direction":"LEFT","id":"left"},{"direction":"BOTTOM","id":"bottom"}]},{"tile":{"id":"room11_b","encounterId":"tematic_random_lv1"},"exits":[{"direction":"TOP","id":"right"},{"direction":"BOTTOM","id":"left"},{"direction":"LEFT","id":"top"}]},{"tile":{"id":"room10_b","encounterId":"tematic_random_lv1"},"exits":[{"direction":"TOP","id":"right"},{"direction":"RIGHT","id":"bottom"},{"direction":"LEFT","id":"top"}]},null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+			[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],
+			"excludedSets": ["ironkeep_expansion"],
+			"outroMessage": "Augment the treasure deck by adding the transposed and legendary treasure cards as described in the rulebook in the `Setup After the Mini Boss` section"
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "b2f42026-31d0-40b3-ab4f-3fb05e4ed0d5",
+			"excludedBiomes": ["castle_new", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv3", "tematic_random_lv3"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "f1944bb4-8c4d-437e-8c97-d857da93241e",
+			"excludedBiomes": ["castle_new", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion"],
+			"commonEncountersIds": ["tematic_random_lv2", "tematic_random_lv3", "tematic_random_lv3", "tematic_random_lv3"]
+		}
+	]
+}

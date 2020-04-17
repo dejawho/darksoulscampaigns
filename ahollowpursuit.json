@@ -1,0 +1,71 @@
+{
+	"title": "A Hollow Pursuit",
+	"description": "This is the campaign defined in the rulebook of the Explorers expansion",
+	"set": ["explorers_expansion", "ironkeep_expansion"],
+	"encounters": [
+		{
+			"id": "451f9d6c-124b-4c84-8892-06d1d250e39c",
+			"title": "Gallery of the Hidden Warrior Bossfight",
+			"level": 3,
+			"set": ["explorers_expansion"],
+			"spawn1": [{ "enemyId": "sk_spearman" }, { "enemyId": "sk_spearman" }, { "enemyId": "sk_greatbowman" }],
+			"spawn2": [{ "enemyId": "sk_spearman" }, { "enemyId": "sk_greatbowman" }, { "enemyId": "sk_greatbowman" }],
+			"specialSpawn1": [{ "enemyId": "voracious_mimic" }],
+			"item2": [{ "itemId": "gravestone" }],
+			"type": "boss"
+		}
+	],
+	"dungeons": [
+		{
+			"type": "random",
+			"introText": "Your first steps shall be along the trails leading through the depths of the Forest of Fallen Giants, towards The Crestfallen’s Retreat. If you are to prevail against the foes in this haunted glade, next you must journey to the Lower Earthen Peak and face the vile adversaries awaiting you there. Should you emerge victorious once more, the last destination is within the Keep itself, atop Threshold Bridge. It is there you shall stand or fall against your final opponent, a mighty knight who denies you further progress on the path of your destiny",
+			"bossEncounterId": "1823b0dc-d18a-45cf-b4aa-2aa184f59d43",
+			"excludedBiomes": ["iron_keep", "castle_new"],
+			"excludedSets": ["ironkeep_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1","tematic_random_lv1", "tematic_random_lv2"]
+		},
+		{
+			"type": "fixed",
+			"dungeon": [
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"room6_b","encounterId":"tematic_random_lv2"},"exits":[{"direction":"RIGHT","id":"left"},{"direction":"BOTTOM","id":"top"},{"direction":"TOP","id":"bottom"}]},{"tile":{"id":"room2_b","encounterId":"451f9d6c-124b-4c84-8892-06d1d250e39c"},"exits":[{"direction":"TOP","id":"bottom"}, {"direction":"LEFT","id":"right"}],"isBossRoom":true},null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"room3_b","encounterId":"tematic_random_lv1"},"exits":[{"direction":"RIGHT","id":"left"},{"direction":"LEFT","id":"right"},{"direction":"TOP","id":"bottom"}]},null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"bonfire1_a"},"exits":[{"direction":"LEFT","id":"left"},{"direction":"BOTTOM","id":"bottom"}]},{"tile":{"id":"room4_b","encounterId":"tematic_random_lv2"},"exits":[{"direction":"TOP","id":"right"},{"direction":"RIGHT","id":"bottom"}]},null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+			],
+			"excludedSets": ["ironkeep_expansion"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "884e6212-b5ca-4e22-81e0-53791259ef54",
+			"excludedBiomes": ["darkroot_basin", "castle_new"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_iron_keep_lv2", "tematic_iron_keep_lv3", "tematic_iron_keep_lv3", "tematic_random_lv3"]
+		}
+	]
+}

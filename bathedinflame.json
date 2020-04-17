@@ -1,0 +1,60 @@
+{
+	"title": "Bathed in Flame",
+	"description": "This is the campaign defined in the rulebook of the Kalameet expansion",
+	"set": ["kalameet"],
+	"encounters": [
+		{
+			"id": "5199ae08-ba1f-4201-8868-946b3dd9f203",
+			"level": 1,
+			"set": ["core"],
+			"label": "Gargoyle boss fight",
+			"onEnterEvent":  {
+				"type": "spawn",
+				"id": "d6cb57ee-dfde-45b4-ae51-888c8b41f1b9",
+				"spawnPoint": "spawn1",
+				"spawnedEnemies": [{"enemyId": "gargoyle", "onDeathEvent": {
+					"type": "spawn",
+					"message": "Another Gargoyle has arrived",
+					"spawnPoint": "spawn1",
+					"spawnedEnemies": [{"enemyId": "gargoyle", "onDeathEvent": {
+						"type": "information",
+						"message": "",
+						"brokeEvent": {"id": "d6cb57ee-dfde-45b4-ae51-888c8b41f1b9", "isBroken": true}
+					}}]
+				}}]
+			},
+			"encountersDifficulty": [0.67, 0.34, 0, 0], 
+			"type": "miniboss"
+		}
+	],
+	"dungeons": [
+		{
+			"type": "random",
+			"bossEncounterId": "5199ae08-ba1f-4201-8868-946b3dd9f203",
+			"excludedBiomes": ["darkroot_basin", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "a6c6a301-a2b0-447f-937e-943a5a5dee32",
+			"excludedBiomes": ["darkroot_basin", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "93d8d8b3-a59c-4b1a-85f6-065af779bb52",
+			"excludedBiomes": ["darkroot_basin", "iron_keep", "castle_old"],
+			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv3", "tematic_random_lv3", "tematic_random_lv3"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "6ca5a4c6-32cf-4ecd-9fd7-5cd3b76e8a2f",
+			"excludedBiomes": ["iron_keep", "castle_new"],
+			"excludedSets": ["ironkeep_expansion", "explorers_expansion"],
+			"commonEncountersIds": ["tematic_darkroot_lv3", "tematic_darkroot_lv3"]
+		}
+	]
+}

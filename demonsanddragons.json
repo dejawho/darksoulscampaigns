@@ -1,0 +1,56 @@
+{
+	"title": "Demons and Dragons",
+	"description": "This is the campaign defined in the rulebook of the Guardian Dragon expansion",
+	"set": ["gaping_dragon", "guardian_dragon", "asylumDemon", "kalameet"],
+	"encounters": [
+	],
+	"dungeons": [
+		{
+			"type": "random",
+			"bossEncounterId": "bc6c9bd4-476d-444d-a1ea-c93ee6bf3c6a",
+			"introMessage": "Each player may increase two stats from Base to Tier 1 and may then increase one stat from Tier 1 to Tier 2.",
+			"excludedBiomes": ["darkroot_basin", "iron_keep", "castle_new"],
+			"excludedSets": ["ironkeep_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "a6c6a301-a2b0-447f-937e-943a5a5dee32",
+			"introMessage": "Each player may increase two stats from Base to Tier 1 and may then increase one stat from Tier 1 to Tier 2.",
+			"excludedBiomes": ["iron_keep", "castle_new"],
+			"excludedSets": ["ironkeep_expansion"],
+			"commonEncountersIds": ["tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv2"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "304dc3ff-f2df-40c2-8e44-a3511d454f0e",
+			"introMessage": "Each player may increase one stat from Tier 1 to Tier 2 and may then increase one stat from Tier 2 to Tier 3.",
+			"excludedBiomes": ["darkroot_basin", "castle_old"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv2"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "d7257e75-2649-45a3-ba74-87726d8c60ec",
+			"introMessage": "Each player may increase one stat from Tier 1 to Tier 2 and may then increase one stat from Tier 2 to Tier 3.",
+			"excludedBiomes": ["iron_keep", "castle_new", "darkroot_basin"],
+			"excludedSets": ["ironkeep_expansion"],
+			"commonEncountersIds": ["tematic_random_lv3", "tematic_random_lv3"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "addca633-7866-43c7-a551-64ebf3f6375e",
+			"introMessage": "Each player may increase two stats from Tier 2 to Tier 3.",
+			"excludedBiomes": ["darkroot_basin", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion", "darkroot_expansion", "explorers_expansion", "phatnoms_expansion"],
+			"commonEncountersIds": []
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "6ca5a4c6-32cf-4ecd-9fd7-5cd3b76e8a2f",
+			"excludedBiomes": ["darkroot_basin", "iron_keep"],
+			"excludedSets": ["ironkeep_expansion", "darkroot_expansion", "explorers_expansion", "phatnoms_expansion"],
+			"commonEncountersIds": []
+		}
+	]
+}

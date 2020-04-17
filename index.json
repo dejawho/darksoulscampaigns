@@ -10,7 +10,7 @@
 },
 {
 	"title": "The First Journey",
-	"description": "This is the first campaign defined in the official manual of Dark Souls The Board Game.",
+	"description": "This is the first campaign defined in the rulebook of Dark Souls The Board Game.",
 	"difficulty": 3,
 	"set": ["core"],
 	"dungeons": 3,
@@ -20,11 +20,111 @@
 },
 {
 	"title": "The Coiled Sword",
-	"description": "This is the second campaign defined in the official manual of Dark Souls The Board Game.",
+	"description": "This is the second campaign defined in the rulebook of Dark Souls The Board Game.",
 	"difficulty": 3,
 	"set": ["core"],
 	"dungeons": 3,
 	"timestamp": 1577709573,
 	"resource": "coiledsword.json",
 	"id": "a2ca9f1a-c7ca-4339-af63-a8b4e93cda8c"
-}]
+},
+{
+	"title": "Demon Hunting",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Asylum Demon expansion",
+	"difficulty": 4,
+	"set": ["core", "asylumDemon"],
+	"dungeons": 5,
+	"timestamp": 1586826832,
+	"resource": "demonhunting.json",
+	"minVersion": "1.5.0",
+	"id": "5110a326-4e83-4613-adde-bed51aa564dd"
+},
+{
+	"title": "Treasure of the Ice Cave",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Vordt of the Boreal Valley expansion",
+	"difficulty": 4,
+	"set": ["core", "vordt_of_the_boreal_valley", "phatnoms_expansion"],
+	"dungeons": 4,
+	"timestamp": 1586885403,
+	"resource": "treasureoftheicecave.json",
+	"minVersion": "1.5.0",
+	"id": "17bfb365-e6c8-4606-acda-468ff7acccb9"
+},
+{
+	"title": "Demons and Dragons",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Guardian Dragon expansion",
+	"difficulty": 4,
+	"set": ["core", "gaping_dragon", "guardian_dragon", "asylumDemon", "kalameet"],
+	"dungeons": 6,
+	"timestamp": 1586885403,
+	"resource": "demonsanddragons.json",
+	"minVersion": "1.5.0",
+	"id": "214cf336-bf4f-43c2-9978-3236dd9f16fb"
+},
+{
+	"title": "Facing the Abyss",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Darkroot expansion",
+	"difficulty": 3,
+	"set": ["core", "darkroot_expansion", "darkroot_iron_tiles"],
+	"dungeons": 3,
+	"timestamp": 1586885403,
+	"resource": "facingtheabyss.json",
+	"minVersion": "1.5.0",
+	"id": "0977774f-8815-45e1-ba19-2d8747fca8f9"
+},
+{
+	"title": "Bathed in Flame",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Kalameet expansion",
+	"difficulty": 3,
+	"set": ["core", "kalameet"],
+	"dungeons": 4,
+	"timestamp": 1586885403,
+	"resource": "bathedinflame.json",
+	"minVersion": "1.5.0",
+	"id": "94ab0cb7-f7dd-4724-9c1d-c9ce74831b27"
+},
+{
+	"title": "Go Beyond Death",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Old Iron King expansion",
+	"difficulty": 4,
+	"set": ["core", "old_iron_king", "explorers_expansion", "phatnoms_expansion", "ironkeep_expansion"],
+	"dungeons": 4,
+	"timestamp": 1586885403,
+	"resource": "gobeyonddeath.json",
+	"minVersion": "1.5.0",
+	"id": "a9197862-9352-4cce-bdc9-8b04a54502b9"
+},
+{
+	"title": "Into The Depths",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis campaign is inspired by the one defined in the rulebook of the Gaping Dragon expansion",
+	"difficulty": 4,
+	"set": ["core", "gaping_dragon", "darkroot_expansion"],
+	"dungeons": 5,
+	"timestamp": 1586885403,
+	"resource": "intothedepths.json",
+	"minVersion": "1.5.0",
+	"id": "17a7c9c4-0fa1-46b7-91b2-c5d50a388db1"
+},
+{
+	"title": "A Hollow Pursuit",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Explorers expansion",
+	"difficulty": 3,
+	"set": ["core", "explorers_expansion", "ironkeep_expansion"],
+	"dungeons": 3,
+	"timestamp": 1586885403,
+	"resource": "ahollowpursuit.json",
+	"minVersion": "1.5.0",
+	"id": "fc733c3d-7715-4025-9d93-7daec3ac296e"
+},
+{
+	"title": "Call of the Abyss",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Four Kings expansion",
+	"difficulty": 3,
+	"set": ["core", "darkroot_expansion", "darkroot_iron_tiles", "fourKings"],
+	"dungeons": 5,
+	"timestamp": 1586885403,
+	"resource": "calloftheabyss.json",
+	"minVersion": "1.5.0",
+	"id": "6d70a3e9-c3a0-4f2b-8e09-a41efdaaeeaf"
+}
+]
