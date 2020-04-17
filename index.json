@@ -30,7 +30,7 @@
 },
 {
 	"title": "Demon Hunting",
-	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Asylum Demon expansion",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application.\nThis is the campaign defined in the rulebook of the Asylum Demon expansion",
 	"difficulty": 4,
 	"set": ["core", "asylumDemon"],
 	"dungeons": 5,
@@ -41,7 +41,7 @@
 },
 {
 	"title": "Treasure of the Ice Cave",
-	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Vordt of the Boreal Valley expansion",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application.\nThis is the campaign defined in the rulebook of the Vordt of the Boreal Valley expansion",
 	"difficulty": 4,
 	"set": ["core", "vordt_of_the_boreal_valley", "phatnoms_expansion"],
 	"dungeons": 4,
@@ -52,7 +52,7 @@
 },
 {
 	"title": "Demons and Dragons",
-	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Guardian Dragon expansion",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application.\nThis is the campaign defined in the rulebook of the Guardian Dragon expansion",
 	"difficulty": 4,
 	"set": ["core", "gaping_dragon", "guardian_dragon", "asylumDemon", "kalameet"],
 	"dungeons": 6,
@@ -63,7 +63,7 @@
 },
 {
 	"title": "Facing the Abyss",
-	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Darkroot expansion",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application.\nThis is the campaign defined in the rulebook of the Darkroot expansion",
 	"difficulty": 3,
 	"set": ["core", "darkroot_expansion", "darkroot_iron_tiles"],
 	"dungeons": 3,
@@ -74,7 +74,7 @@
 },
 {
 	"title": "Bathed in Flame",
-	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Kalameet expansion",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application.\nThis is the campaign defined in the rulebook of the Kalameet expansion",
 	"difficulty": 3,
 	"set": ["core", "kalameet"],
 	"dungeons": 4,
@@ -85,7 +85,7 @@
 },
 {
 	"title": "Go Beyond Death",
-	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Old Iron King expansion",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application.\nThis is the campaign defined in the rulebook of the Old Iron King expansion",
 	"difficulty": 4,
 	"set": ["core", "old_iron_king", "explorers_expansion", "phatnoms_expansion", "ironkeep_expansion"],
 	"dungeons": 4,
@@ -96,7 +96,7 @@
 },
 {
 	"title": "Into The Depths",
-	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis campaign is inspired by the one defined in the rulebook of the Gaping Dragon expansion",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application.\nThis campaign is inspired by the one defined in the rulebook of the Gaping Dragon expansion",
 	"difficulty": 4,
 	"set": ["core", "gaping_dragon", "darkroot_expansion"],
 	"dungeons": 5,
@@ -107,7 +107,7 @@
 },
 {
 	"title": "A Hollow Pursuit",
-	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Explorers expansion",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application.\nThis is the campaign defined in the rulebook of the Explorers expansion",
 	"difficulty": 3,
 	"set": ["core", "explorers_expansion", "ironkeep_expansion"],
 	"dungeons": 3,
@@ -118,7 +118,7 @@
 },
 {
 	"title": "Call of the Abyss",
-	"description": "NOTE: This campaign require at least the version 1.5.0 of the application/\nThis is the campaign defined in the rulebook of the Four Kings expansion",
+	"description": "NOTE: This campaign require at least the version 1.5.0 of the application.\nThis is the campaign defined in the rulebook of the Four Kings expansion",
 	"difficulty": 3,
 	"set": ["core", "darkroot_expansion", "darkroot_iron_tiles", "fourKings"],
 	"dungeons": 5,
