@@ -1,0 +1,32 @@
+{
+	"title": "Playing with Fire",
+	"description": "This is the campaign defined in the rulebook of the Iron Keep expansions, with a new custom boss",
+	"set": ["custom_enemies_expansions", "darkroot_iron_tiles", "ironkeep_expansion"],
+	"encounters": [],
+	"dungeons": [
+		{
+			"type": "random",
+			"introMessage": "Your journey begins in the desolate Harvest Valley, amongst the poisonous pits and treacherous mines. Beware this charred quarry, for death awaits the unwary, even at this early stage. ",
+			"bossEncounterId": "80a5191f-9200-4d88-98d5-3cf2985d1a01",
+			"excludedBiomes": ["iron_keep", "castle_new"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "a9182125-6431-4028-affb-c8a39aa160ff",
+			"introMessage": "Yet as you approach the blasted and damned walls of the Iron Keep, you may grow reluctant to leave, for the path ahead will only prove more dangerous.",
+			"excludedBiomes": ["darkroot_basin", "castle_old"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv3"]
+		},
+		{
+			"type": "random",
+			"bossEncounterId": "22e991db-ef4b-4d08-b1ac-49b3f8705561",
+			"introMessage": "You have reached the Brume Tower, your final location standing atop the bleakest wasteland imaginable. It is here that your last adversary, a figure of myth and legend, awaits",
+			"excludedBiomes": ["darkroot_basin", "castle_old"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv2", "tematic_random_lv3", "tematic_random_lv3", "tematic_random_lv3"]
+		}
+	]
+}

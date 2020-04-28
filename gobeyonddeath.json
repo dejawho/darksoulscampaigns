@@ -9,13 +9,14 @@
 		{
 			"type": "random",
 			"bossEncounterId": "1823b0dc-d18a-45cf-b4aa-2aa184f59d43",
-			"introMessage": "Rest not as the Old Dragonslayer falls, but instead turn your eye to the Iron Keep. Here lies your true destination, far from the path you already know. Barely past Threshold Bridge shall be your first challenge, the vile Smelter Demon, a creature as responsible for the destruction of this land as the folly of its ruler is. Topple this mighty goliath and your reward will be to encounter the Knightly pursuer of your curse, who stalks you through this monstrous tomb. Finally, should you overcome his challenge, you shall meet your true adversary—none other than the Old Iron King himself",
+			"introMessage": "Rest not as the Old Dragonslayer falls, but instead turn your eye to the Iron Keep. Here lies your true destination, far from the path you already know.",
 			"excludedBiomes": ["darkroot_basin", "castle_old"],
 			"excludedSets": ["darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1","tematic_random_lv1", "tematic_random_lv2"]
 		},
 		{
 			"type": "random",
+			"introMessage": "Barely past Threshold Bridge shall be your first challenge, the vile Smelter Demon, a creature as responsible for the destruction of this land as the folly of its ruler is.",
 			"bossEncounterId": "a9182125-6431-4028-affb-c8a39aa160ff",
 			"excludedBiomes": ["darkroot_basin", "castle_old"],
 			"excludedSets": ["darkroot_expansion"],
@@ -23,6 +24,7 @@
 		},
 		{
 			"type": "fixed",
+			"introMessage": "Topple this mighty goliath and your reward will be to encounter the Knightly pursuer of your curse, who stalks you through this monstrous tomb.",
 			"dungeon": [
 				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
 				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
@@ -59,6 +61,7 @@
 		},
 		{
 			"type": "random",
+			"introMessage": "Finally, should you overcome his challenge, you shall meet your true adversary—none other than the Old Iron King himself.",
 			"bossEncounterId": "f59098e4-104e-4597-922b-5d1d70b5ca90",
 			"preBossEncounterId": "d82b5c6f-0265-40e0-b396-32b6530ba214",
 			"excludedBiomes": ["darkroot_basin", "castle_old"],
