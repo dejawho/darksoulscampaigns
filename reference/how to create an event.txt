@@ -23,11 +23,15 @@ The typical structure of a simple encounter is
 	hasTrapTraps: true, //set like this if the encounter has traps, set it to false or don't set it otherwise 
 	onEnterEvent: {an_event} //optional event executed each time the player discover this tile
 	soulsPerPlayer: 10, //optional, this will specify a custom amount of souls per player when all the enemies are dead, it could be set to 0 if this encounter don't give souls and if not specified this will default to the standard rules
-	type: 'common', //the type of the event between common, chained, miniboss, boss and megaboss. Optional, if not defined it will be used as common
+	type: 'common', //the type of the event between common, quest, chained, secret, miniboss, boss and megaboss. Optional, if not defined it will be used as common
 }
 
-this record can be provided in any order. In some places are used IDs of elements, like for the set, spawn and items. These IDs can be found in a separate file 
-
+this record can be provided in any order. In some places are used IDs of elements, like for the set, spawn and items. These IDs can be found in a separate file.
+About the encounter type:
+common: these are the standard encounters
+quest: these encounters are the start of quest, a quest is a concatenation of more encounters
+chained: these are the encounter that appear following a quest 
+secret: these are the encounters you can find in a secret room (behind an illusory wall)
 
 .2.
 
@@ -47,7 +51,7 @@ Also there are other three really important parameters to create complex encount
 
 -brokeEvent : {id: unique_id_of_an_event, isBroken: true or false} Similar to brokeEncounter but for event, set an event with a specific id broken or not. A broken event is never executed, and also all his child events are skipped too.
 
--nextEncounter: this will get the id of an encounter and will force the next encounter the player will discover by entering into a non boss room, optionally you can specify this in extended form nextEncounter: {id: '0cfc4d49-85a9-45a9-8b50-a61a874e82bc', stepsToFind: 2} where the id is always the id of the encounter to force and stepsToFind is the number of tile to discover to trigger the encounter, the steps are counted even by going to another dungeon on the same saveslot, so it could happen that the event trigger after the bossfight and the start of another dungeon. When using the compact form and specifying only the id the steps defaults to 0, so the encounter will be forced on the next tile. 
+-nextEncounter: this will get the id of an encounter and will force the next encounter the player will discover by entering into a non boss room, optionally you can specify this in extended form nextEncounter: {id: '0cfc4d49-85a9-45a9-8b50-a61a874e82bc', stepsToFind: 2, dungeonsToFind: 1} where the id is always the id of the encounter to force and stepsToFind is the number of tile to discover to trigger the encounter, the steps are counted even by going to another dungeon on the same saveslot, so it could happen that the event trigger after the bossfight and the start of another dungeon. For this reason there is also the dungeonsToFind that works simular to the stepsToFind and is decreased only when continuing your game after the boss defeat. When using the compact form and specifying only the id the steps and dungeons defaults to 0, so the encounter will be forced on the next tile. 
 
 -keepResult: afcd085d-ac4e-4e63-81c2-dfa406b3c2d3 //optional, keep result of the question, random event and wide random event, used when we want that a result stay the same after every spark
 

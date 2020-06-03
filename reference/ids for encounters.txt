@@ -14,13 +14,19 @@ SET IDs:
 'vordt_of_the_boreal_valley', 
 'asylum_demon'
 'fourKings'
+'custom_enemies_expansions'
 
-ITEM IDS:
+ITEM IDs:
+
 chest,
+safe_chest, //like chest but can never transfrom into a mimick
 barrel,
 gravestone,
 npc //new item, you can use something as placeholder on the board like the miniature from the charachter expansion. rules yet to be defined, for now they don't affect the combat
-message ////new item, you can use something as placeholder, it reperesent the classic messages from other players. rules yet to be defined, for now they don't affect the combat
+npc_barrel //it is pretty much an npc but show with the icon of a barrel and can be interacted only outside of the combat (done to reperesent the classic barrel with inside something)
+npc_ID_OF_AN_ENEMY //(ie npc_sir_alonne) like an npc but use the icon of an enemy on the board 
+message //you can use as placeholder, it reperesent the classic messages from other players. rules yet to be defined, for now they don't affect the combat
+summon //identical to the message but with a different icon
 
 ENEMIES IDs
 
@@ -60,14 +66,36 @@ smelter_demon
 dancer_of_the_boreal_valley,
 boreal_knight
 
+CUSTOM ENEMY IDs
 
-MEGABOSS
+soul_of_cinder
+lothric_lorian
+sirris
+mytha
+gwyndolin
+aslatiel
+havel_the_rock
+black_knight_greatswordsman
+black_knight_greataxeman
+black_knight_swordsman
+black_knight_halberdier
+darkwraith
+cathedral_knight
+
+
+MEGABOSS IDs
+
 gaping_dragon
 old_iron_king
 kalameet
 four_kings
+asylumn_demon
+stray_demon
+vordt_of_the_boreal_valley
+guardian_dragon
 
 INVADER IDs
+
 invader_brylex,
 marvelous_chester,
 armorer_dennis,

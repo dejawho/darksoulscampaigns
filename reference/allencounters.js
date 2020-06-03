@@ -24,12 +24,19 @@
 
 'tematic_explorers_lv3'
 
+//random encounters of specific level, it will select an encounter compatible with the current avaiable set of the user
 
-  //core
+'tematic_random_lv1'
 
-    //level 1
+'tematic_random_lv2'
 
-    [
+'tematic_random_lv3'
+
+//core
+
+//level 1
+
+[
     {
         id: '89c264b8-a08e-43e9-b52f-a0e09754af4f',
         title: 'Dark Hollow',
@@ -682,8 +689,8 @@
         spawn2: [{ enemyId: 'sentinel' }, { enemyId: 'large_hollow_soldier' }],
         type: 'common',
     },
-	
-	//dark root
+
+    //dark root
 
     //level 1
 
@@ -929,8 +936,8 @@
         hasTrapTraps: true,
         type: 'common',
     },
-	
-	//explorer expansion
+
+    //explorer expansion
 
     //level 1
 
@@ -1308,9 +1315,264 @@
         specialSpawn2: [{ enemyId: 'crystal_lizard' }],
         type: 'common',
     },
-	
-	
-	   //gaping dragon
+
+    //boss encounters
+
+    {
+        id: 'f2a31d07-c50d-4e6b-bf00-4fece41f8e50',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'dancer_of_the_boreal_valley',
+        spawn1: [{ enemyId: 'dancer_of_the_boreal_valley' }],
+        type: BOSS_KEY,
+        encountersDifficulty: [0, 0.5, 0.5, 0],
+    },
+    {
+        id: '93d8d8b3-a59c-4b1a-85f6-065af779bb52',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'ornstein_smough_label',
+        spawn1: [{ enemyId: 'dragonslayer_ornstein' }, { enemyId: 'executioner_smough' }],
+        type: BOSS_KEY,
+        encountersDifficulty: [0, 0.25, 0.75, 0],
+    },
+    {
+        id: 'b2f42026-31d0-40b3-ab4f-3fb05e4ed0d5',
+        level: 2,
+        set: ['darkroot_expansion'],
+        label: 'great_grey_wolf_sif',
+        spawn1: [{ enemyId: 'great_grey_wolf_sif' }],
+        type: BOSS_KEY,
+        encountersDifficulty: [0, 0.25, 0.75, 0],
+    },
+    {
+        id: 'f1944bb4-8c4d-437e-8c97-d857da93241e',
+        level: 2,
+        set: ['darkroot_expansion'],
+        label: 'artorias',
+        spawn1: [{ enemyId: 'artorias' }],
+        type: BOSS_KEY,
+        encountersDifficulty: [0, 0, 1, 0],
+    },
+    {
+        id: 'ad20c9e4-f478-4b6f-a420-3905a95398dc',
+        level: 1,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'boreal_knight' }],
+        label: 'boreal_knight',
+        encountersDifficulty: [0.5, 0.5, 0, 0],
+        type: MINIBOSS_KEY,
+    },
+    {
+        id: 'a6c6a301-a2b0-447f-937e-943a5a5dee32',
+        level: 1,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'titanite_demon' }],
+        label: 'titanite_demon',
+        encountersDifficulty: [0.25, 0.75, 0, 0],
+        type: MINIBOSS_KEY,
+    },
+    {
+        id: '2ad0b575-79c8-4f96-8a4e-bbb2b588280a',
+        level: 1,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'winged_knight' }],
+        label: 'winged_knight',
+        encountersDifficulty: [0.5, 0.5, 0, 0],
+        type: MINIBOSS_KEY,
+    },
+    {
+        id: 'c650c015-ecae-4167-87de-e7e72f72f584',
+        level: 1,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'gargoyle' }],
+        label: 'gargoyle_label',
+        encountersDifficulty: [0.75, 0.25, 0, 0],
+        type: MINIBOSS_KEY,
+    },
+    {
+        id: '1823b0dc-d18a-45cf-b4aa-2aa184f59d43',
+        level: 1,
+        set: [EXPLORERS_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'old_dragonslayer' }],
+        label: 'old_dragonslayer',
+        encountersDifficulty: [0.75, 0.25, 0, 0],
+        type: MINIBOSS_KEY,
+    },
+    {
+        id: '884e6212-b5ca-4e22-81e0-53791259ef54',
+        level: 2,
+        set: [EXPLORERS_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'the_pursuer' }],
+        label: 'the_pursuer',
+        encountersDifficulty: [0, 0.25, 0.75, 0],
+        type: BOSS_KEY,
+    },
+    {
+        id: '22e991db-ef4b-4d08-b1ac-49b3f8705561',
+        level: 2,
+        set: [IRON_KEEP_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'sir_alonne' }],
+        label: 'sir_alonne',
+        encountersDifficulty: [0, 0.75, 0.25, 0],
+        type: BOSS_KEY,
+    },
+    {
+        id: 'a9182125-6431-4028-affb-c8a39aa160ff',
+        level: 2,
+        set: [IRON_KEEP_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'smelter_demon' }],
+        label: 'smelter_demon',
+        encountersDifficulty: [0, 0.5, 0.5, 0],
+        type: BOSS_KEY,
+    },
+    {
+        id: 'e9532c80-06b8-4a54-8e46-d0345fff2e1d',
+        level: 2,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'lothric_lorian' }],
+        label: 'lorian_lothric_label',
+        onEnterEvent: {
+            type: 'information',
+            title: 'Special Rule',
+            id: '97574bce-0ab6-424b-9d91-526a28b6883f',
+            message: 'You can use any boss miniature as replacement for the actual boss during this encounter.',
+            brokeEvent: { id: '97574bce-0ab6-424b-9d91-526a28b6883f', isBroken: true },
+        },
+        encountersDifficulty: [0, 0.5, 0.5, 0],
+        type: BOSS_KEY,
+    },
+    {
+        id: '80a5191f-9200-4d88-98d5-3cf2985d1a01',
+        level: 2,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'mytha' }],
+        label: 'mytha',
+        bossTile: 'mytha_room_b',
+        //exlude from the dungeon the room2_a and room2_b because mytha_room_b use the same physical tile
+        excludedDungeonTiles: ['room2'],
+        encountersDifficulty: [0.5, 0.5, 0, 0],
+        onEnterEvent: {
+            type: 'information',
+            title: 'Special Rule',
+            id: 'e723d71b-03c7-4964-a581-c212ff158e93',
+            message: 'You can use any boss miniature as replacement for the actual boss during this encounter.\n\nPlace any 4 token on the corner nodes of this room as shown in the image, these are now considered Poison Nodes. Whenever a model (enemy or a player character) starts their activation on this nodes, they are immediately affected by poison',
+            brokeEvent: { id: 'e723d71b-03c7-4964-a581-c212ff158e93', isBroken: true },
+        },
+        type: MINIBOSS_KEY,
+    },
+    {
+        id: 'b2202b0b-fa43-4682-8ac2-bfb2131e891c',
+        level: 3,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'soul_of_cinder' }],
+        label: 'soul_of_cinder',
+        bossTile: 'boss1_a',
+        prebossTile: 'soul_of_cinder_preboss_a',
+        preBossEncounterId: '1b90a2cf-d685-4460-9573-731ee5bacf9e',
+        //exlude from the dungeon the room5 because it is used as a preboss tile
+        excludedDungeonTiles: ['room5'],
+        encountersDifficulty: [0, 0.5, 0.5, 0],
+        onEnterEvent: {
+            type: 'information',
+            title: 'Additional Info',
+            id: '0e6b125b-c389-4ffc-9974-50c1d3619cde',
+            message: 'You can use any boss miniature as replacement for the actual boss during the boss encounter.',
+            brokeEvent: { id: '0e6b125b-c389-4ffc-9974-50c1d3619cde', isBroken: true },
+        },
+        type: MEGA_BOSS_KEY,
+    },
+    {
+        id: 'd7257e75-2649-45a3-ba74-87726d8c60ec',
+        level: 3,
+        set: [GAPING_DRAGON_BOSS_KEY],
+        spawn1: [{ enemyId: 'gaping_dragon' }],
+        label: 'gaping_dragon',
+        encountersDifficulty: [0, 0.2, 0.8, 0],
+        prebossTile: 'megaboss_gaping_dragon_a',
+        bossTile: 'megaboss_gaping_dragon_b',
+        type: MEGA_BOSS_KEY,
+    },
+    {
+        id: 'f59098e4-104e-4597-922b-5d1d70b5ca90',
+        level: 3,
+        set: [OLD_IRON_KING_BOSS_KEY],
+        spawn1: [{ enemyId: 'old_iron_king' }],
+        label: 'old_iron_king',
+        encountersDifficulty: [0, 0.2, 0.8, 0],
+        prebossTile: 'megaboss_old_iron_king_a',
+        bossTile: 'megaboss_old_iron_king_b',
+        type: MEGA_BOSS_KEY,
+    },
+    {
+        id: '6ca5a4c6-32cf-4ecd-9fd7-5cd3b76e8a2f',
+        level: 3,
+        set: [KALAMEET_BOSS_KEY],
+        spawn1: [{ enemyId: 'kalameet' }],
+        label: 'kalameet',
+        encountersDifficulty: [0, 0.2, 0.8, 0],
+        prebossTile: 'megaboss_kalameet_a',
+        bossTile: 'megaboss_kalameet_b',
+        type: MEGA_BOSS_KEY,
+    },
+    {
+        id: '486d6948-a674-4e15-8482-576e5a271d43',
+        level: 3,
+        set: [FOUR_KINGS_BOSS_KEY],
+        spawn1: [{ enemyId: 'four_kings' }, { enemyId: 'four_kings' }, { enemyId: 'four_kings' }, { enemyId: 'four_kings' }],
+        label: 'the_four_king_label',
+        encountersDifficulty: [0, 0.2, 0.8, 0],
+        prebossTile: 'megaboss_four_kings_a',
+        bossTile: 'megaboss_four_kings_b',
+        type: MEGA_BOSS_KEY,
+    },
+    {
+        id: 'bc6c9bd4-476d-444d-a1ea-c93ee6bf3c6a',
+        level: 1,
+        set: [ASYLUM_DEMON_BOSS_KEY],
+        label: 'asylumn_demon',
+        spawn1: [{ enemyId: 'asylumn_demon' }],
+        encountersDifficulty: [0.75, 0.25, 0, 0],
+        bossTile: 'megaboss_asylum_demon_b',
+        type: MINIBOSS_KEY,
+    },
+    {
+        id: 'addca633-7866-43c7-a551-64ebf3f6375e',
+        level: 3,
+        set: [ASYLUM_DEMON_BOSS_KEY],
+        label: 'stray_demon',
+        spawn1: [{ enemyId: 'stray_demon' }],
+        encountersDifficulty: [0, 0.2, 0.8, 0],
+        prebossTile: 'megaboss_asylum_demon_a',
+        bossTile: 'megaboss_asylum_demon_b',
+        type: MEGA_BOSS_KEY,
+    },
+    {
+        id: '91fb6b0e-f510-473c-8830-ecadb320ee7e',
+        level: 3,
+        set: [VORDT_BOSS_KEY],
+        label: 'vordt_of_the_boreal_valley',
+        spawn1: [{ enemyId: 'vordt_of_the_boreal_valley' }],
+        encountersDifficulty: [0, 0.2, 0.8, 0],
+        prebossTile: 'megaboss_vordt_a',
+        bossTile: 'megaboss_vordt_b',
+        type: MEGA_BOSS_KEY,
+    },
+    {
+        id: '304dc3ff-f2df-40c2-8e44-a3511d454f0e',
+        level: 3,
+        set: [GUARDIAN_DRAGON_BOSS_KEY],
+        label: 'guardian_dragon',
+        spawn1: [{ enemyId: 'guardian_dragon' }],
+        encountersDifficulty: [0, 0.2, 0.8, 0],
+        prebossTile: 'megaboss_guardian_dragon_a',
+        bossTile: 'megaboss_guardian_dragon_b',
+        type: MEGA_BOSS_KEY,
+    },
+
+    //lv 4 encounters
+
+    //gaping dragon
 
     {
         id: 17,
@@ -1603,1456 +1865,2569 @@
         item4: [{ itemId: 'barrel' }],
         type: 'common',
     },
-	
-	
-       //custom
+
+       //asylum demon encounters
+
+       {
+        id: 'c04bee48-654e-495b-a964-6be2520c9a47',
+        title: 'Demon\'s Antichamber',
+        level: 4,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        spawn2: [{ enemyId: 'sk_greatbowman' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        spawn3: [{ enemyId: 'sentinel' }, { enemyId: 'hollow_crossbow' }],
+        spawn4: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        item1: [{ itemId: 'barrel' }],
+        item2: [{ itemId: 'barrel' }],
+        item3: [{ itemId: 'barrel' }],
+        item4: [{ itemId: 'barrel' }],
+        hasTraps: true,
+        type: COMMON_ENCOUNTERS_KEY,
+    },
     {
-          //this encounter will generate a random low level invader
-          id: '01163208-8c66-4a5a-94d0-0a15020c4f4b',
-          label: 'Random Invasion',
-          //this encounter doesn't give souls for defating the invader since they are given on the ondeath event
-          soulsPerPlayer: 0,
-          //when entering the tile we spawn the nemy
-          onEnterEvent:  {
-              type: 'wideRandomEvent',
-              keepResult: '5048a28d-5d92-4740-8094-09eae9169c20',
-              events: [
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'xanthous_king_jeremiah', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Notched Whip and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: '95fe57f7-d432-433b-a8d6-d3c6baedd4dc', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: '95fe57f7-d432-433b-a8d6-d3c6baedd4dc',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Xanthous King Jeremiah',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: '95fe57f7-d432-433b-a8d6-d3c6baedd4dc', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'melinda_the_butcher', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Melinda\'s Greataxe and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: 'a6d90f3c-6042-421b-b6d0-b8d29828f466', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: 'a6d90f3c-6042-421b-b6d0-b8d29828f466',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Melinda the Butcher',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: 'a6d90f3c-6042-421b-b6d0-b8d29828f466', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'maneater_mildred', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Butcher Knife and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: '18f52eff-a9de-4575-99b7-d8e5a99d6086', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: '18f52eff-a9de-4575-99b7-d8e5a99d6086',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Maneater Mildred',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: '18f52eff-a9de-4575-99b7-d8e5a99d6086', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'oliver_the_collector', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Minotaur Helmet and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: '677d9e97-f36b-4b35-835e-a374f55c8f39', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: '677d9e97-f36b-4b35-835e-a374f55c8f39',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Oliver the Collector',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: '677d9e97-f36b-4b35-835e-a374f55c8f39', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'maldron_the_assassin', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Royal Swordsman Armour and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: '70cbd690-0332-4199-8ef8-94e2bef5b5d4', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: '70cbd690-0332-4199-8ef8-94e2bef5b5d4',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Maldron the Assassin',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: '70cbd690-0332-4199-8ef8-94e2bef5b5d4', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'kirk_knight_of_thorns', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Spike Shield and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: '94577abe-bec8-42e7-be80-bb3d4d265e2c', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: '94577abe-bec8-42e7-be80-bb3d4d265e2c',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Kirk Knight of Thorns',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: '94577abe-bec8-42e7-be80-bb3d4d265e2c', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          //empty event, nothing happen
-                          type: 'information',
-                          message: '',
-                      },
-                      probability: 10,
-                  },
-              ],
-          },
-          level: 2,
-          set: [PHANTOMS_EXPANSION_KEY],
-          type: 'common',
-          item1: [{ itemId: 'chest' }],
-          item2: [{ itemId: 'gravestone' }],
-      },
-      {
-          //this encounter will generate a random medium level invader
-          id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20',
-          //this encounter doesn't give souls for defating the invader since they are given on the ondeath event
-          label: 'Random Invasion 2',
-          soulsPerPlayer: 0,
-          //when entering the tile we spawn the nemy
-          onEnterEvent:  {
-              type: 'wideRandomEvent',
-              keepResult: '17950480-f0f1-4377-989f-be02db7a3f7f',
-              events: [
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'longfinger_kirk', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Armour of Thorns and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: 'be4de786-ad38-492c-b086-0370c1487b9b', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: 'be4de786-ad38-492c-b086-0370c1487b9b',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Longfinger Kirk',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: 'be4de786-ad38-492c-b086-0370c1487b9b', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'paladin_leroy', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Stanctus and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: '5bba773e-7b39-4c4c-9375-44c45011fb3a', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: '5bba773e-7b39-4c4c-9375-44c45011fb3a',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Paladin Leroy',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: '5bba773e-7b39-4c4c-9375-44c45011fb3a', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'fencer_sharon', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Sanctum Priestess Tiara and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: '0d5a4fc8-197c-48f0-b353-22e0f1f066fb', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: '0d5a4fc8-197c-48f0-b353-22e0f1f066fb',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Fencer Sharon',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: '0d5a4fc8-197c-48f0-b353-22e0f1f066fb', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'armorer_dennis', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Clear Bluestone Ring and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: '473287bb-735a-4d5f-9c8e-91397355f739', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: '473287bb-735a-4d5f-9c8e-91397355f739',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Armorer Dennis',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: '473287bb-735a-4d5f-9c8e-91397355f739', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'marvelous_chester', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Chester\'s Set and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: 'da78472f-5411-4ec3-a848-ea95d06d7ec2', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: 'da78472f-5411-4ec3-a848-ea95d06d7ec2',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Marvelous Chester',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: 'da78472f-5411-4ec3-a848-ea95d06d7ec2', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          type: 'spawn',
-                          spawnPoint: 'spawn1',
-                          spawnedEnemies: [{
-                              enemyId: 'invader_brylex', onDeathEvent: {
-                                  type: 'information',
-                                  title: 'Invader Banished',
-                                  message: 'Obtain the item Mon Ring and 3 souls',
-                                  //restore the event so the next time this dark spirit will invade us the message will popup again
-                                  brokeEvent: {id: '52a826de-96b8-4a96-8c1a-7ec5d7c001f5', isBroken: false},
-                                  //when the enemy is defeated we broke the encounter so it will not respawn
-                                  brokeEncounter: {id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20', isBroken: true, scope: 'dungeon'},
-                              },
-                          }],
-                          next: {
-                              id: '52a826de-96b8-4a96-8c1a-7ec5d7c001f5',
-                              type: 'information',
-                              message: 'You have been invaded by the Dark Spirit Invader Brylex',
-                              //broke this event, this means the message will be showed once
-                              brokeEvent: {id: '52a826de-96b8-4a96-8c1a-7ec5d7c001f5', isBroken: true},
-                          },
-                      },
-                      probability: 15,
-                  },
-                  {
-                      event:{
-                          //empty event, nothing happen
-                          type: 'information',
-                          message: '',
-                      },
-                      probability: 10,
-                  },
-              ],
-          },
-          level: 3,
-          set: [PHANTOMS_EXPANSION_KEY],
-          type: 'common',
-          item1: [{ itemId: 'chest' }],
-          item2: [{ itemId: 'gravestone' }],
-      },
-      {
-          id: 'd8d5ac37-7f85-432b-a254-9c5a357e1089',
-          level: 2,
-          set: [CORE_SET_KEY],
-          hasTrapTraps: true,
-          label: 'Random Mimic',
-          spawn1: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }],
-          spawn2: [{ enemyId: 'sk_swordsman' }],
-          item1: [{
-              itemId: 'chest',
-              pressEvent: {
-                  type: 'question',
-                  message: 'Do you want to open the chest?',
-                  answers: [
-                      {
-                          answerLabel: 'yes',
-                          next: {
-                              type: 'randomEvent',
-                              successValue: 30,
-                              successEvent: {
-                                  type: 'information',
-                                  message: 'Draw two card from the treasures deck',
-                                  brokeItem: true,
-                              },
-                              failureEvent: {
-                                  type: 'spawn',
-                                  message: 'The chest transform into a mimic',
-                                  spawnPoint: 'specialSpawn1',
-                                  spawnedEnemies: [{
-                                      enemyId: 'hungry_mimic', onDeathEvent: {
-                                          type: 'information',
-                                          message: 'Draw 3 cards from the treasures deck and gain two souls',
-                                          brokeItem: true,
-                                      },
-                                  }],
-                              },
-                          },
-                      },
-                      {
-                          answerLabel: 'no',
-                          //without next nothing happen, simply the message popup is closed
-                      },
-                  ],
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: '21244ab3-34ed-485d-acdd-6d18454d0f31',
-          level: 3,
-          label: 'amazing chest part 1',
-          set: [CORE_SET_KEY],
-          spawn1: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }],
-          item1: [{
-              itemId: 'message',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Message',
-                  message: 'Amazing Chest Ahead',
-                  brokeItem: true,
-                  brokeEncounter: {id: '21244ab3-34ed-485d-acdd-6d18454d0f31', isBroken: true, scope: 'campaign'},
-                  nextEncounter: {id: '2cf6c96f-3cc8-47ee-bcb0-277377e1f276', stepsToFind: 0},
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: '2cf6c96f-3cc8-47ee-bcb0-277377e1f276',
-          level: 3,
-          set: [CORE_SET_KEY],
-          label: 'amazing chest part 2',
-          spawn1: [{ enemyId: 'sentinel' }],
-          spawn2: [{ enemyId: 'sk_greatbowman' }, { enemyId: 'sentinel' }],
-          item1: [{
-              itemId: 'chest',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Message',
-                  message: 'Draw a random legendary weapon',
-                  brokeItem: true,
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: '4980b412-0ff5-4303-8cf8-f62fd709abb5',
-          level: 2,
-          set: [CORE_SET_KEY],
-          hasTraps: true,
-          label: 'patches part 1',
-          spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'question',
-                  title: 'Patches the Hyena',
-                  message: 'Good day! You look reasonably sane!\nWhat are you doing here? Are you a Cleric or something?',
-                  answers: [
-                      {
-                          answerLabel: 'Yes',
-                          next: {
-                              type: 'information',
-                              title: 'Patches the Hyena',
-                              message: 'Yes, I imagined as much. Best of luck with your pilgrimages or missions or whatever you do. In the next room you can find something useful\nHeh heh heh…',
-                              brokeItem: true,
-                              brokeEncounter: {id: '4980b412-0ff5-4303-8cf8-f62fd709abb5', isBroken: true, scope: 'campaign'},
-                              nextEncounter: {id: 'd1e9a8f8-a578-4b0d-82dd-a985fb78b9e9', stepsToFind: 0},
-                          },
-                      },
-                      {
-                          answerLabel: 'No',
-                          next: {
-                              type: 'information',
-                              title: 'Patches the Hyena',
-                              message: 'No? Well, that\'s strange. \nOhhh, I know what it is. You\'ve come for the trinkets, haven\'t you? Well whatever it is\nThis place is treacherous. Do watch your step.\nHeh heh heh…',
-                              brokeItem: true,
-                              brokeEncounter: {id: '4980b412-0ff5-4303-8cf8-f62fd709abb5', isBroken: true, scope: 'campaign'},
-                              nextEncounter: {id: '4c043791-b3ad-4666-8cb3-733c17e375c4', stepsToFind: 0},
-                          },
-                      },
-                  ],
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: 'd1e9a8f8-a578-4b0d-82dd-a985fb78b9e9',
-          level: 2,
-          label: 'patches part 2a',
-          set: [CORE_SET_KEY],
-          spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
-          spawn2: [{ enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Patches the Hyena',
-                  message: '…Oh, you, I…Let\'s just calm down. Talk about things… I did you wrong.\nBut, I didn\'t mean it. These temptations, they can, well, overcome me…You know what I mean? Don\'t you? \nPlease forgive me. Here a little gift:',
-                  next: {
-                      type: 'information',
-                      message: 'Draw 3 cards from the tresures deck',
-                      brokeItem: true,
-                  },
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: '4c043791-b3ad-4666-8cb3-733c17e375c4',
-          level: 2,
-          label: 'patches part 2b',
-          set: [CORE_SET_KEY],
-          spawn1: [{ enemyId: 'hollow_soldier' }],
-          item1: [{ itemId: 'chest' }],
-          hasTraps: true,
-          type: 'chained',
-      },
-      {
-          id: '054a365d-7b4a-4f42-b324-6a5c4dace8a7',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'oscar encounter',
-          hasTrapTraps: true,
-          spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
-          spawn2: [{ enemyId: 'hollow_crossbow' }],
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Oscar from Astora',
-                  message: '…Oh, you… You\'re no Hollow, eh? …Thank goodness…I\'m done for, I\'m afraid……I\'ll die soon, then lose my sanity…',
-                  next: {
-                      type: 'question',
-                      title: 'Oscar from Astora',
-                      message: '…I wish to ask something of you…You and I, we\'re both Undead… Hear me out, will you?',
-                      answers: [
-                          {
-                              answerLabel: 'Yes',
-                              next: {
-                                  type: 'information',
-                                  title: 'Oscar from Astora',
-                                  message: '…Regrettably, I have failed in my mission…But perhaps you can keep the torch lit…There is an old saying in my family…Thou who art Undead, art chosen.\nHere, take this…An Estus Flask, an Undead favourite.',
-                                  next: {
-                                      type: 'information',
-                                      title: 'Oscar from Astora',
-                                      message: 'Players can flip their eastus flask token on the unused side',
-                                      brokeItem: true,
-                                  },
-                              },
-                          },
-                          {
-                              answerLabel: 'No',
-                              next: {
-                                  type: 'information',
-                                  title: 'Oscar from Astora',
-                                  message: '… Yes, I see… Perhaps I was too hopeful… Hah hah… Please, leave me be… I have not long to live, and I may harm you after death… Now, go…',
-                                  next: {
-                                      type: 'spawn',
-                                      spawnPoint: 'specialSpawn1',
-                                      spawnedEnemies: [{
-                                          enemyId: 'hollow_soldier', onDeathEvent: {
-                                              type: 'information',
-                                              message: 'You can add Crest Shield (Herald Transposed Tresure) or Elite Knight Armour (Knight Transposed Treasure) to your Inventory or 3 souls to your reserve',
-                                              brokeItem: true,
-                                          },
-                                      }],
-                                  },
-                              },
-                          },
-                      ],
-                  },
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: '95fb93b5-17b7-40a2-9513-acecd26c3e72',
-          level: 2,
-          set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY],
-          label: 'sirris encounter part 1',
-          spawn1: [{ enemyId: 'hollow_crossbow'}],
-          spawn2: [{ enemyId: 'hollow_crossbow'}, { enemyId: 'hollow_soldier'}, { enemyId: 'hollow_soldier'}],
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Sirris of the Sunless Realm',
-                  message: 'Mm, you\'re an Unkindled, aren\'t you. I am Sirris, of the Sunless Realms, former servant of the Divinity. Duties we each bear, but one\'s duty is a solitary affair. I doubt we\'ve much to gain from fraternisation. Blessing of the moon upon your journey.',
-                  nextEncounter: {id: 'd3f986af-046f-4a43-88b5-77d80780d875', stepsToFind: 2},
-                  brokeEncounter: {id: '95fb93b5-17b7-40a2-9513-acecd26c3e72', isBroken: true, scope: 'campaign'},
-                  brokeItem: true,
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: 'd3f986af-046f-4a43-88b5-77d80780d875',
-          level: 2,
-          label: 'sirris encounter part 2',
-          set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY],
-          onEnterEvent:  {
-              type: 'information',
-              message: 'You see someone fighting',
-              id: 'f5595fb2-6d8f-49b4-a4b9-909f55e75183',
-              next: {
-                  type: 'information',
-                  message: 'During this encounter you can use the summon Sirris of The Sunless Realm',
-              },
-          },
-          spawn1: [{ enemyId: 'longfinger_kirk', respawn: false, onDeathEvent: {
-              type: 'information',
-              message: '',
-              brokeEvent: {id: 'f5595fb2-6d8f-49b4-a4b9-909f55e75183', isBroken: true},
-          } }],
-          spawn2: [{ enemyId: 'hollow_crossbow'}, { enemyId: 'hollow_soldier'}, { enemyId: 'hollow_soldier'}],
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Sirris of the Sunless Realm',
-                  message: 'Thank you for your generous rescue. That Dark Spirit was one of Rosaria\'s Fingers. Vile bastard offspring who lurk in the darkness. My sworn enemies. Fearsome invaders, to say the least. I would not have made it alone. You have my deepest gratitude. If you require help on your travels, I offer you my sign.\nBlessing of the moon upon your journey.',
-                  next: {
-                      type: 'information',
-                      message: 'Before to start the next bossfight you can summon Sirris without having to renounce to the souls given by the boss',
-                      brokeItem: true,
-                  },
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: 'fc339682-73b8-446e-9d76-625d0108b885',
-          level: 2,
-          label: 'rosabeth encounter',
-          set: [CORE_SET_KEY, EXPLORERS_EXPANSION_KEY],
-          spawn1: [{ enemyId: 'hollow_crossbow'}],
-          spawn2: [{ enemyId: 'firebomb_hollow'}, { enemyId: 'hollow_soldier'}],
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Rosabeth',
-                  message: 'Th-th…Thank…thank you…I\'m fine, I think. Hrgg! No no no, I\'m fine! Really, I am! Um, my name is Rosabeth. Thank you so much for rescuing me. Phew…I owe you my life! If you had not come…I feel shameful…wearing these rags…',
-                  next: {
-                      type: 'information',
-                      title: 'Rosabeth',
-                      message: 'Um…I hate to burden you further, as you\'ve already saved my life…But…just look at me, my clothes are in tatters. Do you have any clothing that you could spare? I\'ll take anything, whatever you don\'t need. I\'m not particular when it comes to apparel.Anything at all will do.',
-                      next: {
-                          type: 'question',
-                          title: 'Rosabeth',
-                          message: 'Do you want to reshufle one of your armour in the tresure deck?',
-                          answers: [
-                              {
-                                  answerLabel: 'Yes',
-                                  next: {
-                                      type: 'information',
-                                      title: 'Rosabeth',
-                                      message: 'You even were kind enough to clothe me. Thank you so very much. Well, I\'m quite a hand at pyromancy. So, perhaps… You could consider this my thanks?',
-                                      next: {
-                                          type: 'information',
-                                          message: 'Search and draw the common treasures Fireball and Poison Mist',
-                                          brokeEncounter: {id: 'fc339682-73b8-446e-9d76-625d0108b885', isBroken: true, scope: 'campaign'},
-                                          brokeItem: true,
-                                      },
-                                  },
-                              },
-                              {
-                                  answerLabel: 'No',
-                                  next: {
-                                      type: 'information',
-                                      title: 'Rosabeth',
-                                      message: 'Oh, be safe then',
-                                  },
-                              },
-                          ],
-                      },
-                  },
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: '2e19d7a9-e1f6-4d7e-81cb-ee31c9d7419d',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'petrus encounter part 1',
-          spawn1: [{ enemyId: 'hollow_crossbow'}],
-          spawn2: [{ enemyId: 'firebomb_hollow'}, { enemyId: 'hollow_soldier'}],
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Petrus',
-                  message: 'Hello there. I believe we are not acquainted?  I am Petrus of Thorolund. Have you business with us? …If not, I\'d prefer to keep a distance, if possible.',
-                  next: {
-                      type: 'question',
-                      message: 'Continue talking?',
-                      answers: [
-                          {
-                              answerLabel: 'Yes',
-                              next: {
-                                  type: 'information',
-                                  title: 'Petrus',
-                                  message: 'Oh, my… you again? Oh, I know. How about this…I have to await my companions here anyway,so, what if I were to teach you some miracles? Would that please you?',
-                                  next: {
-                                      type: 'question',
-                                      title: 'Petrus',
-                                      message: 'Do you want to spend 3 souls to learn one miracle between Heal and Force?',
-                                      answers: [
-                                          {
-                                              answerLabel: 'Yes',
-                                              next: {
-                                                  type: 'information',
-                                                  title: 'Petrus',
-                                                  message: 'Now, let me share my Miracles.',
-                                                  next: {
-                                                      type: 'information',
-                                                      message: 'Search and draw the selected miracle from the common treasures deck',
-                                                      brokeEncounter: {id: '2e19d7a9-e1f6-4d7e-81cb-ee31c9d7419d', isBroken: true, scope: 'campaign'},
-                                                      brokeItem: true,
-                                                  },
-                                              },
-                                          },
-                                          {
-                                              answerLabel: 'No',
-                                              next: {
-                                                  type: 'information',
-                                                  title: 'Petrus',
-                                                  message: 'That is a shame. But each to their own. Speak to me if you have a change of heart.',
-                                              },
-                                          },
-                                      ],
-                                  },
-                              },
-                          },
-                          {
-                              answerLabel: 'No',
-                          },
-                      ],
-                  },
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: '92090c4a-a3a0-4319-9624-7d2701775dbe',
-          level: 2,
-          set: [CORE_SET_KEY, EXPLORERS_EXPANSION_KEY],
-          label: 'random pursuer',
-          onEnterEvent:  {
-              type: 'randomEvent',
-              successValue: 60,
-              keepResult: '558536a2-2361-4427-9048-0ac4927f844f',
-              successEvent: {
-                  type: 'spawn',
-                  spawnPoint: 'spawn1',
-                  spawnedEnemies: [{enemyId: 'firebomb_hollow'}, {enemyId: 'firebomb_hollow'}],
-                  next: {
-                      type: 'spawn',
-                      spawnPoint: 'spawn2',
-                      spawnedEnemies: [{enemyId: 'hollow_soldier'}, {enemyId: 'hollow_soldier'}],
-                  },
-              },
-              failureEvent: {
-                  type: 'spawn',
-                  message: 'A figure emerges from the darkness',
-                  spawnPoint: 'spawn1',
-                  id: 'ca4539d2-e86a-469a-aaeb-eabc0fbf50cd',
-                  spawnedEnemies: [{
-                      enemyId: 'the_pursuer', respawn: false, health: 20, onDeathEvent: {
-                          type: 'information',
-                          message: 'You gain 3 additional souls',
-                          brokeEvent: {id: 'ca4539d2-e86a-469a-aaeb-eabc0fbf50cd', isBroken: true},
-                      },
-                  }],
-              },
-          },
-          type: 'common',
-      },
-      {
-          id: 'a746a64f-e13f-4862-8d48-057c63fe3fb7',
-          level: 2,
-          set: [CORE_SET_KEY, DARKROOT_EXPANSION_KEY],
-          label: 'darkroot ambush',
-          item1: [{
-              itemId: 'chest',
-              pressEvent: {
-                  type: 'spawn',
-                  spawnPoint: 'spawn1',
-                  message: 'It\'s a trap',
-                  spawnedEnemies: [{enemyId: 'plow_scarecrow'}, {enemyId: 'shears_scarecrow'}],
-                  next: {
-                      type: 'spawn',
-                      spawnPoint: 'spawn2',
-                      spawnedEnemies: [{enemyId: 'plow_scarecrow'}, {enemyId: 'shears_scarecrow'}],
-                      brokeItem: true,
-                  },
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: 'dbcc44fa-41e1-46f4-8e0a-e27806acd2a7',
-          level: 2,
-          set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY, IRON_KEEP_EXPANSION_KEY],
-          label: 'siegward part1',
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Siegward of Catarina',
-                  message: 'Hmmm...Mmmm...Oh! Pardon me. I was absorbed in thought. I am Siegward of Catarina. To be honest, I\'m in a bit of a pickle.',
-                  next: {
-                      type: 'information',
-                      title: 'Siegward of Catarina',
-                      message: 'Anyhow, do you see that? That humongous beast? I\'m no coward and I\'ve a steady hand, but that thing makes my skin crawl. Now, now, think twice before you go down that road.',
-                      next: {
-                          type: 'information',
-                          title: 'Siegward of Catarina',
-                          message: 'I could try talking some sense into him…No, I think not. he\'s far too over-heated. I\'ve got to use my head and think. Hmm…. Mmm…',
-                          nextEncounter: {id: '0cfc4d49-85a9-45a9-8b50-a61a874e82bc', stepsToFind: 0},
-                          brokeEncounter: {id: 'dbcc44fa-41e1-46f4-8e0a-e27806acd2a7', isBroken: true, scope: 'campaign'},
-                          brokeItem: true,
-                      },
-                  },
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: '0cfc4d49-85a9-45a9-8b50-a61a874e82bc',
-          level: 2,
-          set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY, IRON_KEEP_EXPANSION_KEY],
-          label: 'siegward part2',
-          onEnterEvent:  {
-              id: '616d47c7-b820-42d4-a644-7d16dac7cf6a',
-              type: 'information',
-              title: 'Siegward of Catarina',
-              message: 'No! You should have waited! Well, it\'s too late now. I, Siegward of the Knights of Catarina, fight by your side!',
-              next: {
-                  type: 'information',
-                  message: 'You can summon Siegward of Catarina for this encounter without any cost',
-              },
-          },
-          spawn1: [{ enemyId: 'smelter_demon', respawn: false, heatup: -1, health: 12, onDeathEvent: {
-              type: 'information',
-              message: '',
-              brokeEvent: {id: '616d47c7-b820-42d4-a644-7d16dac7cf6a', isBroken: true},
-          }}],
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Siegward of Catarina',
-                  message: 'That was quite the performance. But you mustn\'t get in over your head. We Unkindled must put our duties first. But for the moment, we\'ve a toast to make. To your valour, my sword, and our victory together.',
-                  next: {
-                      type: 'information',
-                      title: 'Siegward of Catarina',
-                      message: 'Long may the sun shine! Well, I\'m going to have myself a little nap. The only thing to do, really, after a nice toast.',
-                      next: {
-                          type:'information',
-                          message: 'Players can flip their eastus flask token on the unused side',
-                          nextEncounter: {id: 'c101bc71-ae53-43fa-b662-b0e3c636db58', stepsToFind: 4},
-                          brokeItem: true,
-                      },
-                  },
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: 'c101bc71-ae53-43fa-b662-b0e3c636db58',
-          level: 2,
-          set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY, IRON_KEEP_EXPANSION_KEY],
-          label: 'siegward part3',
-          spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
-          spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Siegward of Catarina',
-                  message: 'Hello! Hello! Anyone there? Anyone at all? Oh! I know that voice. Just how long has it been! It\'s me, Siegward of Catarina. I\'m loathe to admit it, but I\'ve been had.',
-                  next: {
-                      type: 'information',
-                      title: 'Siegward of Catarina',
-                      message: 'Someone\'s swiped my armour. Did you happen to see it anywhere? I\'m in quite a pickle indeed. Maybe I can fashion a replacement…from the…hmm. I\'ve got to use my head. And think. Hmm… Mmm…',
-                      next: {
-                          type:'question',
-                          message: 'Do you want to reshufle one of your armour in the tresure deck?',
-                          answers: [
-                          {
-                                  answerLabel: 'Yes',
-                                  next: {
-                                      type: 'information',
-                                      title: 'Siegward of Catarina',
-                                      message: 'Ah, oh! An armour! My deepest gratitude! I, Siegward of Catarina, salute you. With my trusty suit of armor, I\'ll be out of here in a jiffy. Until we meet again, comrade!',
-                                      nextEncounter: {id: 'd8b46ad5-935b-4013-800b-13867b020cec', stepsToFind: 3},
-                                      brokeItem: true,
-                                  },
-                              },
-                              {
-                                  answerLabel: 'No',
-                                  next: {
-                                      type: 'information',
-                                      title: 'Siegward of Catarina',
-                                      message: 'Oh, yes, I see…Not to worry. Great planning begets great fortune. An old tenet of the Knights of Catarina. And I am a master planner, I do say!',
-                                  },
-                              },
-                          ],
-                      },
-                  },
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: 'd8b46ad5-935b-4013-800b-13867b020cec',
-          level: 2,
-          set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY, IRON_KEEP_EXPANSION_KEY],
-          label: 'siegward part4',
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Siegward of Catarina',
-                  message: 'Ah, ohh! Excuse me. I must have dozed off. It\'s rather warm in here. Well, well, hasn\'t it been all too long! It\'s good to see you. Oh, I seemed to have missed my chance, so…I, Siegward of Catarina, offer my deepest gratitude. And a little surprise to go with it. It\'s all yours.',
-                  next: {
-                      type: 'information',
-                      message: 'Search and draw the common item Force',
-                      next: {
-                          type: 'information',
-                          title: 'Siegward of Catarina',
-                          message: 'Won\'t you join me for dinner? I make a fine estus soup. I\'ve got some stewing right now. Even we Undead deserve a little normalcy, from time to time. And finally, upon this rendezvous, let us make a toast.',
-                          next: {
-                              type: 'information',
-                              title: 'Siegward of Catarina',
-                              message: 'To your valour, my sword, and our sworn duties! Long may the sun shine!',
-                              next: {
-                                  type: 'information',
-                                  message: 'Players can flip their eastus flask token on the unused side',
-                                  brokeItem: true,
-                              },
-                          },
-                      },
-                  },
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: '7aed7b6a-2809-4962-8c75-2f61d52f402a',
-          level: 2,
-          set: [CORE_SET_KEY],
-          spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
-          spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
-          label: 'yoel part1',
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Yoel of Londor',
-                  message: 'Ohh… Ohh, then it\'s true. A Champion of Ash, as I live and breathe. To be in your presence is a great honour. I am Yoel of Londor, a pilgrim as you can see. Only, somehow, I failed to die as was ordained. Well, perhaps my calling lies elsewhere.',
-                  next: {
-                      type: 'question',
-                      title: 'Yoel of Londor',
-                      message: 'Say, Champion of Ash, how does the idea of taking me into your service strike you? I was once a sorcerer, surely I can be of use?',
-                      answers: [
-                          {
-                              answerLabel: 'Yes',
-                              next: {
-                                  type: 'information',
-                                  title: 'Yoel of Londor',
-                                  message: 'Ohh, I am honoured, truly. I should be dead, yet you have granted me purpose anew. I, Yoel of Londor, do solemnly swear myself to you.',
-                                  next: {
-                                      type: 'information',
-                                      message: '',
-                                      nextEncounter: {id: 'a28016ff-5eaf-4b71-8c4a-308234ca3abf', stepsToFind: 2},
-                                      brokeEncounter: {id: '7aed7b6a-2809-4962-8c75-2f61d52f402a', isBroken: true, scope: 'campaign'},
-                                      brokeItem: true,
-                                  },
-                              },
-                          },
-                          {
-                              answerLabel: 'No',
-                              next: {
-                                  type: 'information',
-                                  title: 'Yoel of Londor',
-                                  message: 'Be safe, Champion of Ash.',
-                              },
-                          },
-                      ],
-                  },
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: 'a28016ff-5eaf-4b71-8c4a-308234ca3abf',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'yoel part2',
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Yoel of Londor',
-                  message: 'As I have said, I was once a sorcerer. Alas, the magic of Londor is a far cry from the wonders of Vinheim. But I can teach you what I know. Perhaps more importantly…',
-                  next: {
+        id: '69ee087e-6ebf-4c9c-b230-bf094f1bccc8',
+        title: 'Shattered Cell',
+        level: 4,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        spawn2: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_greatbowman' }, { enemyId: 'hollow_crossbow' }],
+        spawn3: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_greatbowman' }, { enemyId: 'hollow_crossbow' }],
+        spawn4: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        item1: [{ itemId: 'gravestone' }],
+        item2: [{ itemId: 'chest' }],
+        item3: [{ itemId: 'barrel' }],
+        item4: [{ itemId: 'barrel' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '256fc936-f5b3-4d43-9162-5ad6e4d01b30',
+        title: 'Asylum\'s North Hall',
+        level: 4,
+        set: [CORE_SET_KEY, DARKROOT_EXPANSION_KEY, EXPLORERS_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'stone_knight' }, { enemyId: 'sk_spearman' }],
+        spawn2: [{ enemyId: 'plow_scarecrow' }, { enemyId: 'firebomb_hollow' }],
+        spawn3: [{ enemyId: 'plow_scarecrow' }, { enemyId: 'firebomb_hollow' }],
+        spawn4: [{ enemyId: 'stone_knight' }, { enemyId: 'sk_spearman' }],
+        item2: [{ itemId: 'chest' }],
+        item3: [{ itemId: 'gravestone' }],
+        item4: [{ itemId: 'gravestone' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'e5e785b0-7e4f-4bcd-90ce-363ea53c2a55',
+        title: 'Cells of the Dead',
+        level: 4,
+        set: [CORE_SET_KEY, IRON_KEEP_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'ironclad_soldier' }],
+        spawn2: [{ enemyId: 'sk_swordsman' }, { enemyId: 'hollow_crossbow' }],
+        spawn3: [{ enemyId: 'sk_swordsman' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        spawn4: [{ enemyId: 'ironclad_soldier' }],
+        specialSpawn1: [{ enemyId: 'crystal_lizard' }],
+        specialSpawn2: [{ enemyId: 'crystal_lizard' }],
+        item3: [{ itemId: 'barrel' }],
+        item4: [{ itemId: 'barrel' }],
+        hasTraps: true,
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+
+    // vordt encounters
+
+    {
+        id: '2348cfed-56cd-4d7b-842e-d4712f6bf502',
+        title: 'Courtyard of Lothric',
+        level: 4,
+        set: [CORE_SET_KEY, EXPLORERS_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'firebomb_hollow' }],
+        spawn2: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_spearman' }],
+        spawn3: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'firebomb_hollow' }],
+        spawn4: [{ enemyId: 'voracious_mimic' }],
+        item2: [{ itemId: 'barrel' }],
+        item4: [{ itemId: 'barrel' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '6a4c71c5-cfd4-40a2-b607-6fd6f514d051',
+        title: 'The Castle Grounds',
+        level: 4,
+        set: [CORE_SET_KEY, IRON_KEEP_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'alonne_knight_captain' }, { enemyId: 'alonne_knight_captain' }],
+        spawn2: [{ enemyId: 'alonne_knight_captain' }, { enemyId: 'alonne_sword_knight' }],
+        spawn3: [{ enemyId: 'alonne_knight_captain' }, { enemyId: 'alonne_sword_knight' }],
+        spawn4: [{ enemyId: 'alonne_bow_knight' }, { enemyId: 'alonne_bow_knight' }],
+        specialSpawn1: [{ enemyId: 'crystal_lizard' }],
+        specialSpawn2: [{ enemyId: 'crystal_lizard' }],
+        item3: [{ itemId: 'gravestone' }],
+        item4: [{ itemId: 'gravestone' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'a0c4e851-ae15-4ccc-bfb3-2fb161506fea',
+        title: 'Guarded Path',
+        level: 4,
+        hasTraps: true,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'sentinel' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        spawn3: [{ enemyId: 'sentinel' }],
+        spawn4: [{ enemyId: 'sk_greatbowman' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        item1: [{ itemId: 'barrel' }],
+        item2: [{ itemId: 'chest' }],
+        item3: [{ itemId: 'gravestone' }],
+        item4: [{ itemId: 'barrel' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '5a611a4a-607f-4168-8d0e-74ac33cb1c22',
+        title: 'The Dog\'s Domain',
+        level: 4,
+        hasTraps: true,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'sk_swordsman' }],
+        spawn2: [{ enemyId: 'sk_greatbowman' }],
+        spawn3: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'sk_swordsman' }],
+        spawn4: [{ enemyId: 'sentinel' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        item1: [{ itemId: 'gravestone' }],
+        item2: [{ itemId: 'barrel' }],
+        item3: [{ itemId: 'barrel' }],
+        item4: [{ itemId: 'chest' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+
+    // guardian dragon encounters
+
+    {
+        id: 'b3a4df72-801a-4cc6-8e9a-cf37b7524f1f',
+        title: 'Scholar\'s Hall',
+        level: 4,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'sentinel' }, { enemyId: 'hollow_soldier' }],
+        spawn3: [{ enemyId: 'sentinel' }, { enemyId: 'hollow_soldier' }],
+        spawn4: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        item1: [{ itemId: 'barrel' }],
+        item2: [{ itemId: 'chest' }],
+        item3: [{ itemId: 'gravestone' }],
+        item4: [{ itemId: 'barrel' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '4271f9a6-08a5-4aec-a0f9-736c2f6b56af',
+        title: 'Manor Foregarden',
+        level: 4,
+        set: [CORE_SET_KEY, DARKROOT_EXPANSION_KEY, IRON_KEEP_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'stone_knight' }, { enemyId: 'ironclad_soldier' }],
+        spawn2: [{ enemyId: 'demonic_foliage' }],
+        spawn3: [{ enemyId: 'demonic_foliage' }],
+        spawn4: [{ enemyId: 'stone_knight' }, { enemyId: 'ironclad_soldier' }],
+        specialSpawn1: [{ enemyId: 'crystal_lizard' }],
+        specialSpawn2: [{ enemyId: 'crystal_lizard' }],
+        item4: [{ itemId: 'chest' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '45a1f931-26bf-4c9a-b42a-ad461efef131',
+        title: 'Dragon Shrine',
+        level: 4,
+        hasTraps: true,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'sentinel' }, { enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        spawn3: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }],
+        spawn4: [{ enemyId: 'sk_swordsman' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        item1: [{ itemId: 'gravestone' }],
+        item2: [{ itemId: 'gravestone' }],
+        item4: [{ itemId: 'chest' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '09aa803b-639a-4e68-a64a-d0da6a10bd52',
+        title: 'Research Library',
+        level: 4,
+        hasTraps: true,
+        set: [CORE_SET_KEY, EXPLORERS_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }, { enemyId: 'firebomb_hollow' }],
+        spawn2: [{ enemyId: 'sk_spearman' }, { enemyId: 'hollow_crossbow' }],
+        spawn3: [{ enemyId: 'sk_spearman' }, { enemyId: 'hollow_crossbow' }],
+        spawn4: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_greatbowman' }, { enemyId: 'sk_greatbowman' }],
+        item1: [{ itemId: 'chest' }],
+        item2: [{ itemId: 'barrel' }],
+        item3: [{ itemId: 'barrel' }],
+        item4: [{ itemId: 'gravestone' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+
+
+    //custom
+    {
+        //this encounter will generate a random low level invader
+        id: '01163208-8c66-4a5a-94d0-0a15020c4f4b',
+        label: 'Random Invasion 1',
+        //this encounter doesn't give souls for defating the invader since they are given on the ondeath event
+        soulsPerPlayer: 0,
+        //when entering the tile we spawn the nemy
+        onEnterEvent: {
+            type: 'wideRandomEvent',
+            keepResult: '5048a28d-5d92-4740-8094-09eae9169c20',
+            events: [
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'xanthous_king_jeremiah', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Notched Whip and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: '95fe57f7-d432-433b-a8d6-d3c6baedd4dc', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: '95fe57f7-d432-433b-a8d6-d3c6baedd4dc',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Xanthous King Jeremiah',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: '95fe57f7-d432-433b-a8d6-d3c6baedd4dc', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'melinda_the_butcher', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Melinda\'s Greataxe and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: 'a6d90f3c-6042-421b-b6d0-b8d29828f466', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: 'a6d90f3c-6042-421b-b6d0-b8d29828f466',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Melinda the Butcher',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: 'a6d90f3c-6042-421b-b6d0-b8d29828f466', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'maneater_mildred', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Butcher Knife and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: '18f52eff-a9de-4575-99b7-d8e5a99d6086', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: '01163208-8c66-4a5a-94d0-0a15020c4f4b', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: '18f52eff-a9de-4575-99b7-d8e5a99d6086',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Maneater Mildred',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: '18f52eff-a9de-4575-99b7-d8e5a99d6086', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+            ],
+        },
+        level: 2,
+        set: [PHANTOMS_EXPANSION_KEY],
+        type: 'quest',
+        item1: [{ itemId: 'chest' }],
+        item2: [{ itemId: 'gravestone' }],
+    },
+    {
+        //this encounter will generate a random low level invader
+        id: '7292ee9b-f084-486a-a922-4f351e00811e',
+        label: 'Random Invasion 2',
+        //this encounter doesn't give souls for defating the invader since they are given on the ondeath event
+        soulsPerPlayer: 0,
+        //when entering the tile we spawn the nemy
+        onEnterEvent: {
+            type: 'wideRandomEvent',
+            keepResult: 'da501fd5-e274-448a-9919-1e9c4755aa61',
+            events: [
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'oliver_the_collector', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Minotaur Helmet and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: '677d9e97-f36b-4b35-835e-a374f55c8f39', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: '7292ee9b-f084-486a-a922-4f351e00811e', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: '677d9e97-f36b-4b35-835e-a374f55c8f39',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Oliver the Collector',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: '677d9e97-f36b-4b35-835e-a374f55c8f39', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'maldron_the_assassin', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Royal Swordsman Armour and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: '70cbd690-0332-4199-8ef8-94e2bef5b5d4', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: '7292ee9b-f084-486a-a922-4f351e00811e', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: '70cbd690-0332-4199-8ef8-94e2bef5b5d4',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Maldron the Assassin',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: '70cbd690-0332-4199-8ef8-94e2bef5b5d4', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'kirk_knight_of_thorns', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Spike Shield and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: '94577abe-bec8-42e7-be80-bb3d4d265e2c', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: '7292ee9b-f084-486a-a922-4f351e00811e', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: '94577abe-bec8-42e7-be80-bb3d4d265e2c',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Kirk Knight of Thorns',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: '94577abe-bec8-42e7-be80-bb3d4d265e2c', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+            ],
+        },
+        level: 2,
+        set: [PHANTOMS_EXPANSION_KEY],
+        type: 'quest',
+        item1: [{ itemId: 'chest' }],
+        item2: [{ itemId: 'gravestone' }],
+    },
+    {
+        //this encounter will generate a random medium level invader
+        id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20',
+        //this encounter doesn't give souls for defating the invader since they are given on the ondeath event
+        label: 'Random Invasion 3',
+        soulsPerPlayer: 0,
+        //when entering the tile we spawn the nemy
+        onEnterEvent: {
+            type: 'wideRandomEvent',
+            keepResult: '17950480-f0f1-4377-989f-be02db7a3f7f',
+            events: [
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'longfinger_kirk', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Armour of Thorns and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: 'be4de786-ad38-492c-b086-0370c1487b9b', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: 'be4de786-ad38-492c-b086-0370c1487b9b',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Longfinger Kirk',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: 'be4de786-ad38-492c-b086-0370c1487b9b', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'paladin_leroy', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Stanctus and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: '5bba773e-7b39-4c4c-9375-44c45011fb3a', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: '5bba773e-7b39-4c4c-9375-44c45011fb3a',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Paladin Leroy',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: '5bba773e-7b39-4c4c-9375-44c45011fb3a', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'fencer_sharon', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Sanctum Priestess Tiara and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: '0d5a4fc8-197c-48f0-b353-22e0f1f066fb', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: '19fa8ab6-fea5-4507-a667-7cc7387f4f20', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: '0d5a4fc8-197c-48f0-b353-22e0f1f066fb',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Fencer Sharon',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: '0d5a4fc8-197c-48f0-b353-22e0f1f066fb', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+            ],
+        },
+        level: 3,
+        set: [PHANTOMS_EXPANSION_KEY],
+        type: 'quest',
+        item1: [{ itemId: 'chest' }],
+        item2: [{ itemId: 'gravestone' }],
+    },
+    {
+        //this encounter will generate a random medium level invader
+        id: 'fc5841cb-d250-41d8-9237-cedb76de6684',
+        //this encounter doesn't give souls for defating the invader since they are given on the ondeath event
+        label: 'Random Invasion 4',
+        soulsPerPlayer: 0,
+        //when entering the tile we spawn the nemy
+        onEnterEvent: {
+            type: 'wideRandomEvent',
+            keepResult: 'dcfb1ca6-7773-409b-ab94-ddd1b5f132d6',
+            events: [
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'armorer_dennis', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Clear Bluestone Ring and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: '473287bb-735a-4d5f-9c8e-91397355f739', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: 'fc5841cb-d250-41d8-9237-cedb76de6684', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: '473287bb-735a-4d5f-9c8e-91397355f739',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Armorer Dennis',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: '473287bb-735a-4d5f-9c8e-91397355f739', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'marvelous_chester', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Chester\'s Set and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: 'da78472f-5411-4ec3-a848-ea95d06d7ec2', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: 'fc5841cb-d250-41d8-9237-cedb76de6684', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: 'da78472f-5411-4ec3-a848-ea95d06d7ec2',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Marvelous Chester',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: 'da78472f-5411-4ec3-a848-ea95d06d7ec2', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+                {
+                    event: {
+                        type: 'spawn',
+                        spawnPoint: 'spawn1',
+                        spawnedEnemies: [{
+                            enemyId: 'invader_brylex', onDeathEvent: {
+                                type: 'information',
+                                title: 'Invader Banished',
+                                message: 'Obtain the item Mon Ring and 3 souls',
+                                //restore the event so the next time this dark spirit will invade us the message will popup again
+                                brokeEvent: { id: '52a826de-96b8-4a96-8c1a-7ec5d7c001f5', isBroken: false },
+                                //when the enemy is defeated we broke the encounter so it will not respawn
+                                brokeEncounter: { id: 'fc5841cb-d250-41d8-9237-cedb76de6684', isBroken: true, scope: 'dungeon' },
+                            },
+                        }],
+                        next: {
+                            id: '52a826de-96b8-4a96-8c1a-7ec5d7c001f5',
+                            type: 'information',
+                            message: 'You have been invaded by the Dark Spirit Invader Brylex',
+                            //broke this event, this means the message will be showed once
+                            brokeEvent: { id: '52a826de-96b8-4a96-8c1a-7ec5d7c001f5', isBroken: true },
+                        },
+                    },
+                    probability: 15,
+                },
+            ],
+        },
+        level: 3,
+        set: [PHANTOMS_EXPANSION_KEY],
+        type: 'quest',
+        item1: [{ itemId: 'chest' }],
+        item2: [{ itemId: 'gravestone' }],
+    },
+    {
+        id: 'd8d5ac37-7f85-432b-a254-9c5a357e1089',
+        level: 2,
+        set: [CORE_SET_KEY],
+        hasTrapTraps: true,
+        label: 'Random Mimic',
+        spawn1: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }],
+        spawn2: [{ enemyId: 'sk_swordsman' }],
+        item1: [{
+            itemId: 'chest',
+            pressEvent: {
+                type: 'question',
+                message: 'Do you want to open the chest?',
+                answers: [
+                    {
+                        answerLabel: 'yes',
+                        next: {
+                            type: 'randomEvent',
+                            successValue: 30,
+                            successEvent: {
+                                type: 'information',
+                                message: 'Draw two card from the treasures deck',
+                                brokeItem: true,
+                            },
+                            failureEvent: {
+                                type: 'spawn',
+                                message: 'The chest transform into a mimic',
+                                spawnPoint: 'specialSpawn1',
+                                spawnedEnemies: [{
+                                    enemyId: 'hungry_mimic', onDeathEvent: {
+                                        type: 'information',
+                                        message: 'Draw 3 cards from the treasures deck and gain two souls',
+                                        brokeItem: true,
+                                    },
+                                }],
+                            },
+                        },
+                    },
+                    {
+                        answerLabel: 'no',
+                        //without next nothing happen, simply the message popup is closed
+                    },
+                ],
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: '21244ab3-34ed-485d-acdd-6d18454d0f31',
+        level: 3,
+        label: 'amazing chest part 1',
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }],
+        spawn2: [{ enemyId: 'sentinel' }],
+        item1: [{
+            itemId: 'message',
+            pressEvent: {
+                type: 'information',
+                title: 'Message',
+                message: 'Amazing Chest Ahead',
+                brokeItem: true,
+                brokeEncounter: { id: '21244ab3-34ed-485d-acdd-6d18454d0f31', isBroken: true, scope: 'campaign' },
+                nextEncounter: { id: '2cf6c96f-3cc8-47ee-bcb0-277377e1f276', stepsToFind: 0 },
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: '2cf6c96f-3cc8-47ee-bcb0-277377e1f276',
+        level: 3,
+        set: [CORE_SET_KEY],
+        label: 'amazing chest part 2',
+        spawn1: [{ enemyId: 'sentinel' }],
+        spawn2: [{ enemyId: 'sk_greatbowman' }, { enemyId: 'sentinel' }],
+        item1: [{
+            itemId: 'chest',
+            pressEvent: {
+                type: 'information',
+                title: 'Message',
+                message: 'Draw a random legendary treasure',
+                brokeItem: true,
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: '4980b412-0ff5-4303-8cf8-f62fd709abb5',
+        level: 2,
+        set: [CORE_SET_KEY],
+        hasTraps: true,
+        label: 'patches part 1',
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'question',
+                title: 'Patches the Hyena',
+                message: 'Good day! You look reasonably sane!\nWhat are you doing here? Are you a Cleric or something?',
+                answers: [
+                    {
+                        answerLabel: 'Yes',
+                        next: {
+                            type: 'information',
+                            title: 'Patches the Hyena',
+                            message: 'Yes, I imagined as much. Best of luck with your pilgrimages or missions or whatever you do. There\'s a fine stash of treasure near here. I found it first, but…well, we\'re friends now. I\'ll split it with you!In any case, go and have a look, it\'ll shimmer you blind!Heh heh heh…\nHeh heh heh…',
+                            brokeItem: true,
+                            brokeEncounter: { id: '4980b412-0ff5-4303-8cf8-f62fd709abb5', isBroken: true, scope: 'campaign' },
+                            nextEncounter: { id: 'd1e9a8f8-a578-4b0d-82dd-a985fb78b9e9', stepsToFind: 0 },
+                        },
+                    },
+                    {
+                        answerLabel: 'No',
+                        next: {
+                            type: 'information',
+                            title: 'Patches the Hyena',
+                            message: 'No? Well, that\'s strange. \nOhhh, I know what it is. You\'ve come for the trinkets, haven\'t you? Well whatever it is\nThis place is treacherous. Do watch your step.\nHeh heh heh…',
+                            brokeItem: true,
+                            brokeEncounter: { id: '4980b412-0ff5-4303-8cf8-f62fd709abb5', isBroken: true, scope: 'campaign' },
+                            nextEncounter: { id: '4c043791-b3ad-4666-8cb3-733c17e375c4', stepsToFind: 0 },
+                        },
+                    },
+                ],
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: 'd1e9a8f8-a578-4b0d-82dd-a985fb78b9e9',
+        level: 2,
+        label: 'patches part 2a',
+        set: [CORE_SET_KEY],
+        onEnterEvent: {
+            id: '030526f0-57e2-4afb-9290-8fb32c19a5a1',
+            type: 'information',
+            title: 'Patches the Hyena',
+            message: 'Heh heh, this is what I do, my friend. The trinkets I\'ll be stripping off your corpse; that\'s the real treasure! Nyah hah hah hah!',
+            nextEncounter: { id: '63452e5e-4df0-4483-a403-45ee8e455a08', stepsToFind: 1 },
+            brokeEvent: { id: '030526f0-57e2-4afb-9290-8fb32c19a5a1', isBroken: true, scope: 'campaign' },
+        },
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'large_hollow_soldier' }],
+        spawn2: [{ enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        type: 'chained',
+    },
+    {
+        id: '63452e5e-4df0-4483-a403-45ee8e455a08',
+        level: 2,
+        label: 'patches part 3a',
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Patches the Hyena',
+                message: '…Oh, you, I…Let\'s just calm down. Talk about things… I did you wrong.\nBut, I didn\'t mean it. These temptations, they can, well, overcome me…You know what I mean? Don\'t you? \nPlease forgive me. Here a little gift:',
+                next: {
+                    type: 'information',
+                    message: 'Draw 3 cards from the tresures deck',
+                    brokeItem: true,
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: '4c043791-b3ad-4666-8cb3-733c17e375c4',
+        level: 2,
+        label: 'patches part 2b',
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'hollow_soldier' }],
+        item1: [{ itemId: 'safe_chest' }],
+        hasTraps: true,
+        type: 'chained',
+    },
+    {
+        id: '054a365d-7b4a-4f42-b324-6a5c4dace8a7',
+        level: 1,
+        set: [CORE_SET_KEY],
+        label: 'oscar encounter',
+        onEnterEvent: {
+            id: '16e1d151-9cca-404b-98b4-55ef548adeca',
+            type: 'checkFlag',
+            flagName: 'isOscarHollow',
+            events: [
+                {
+                    event: {
+                        //check if the flag has been set
+                        type: 'spawn',
+                        spawnPoint: 'specialSpawn1',
+                        message: 'You can use the enemy miniature and behavior card of Hollow Soldier as Oscar from Astora during this encounter',
+                        spawnedEnemies: [{
+                            enemyId: 'hollow_soldier', health: 5, name: 'Oscar from Astora', onDeathEvent: {
+                                type: 'information',
+                                message: 'You can choose and add Crest Shield (Herald Transposed Tresure) or Elite Knight Armour (Knight Transposed Treasure) to your Inventory or 3 souls to your pool',
+                                brokeEvent: { id: '16e1d151-9cca-404b-98b4-55ef548adeca', isBroken: false, scope: 'campaign' },
+                                brokeEncounter: { id: '054a365d-7b4a-4f42-b324-6a5c4dace8a7', isBroken: true, scope: 'campaign' },
+                            },
+                        }],
+                    },
+                    flagValue: true,
+                },
+            ],
+        },
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        spawn2: [{ enemyId: 'hollow_crossbow' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Oscar from Astora',
+                message: '…Oh, you… You\'re no Hollow, eh? …Thank goodness…I\'m done for, I\'m afraid……I\'ll die soon, then lose my sanity…',
+                next: {
+                    type: 'question',
+                    title: 'Oscar from Astora',
+                    message: '…I wish to ask something of you…You and I, we\'re both Undead… Hear me out, will you?',
+                    answers: [
+                        {
+                            answerLabel: 'Yes',
+                            next: {
+                                type: 'information',
+                                title: 'Oscar from Astora',
+                                message: '…Regrettably, I have failed in my mission…But perhaps you can keep the torch lit…There is an old saying in my family…Thou who art Undead, art chosen.\nHere, take this…An Estus Flask, an Undead favourite.',
+                                next: {
+                                    type: 'information',
+                                    title: 'Oscar from Astora',
+                                    message: 'Players can flip their eastus flask token on the unused side',
+                                    brokeItem: true,
+                                    brokeEncounter: { id: '054a365d-7b4a-4f42-b324-6a5c4dace8a7', isBroken: true, scope: 'campaign' },
+                                },
+                            },
+                        },
+                        {
+                            answerLabel: 'No',
+                            next: {
+                                type: 'information',
+                                title: 'Oscar from Astora',
+                                message: '… Yes, I see… Perhaps I was too hopeful… Hah hah… Please, leave me be… I have not long to live, and I may harm you after death… Now, go…',
+                                //set the flag, the next time we will return in this tile oscar will be hollow
+                                setFlag: { name: 'isOscarHollow', value: true },
+                                brokeItem: true,
+                            },
+                        },
+                    ],
+                },
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: '95fb93b5-17b7-40a2-9513-acecd26c3e72',
+        level: 2,
+        set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY],
+        label: 'sirris encounter part 1',
+        spawn1: [{ enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        item1: [{
+            itemId: 'npc_sirris',
+            pressEvent: {
+                type: 'information',
+                title: 'Sirris of the Sunless Realm',
+                message: 'Mm, you\'re an Unkindled, aren\'t you. I am Sirris, of the Sunless Realms, former servant of the Divinity. Duties we each bear, but one\'s duty is a solitary affair. I doubt we\'ve much to gain from fraternisation. Blessing of the moon upon your journey.',
+                nextEncounter: { id: 'd3f986af-046f-4a43-88b5-77d80780d875', stepsToFind: 2 },
+                brokeEncounter: { id: '95fb93b5-17b7-40a2-9513-acecd26c3e72', isBroken: true, scope: 'campaign' },
+                brokeItem: true,
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: 'd3f986af-046f-4a43-88b5-77d80780d875',
+        level: 2,
+        label: 'sirris encounter part 2',
+        set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY],
+        onEnterEvent: {
+            type: 'information',
+            message: 'You see someone fighting',
+            id: 'f5595fb2-6d8f-49b4-a4b9-909f55e75183',
+            next: {
+                type: 'information',
+                message: 'During this encounter you can use the summon Sirris of The Sunless Realm',
+            },
+        },
+        spawn1: [{
+            enemyId: 'longfinger_kirk', respawn: false, onDeathEvent: {
+                type: 'information',
+                message: '',
+                brokeEvent: { id: 'f5595fb2-6d8f-49b4-a4b9-909f55e75183', isBroken: true },
+            },
+        }],
+        spawn2: [{ enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        item1: [{
+            itemId: 'npc_sirris',
+            pressEvent: {
+                type: 'information',
+                title: 'Sirris of the Sunless Realm',
+                message: 'Thank you for your generous rescue. That Dark Spirit was one of Rosaria\'s Fingers. Vile bastard offspring who lurk in the darkness. My sworn enemies. Fearsome invaders, to say the least. I would not have made it alone. You have my deepest gratitude. If you require help on your travels, I offer you my sign.\nBlessing of the moon upon your journey.',
+                next: {
+                    type: 'information',
+                    message: 'Before to start the next bossfight you can summon Sirris without having to renounce to the souls given by the boss',
+                    brokeItem: true,
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: 'fc339682-73b8-446e-9d76-625d0108b885',
+        level: 2,
+        label: 'rosabeth encounter',
+        set: [CORE_SET_KEY, EXPLORERS_EXPANSION_KEY],
+        spawn1: [{ enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'firebomb_hollow' }, { enemyId: 'hollow_soldier' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Rosabeth',
+                message: 'Th-th…Thank…thank you…I\'m fine, I think. Hrgg! No no no, I\'m fine! Really, I am! Um, my name is Rosabeth. Thank you so much for rescuing me. Phew…I owe you my life! If you had not come…I feel shameful…wearing these rags…',
+                next: {
+                    type: 'information',
+                    title: 'Rosabeth',
+                    message: 'Um…I hate to burden you further, as you\'ve already saved my life…But…just look at me, my clothes are in tatters. Do you have any clothing that you could spare? I\'ll take anything, whatever you don\'t need. I\'m not particular when it comes to apparel.Anything at all will do.',
+                    next: {
+                        type: 'question',
+                        title: 'Rosabeth',
+                        message: 'Do you want to reshufle one of your armour in the tresure deck?',
+                        answers: [
+                            {
+                                answerLabel: 'Yes',
+                                next: {
+                                    type: 'information',
+                                    title: 'Rosabeth',
+                                    message: 'You even were kind enough to clothe me. Thank you so very much. Well, I\'m quite a hand at pyromancy. So, perhaps… You could consider this my thanks?',
+                                    next: {
+                                        type: 'information',
+                                        message: 'Search and draw the common treasures Fireball and Poison Mist',
+                                        brokeEncounter: { id: 'fc339682-73b8-446e-9d76-625d0108b885', isBroken: true, scope: 'campaign' },
+                                        brokeItem: true,
+                                    },
+                                },
+                            },
+                            {
+                                answerLabel: 'No',
+                                next: {
+                                    type: 'information',
+                                    title: 'Rosabeth',
+                                    message: 'Oh, be safe then',
+                                },
+                            },
+                        ],
+                    },
+                },
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: '2e19d7a9-e1f6-4d7e-81cb-ee31c9d7419d',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'petrus encounter part 1',
+        spawn1: [{ enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'firebomb_hollow' }, { enemyId: 'hollow_soldier' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Petrus',
+                message: 'Hello there. I believe we are not acquainted?  I am Petrus of Thorolund. Have you business with us? …If not, I\'d prefer to keep a distance, if possible.',
+                next: {
+                    type: 'question',
+                    message: 'Continue talking?',
+                    answers: [
+                        {
+                            answerLabel: 'Yes',
+                            next: {
+                                type: 'information',
+                                title: 'Petrus',
+                                message: 'Oh, my… you again? Oh, I know. How about this…I have to await my companions here anyway,so, what if I were to teach you some miracles? Would that please you?',
+                                next: {
+                                    type: 'question',
+                                    title: 'Petrus',
+                                    message: 'Do you want to spend 3 souls to learn one miracle between Heal and Force?',
+                                    answers: [
+                                        {
+                                            answerLabel: 'Yes',
+                                            next: {
+                                                type: 'information',
+                                                title: 'Petrus',
+                                                message: 'Now, let me share my Miracles.',
+                                                next: {
+                                                    type: 'information',
+                                                    message: 'Search and draw the selected miracle from the common treasures deck',
+                                                    brokeEncounter: { id: '2e19d7a9-e1f6-4d7e-81cb-ee31c9d7419d', isBroken: true, scope: 'campaign' },
+                                                    brokeItem: true,
+                                                },
+                                            },
+                                        },
+                                        {
+                                            answerLabel: 'No',
+                                            next: {
+                                                type: 'information',
+                                                title: 'Petrus',
+                                                message: 'That is a shame. But each to their own. Speak to me if you have a change of heart.',
+                                                brokeEncounter: { id: '2e19d7a9-e1f6-4d7e-81cb-ee31c9d7419d', isBroken: true, scope: 'campaign' },
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                        {
+                            answerLabel: 'No',
+                            brokeEncounter: { id: '2e19d7a9-e1f6-4d7e-81cb-ee31c9d7419d', isBroken: true, scope: 'campaign' },
+                        },
+                    ],
+                },
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: '92090c4a-a3a0-4319-9624-7d2701775dbe',
+        level: 2,
+        set: [CORE_SET_KEY, EXPLORERS_EXPANSION_KEY],
+        label: 'random pursuer',
+        onEnterEvent: {
+            type: 'randomEvent',
+            successValue: 60,
+            keepResult: '558536a2-2361-4427-9048-0ac4927f844f',
+            successEvent: {
+                type: 'spawn',
+                spawnPoint: 'spawn1',
+                spawnedEnemies: [{ enemyId: 'firebomb_hollow' }, { enemyId: 'firebomb_hollow' }],
+                next: {
+                    type: 'spawn',
+                    spawnPoint: 'spawn2',
+                    spawnedEnemies: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+                },
+            },
+            failureEvent: {
+                type: 'spawn',
+                message: 'A figure emerges from the darkness',
+                spawnPoint: 'spawn1',
+                id: 'ca4539d2-e86a-469a-aaeb-eabc0fbf50cd',
+                spawnedEnemies: [{
+                    enemyId: 'the_pursuer', respawn: false, health: 20, onDeathEvent: {
+                        type: 'information',
+                        message: 'You gain 3 additional souls',
+                        brokeEvent: { id: 'ca4539d2-e86a-469a-aaeb-eabc0fbf50cd', isBroken: true },
+                    },
+                }],
+            },
+        },
+        type: 'quest',
+    },
+    {
+        id: 'a746a64f-e13f-4862-8d48-057c63fe3fb7',
+        level: 2,
+        set: [CORE_SET_KEY, DARKROOT_EXPANSION_KEY],
+        label: 'darkroot ambush',
+        item1: [{
+            itemId: 'chest',
+            pressEvent: {
+                type: 'spawn',
+                spawnPoint: 'spawn1',
+                message: 'It\'s a trap',
+                spawnedEnemies: [{ enemyId: 'plow_scarecrow' }, { enemyId: 'shears_scarecrow' }],
+                next: {
+                    type: 'spawn',
+                    spawnPoint: 'spawn2',
+                    spawnedEnemies: [{ enemyId: 'plow_scarecrow' }, { enemyId: 'shears_scarecrow' }],
+                    brokeItem: true,
+                },
+            },
+        }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'dbcc44fa-41e1-46f4-8e0a-e27806acd2a7',
+        level: 2,
+        set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY, IRON_KEEP_EXPANSION_KEY],
+        label: 'siegward part1',
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Siegward of Catarina',
+                message: 'Hmmm...Mmmm...Oh! Pardon me. I was absorbed in thought. I am Siegward of Catarina. To be honest, I\'m in a bit of a pickle.',
+                next: {
+                    type: 'information',
+                    title: 'Siegward of Catarina',
+                    message: 'Anyhow, do you see that? That humongous beast? I\'m no coward and I\'ve a steady hand, but that thing makes my skin crawl. Now, now, think twice before you go down that road.',
+                    next: {
+                        type: 'information',
+                        title: 'Siegward of Catarina',
+                        message: 'I could try talking some sense into him…No, I think not. he\'s far too over-heated. I\'ve got to use my head and think. Hmm…. Mmm…',
+                        nextEncounter: { id: '0cfc4d49-85a9-45a9-8b50-a61a874e82bc', stepsToFind: 0 },
+                        brokeEncounter: { id: 'dbcc44fa-41e1-46f4-8e0a-e27806acd2a7', isBroken: true, scope: 'campaign' },
+                        brokeItem: true,
+                    },
+                },
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: '0cfc4d49-85a9-45a9-8b50-a61a874e82bc',
+        level: 2,
+        set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY, IRON_KEEP_EXPANSION_KEY],
+        label: 'siegward part2',
+        onEnterEvent: {
+            id: '616d47c7-b820-42d4-a644-7d16dac7cf6a',
+            type: 'information',
+            title: 'Siegward of Catarina',
+            message: 'No! You should have waited! Well, it\'s too late now. I, Siegward of the Knights of Catarina, fight by your side!',
+            next: {
+                type: 'information',
+                message: 'You can summon Siegward of Catarina for this encounter without any cost',
+            },
+        },
+        spawn1: [{
+            enemyId: 'smelter_demon', respawn: false, heatup: [], health: 12, onDeathEvent: {
+                type: 'information',
+                message: '',
+                brokeEvent: { id: '616d47c7-b820-42d4-a644-7d16dac7cf6a', isBroken: true },
+            },
+        }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Siegward of Catarina',
+                message: 'That was quite the performance. But you mustn\'t get in over your head. We Unkindled must put our duties first. But for the moment, we\'ve a toast to make. To your valour, my sword, and our victory together.',
+                next: {
+                    type: 'information',
+                    title: 'Siegward of Catarina',
+                    message: 'Long may the sun shine! Well, I\'m going to have myself a little nap. The only thing to do, really, after a nice toast.',
+                    next: {
+                        type: 'information',
+                        message: 'Players can flip their eastus flask token on the unused side',
+                        nextEncounter: { id: 'c101bc71-ae53-43fa-b662-b0e3c636db58', stepsToFind: 4 },
+                        brokeItem: true,
+                    },
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: 'c101bc71-ae53-43fa-b662-b0e3c636db58',
+        level: 2,
+        set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY, IRON_KEEP_EXPANSION_KEY],
+        label: 'siegward part3',
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Siegward of Catarina',
+                message: 'Hello! Hello! Anyone there? Anyone at all? Oh! I know that voice. Just how long has it been! It\'s me, Siegward of Catarina. I\'m loathe to admit it, but I\'ve been had.',
+                next: {
+                    type: 'information',
+                    title: 'Siegward of Catarina',
+                    message: 'Someone\'s swiped my armour. Did you happen to see it anywhere? I\'m in quite a pickle indeed. Maybe I can fashion a replacement…from the…hmm. I\'ve got to use my head. And think. Hmm… Mmm…',
+                    next: {
+                        type: 'question',
+                        message: 'Do you want to reshufle one of your armour in the tresure deck?',
+                        answers: [
+                            {
+                                answerLabel: 'Yes',
+                                next: {
+                                    type: 'information',
+                                    title: 'Siegward of Catarina',
+                                    message: 'Ah, oh! An armour! My deepest gratitude! I, Siegward of Catarina, salute you. With my trusty suit of armor, I\'ll be out of here in a jiffy. Until we meet again, comrade!',
+                                    nextEncounter: { id: 'd8b46ad5-935b-4013-800b-13867b020cec', stepsToFind: 3 },
+                                    brokeItem: true,
+                                },
+                            },
+                            {
+                                answerLabel: 'No',
+                                next: {
+                                    type: 'information',
+                                    title: 'Siegward of Catarina',
+                                    message: 'Oh, yes, I see…Not to worry. Great planning begets great fortune. An old tenet of the Knights of Catarina. And I am a master planner, I do say!',
+                                },
+                            },
+                        ],
+                    },
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: 'd8b46ad5-935b-4013-800b-13867b020cec',
+        level: 2,
+        set: [CORE_SET_KEY, PHANTOMS_EXPANSION_KEY, IRON_KEEP_EXPANSION_KEY],
+        label: 'siegward part4',
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Siegward of Catarina',
+                message: 'Ah, ohh! Excuse me. I must have dozed off. It\'s rather warm in here. Well, well, hasn\'t it been all too long! It\'s good to see you. Oh, I seemed to have missed my chance, so…I, Siegward of Catarina, offer my deepest gratitude. And a little surprise to go with it. It\'s all yours.',
+                next: {
+                    type: 'information',
+                    message: 'Search and draw the common item Force',
+                    next: {
+                        type: 'information',
+                        title: 'Siegward of Catarina',
+                        message: 'Won\'t you join me for dinner? I make a fine estus soup. I\'ve got some stewing right now. Even we Undead deserve a little normalcy, from time to time. And finally, upon this rendezvous, let us make a toast.',
+                        next: {
+                            type: 'information',
+                            title: 'Siegward of Catarina',
+                            message: 'To your valour, my sword, and our sworn duties! Long may the sun shine!',
+                            next: {
+                                type: 'information',
+                                message: 'Players can flip their eastus flask token on the unused side',
+                                brokeItem: true,
+                            },
+                        },
+                    },
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: '7aed7b6a-2809-4962-8c75-2f61d52f402a',
+        level: 2,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        label: 'yoel part1',
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Yoel of Londor',
+                message: 'Ohh… Ohh, then it\'s true. A Champion of Ash, as I live and breathe. To be in your presence is a great honour. I am Yoel of Londor, a pilgrim as you can see. Only, somehow, I failed to die as was ordained. Well, perhaps my calling lies elsewhere.',
+                next: {
+                    type: 'question',
+                    title: 'Yoel of Londor',
+                    message: 'Say, Champion of Ash, how does the idea of taking me into your service strike you? I was once a sorcerer, surely I can be of use?',
+                    answers: [
+                        {
+                            answerLabel: 'Yes',
+                            next: {
+                                type: 'information',
+                                title: 'Yoel of Londor',
+                                message: 'Ohh, I am honoured, truly. I should be dead, yet you have granted me purpose anew. I, Yoel of Londor, do solemnly swear myself to you.',
+                                next: {
+                                    type: 'information',
+                                    message: '',
+                                    nextEncounter: { id: 'a28016ff-5eaf-4b71-8c4a-308234ca3abf', stepsToFind: 2 },
+                                    brokeEncounter: { id: '7aed7b6a-2809-4962-8c75-2f61d52f402a', isBroken: true, scope: 'campaign' },
+                                    brokeItem: true,
+                                },
+                            },
+                        },
+                        {
+                            answerLabel: 'No',
+                            next: {
+                                type: 'information',
+                                title: 'Yoel of Londor',
+                                message: 'Be safe, Champion of Ash.',
+                            },
+                        },
+                    ],
+                },
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: 'a28016ff-5eaf-4b71-8c4a-308234ca3abf',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'yoel part2',
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Yoel of Londor',
+                message: 'As I have said, I was once a sorcerer. Alas, the magic of Londor is a far cry from the wonders of Vinheim. But I can teach you what I know. Perhaps more importantly…',
+                next: {
                     type: 'information',
                     title: 'Yoel of Londor',
                     message: 'I believe that I can help you tease out your true strength. We pilgrims of Londor are keenly aware. That those branded by the Darksign possess something quite special…',
                     next: {
-                      type: 'question',
-                      title: 'Yoel of Londor',
-                      message: 'Spend 1 spark to let up to two players to move one Stat from base to tier 1?',
-                      answers: [
-                          {
-                              answerLabel: 'Yes',
-                              next: {
-                                  type: 'information',
-                                  title: 'Yoel of Londor',
-                                  message: 'Then, shall we begin? Bearer of the Darksign, let your true strength shine…',
-                                  next: {
-                                      type: 'information',
-                                      message: '',
-                                      nextEncounter: {id: 'a43cb504-f107-4857-9fab-2c3c5e90bfd9', stepsToFind: 3},
-                                      brokeItem: true,
-                                  },
-                              },
-                          },
-                          {
-                              answerLabel: 'Leave',
-                              next: {
-                                  type: 'information',
-                                  title: 'Yoel of Londor',
-                                  message: 'Be safe, Champion of Ash.',
-                              },
-                          },
-                      ],
+                        type: 'question',
+                        title: 'Yoel of Londor',
+                        message: 'Spend 1 spark to let up to two players to move one Stat from base to tier 1?',
+                        answers: [
+                            {
+                                answerLabel: 'Yes',
+                                next: {
+                                    type: 'information',
+                                    title: 'Yoel of Londor',
+                                    message: 'Then, shall we begin? Bearer of the Darksign, let your true strength shine…',
+                                    next: {
+                                        type: 'information',
+                                        message: '',
+                                        nextEncounter: { id: 'a43cb504-f107-4857-9fab-2c3c5e90bfd9', stepsToFind: 3 },
+                                        brokeItem: true,
+                                    },
+                                },
+                            },
+                            {
+                                answerLabel: 'Leave',
+                                next: {
+                                    type: 'information',
+                                    title: 'Yoel of Londor',
+                                    message: 'Be safe, Champion of Ash.',
+                                },
+                            },
+                        ],
                     },
-                  },
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: 'a43cb504-f107-4857-9fab-2c3c5e90bfd9',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'yoel part3',
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Yoel of Londor',
-                  message: 'Bearer of the Darksign, let your true strength shine…',
-                  next: {
-                      type: 'question',
-                      title: 'Yoel of Londor',
-                      message: 'Spend 1 spark to let one players to move one Stat from base to tier 1 to tier 2?',
-                      answers: [
-                          {
-                              answerLabel: 'Draw out true strength',
-                              next: {
-                                  type: 'information',
-                                  title: 'Yoel of Londor',
-                                  message: 'Ahh, you have attained ample strength. All will soon be clear, my good Lord…',
-                                  next: {
-                                      type: 'information',
-                                      message: '',
-                                      nextEncounter: {id: '828b73a1-accb-448f-a6f9-07a7ffd8e5f5', stepsToFind: 3},
-                                      brokeItem: true,
-                                  },
-                              },
-                          },
-                          {
-                              answerLabel: 'Leave',
-                              next: {
-                                  type: 'information',
-                                  title: 'Yoel of Londor',
-                                  message: 'Be safe, Champion of Ash.',
-                              },
-                          },
-                      ],
-                  },
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: '828b73a1-accb-448f-a6f9-07a7ffd8e5f5',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'yoel part4',
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Yuria of Londor',
-                  message: '…Oh, prithee…art thou good Yoel\'s master? I am Yuria of Londor, a close friend of his. Thanks to thee, Yoel\'s soul is redeem\'d. Allow me to express my gratitude, in his stead.',
-                  next: {
-                      type: 'information',
-                      message: 'Search and draw the common treasure Soul Arrow',
-                      nextEncounter: {id: '35c12acf-b6a0-4c6c-a16c-068f1b1d23ae', stepsToFind: 3},
-                      brokeItem: true,
-                  },
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: '35c12acf-b6a0-4c6c-a16c-068f1b1d23ae',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'yoel part5',
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  id: 'a33dcaf6-fd2d-48bf-8f60-765301ef6cd5',
-                  type: 'information',
-                  title: 'Yuria of Londor',
-                  message: 'Oh, good Hollow. I\'m afraid I must say… A mage called Orbeck of Vinheim is a cause of much consternation. He proclaimeth himself Lord of Hollows. If left alone, he may one day imperil thy rule. Fall to this matter yarely, else we are unraveled. Decisiveness is the mark of a true monarch…',
-                  brokeItem: true,
-              },
-          }],
-          item2: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'question',
-                  title: 'Orbeck of Vinheim',
-                  message: 'Well, this is unexpected. I don\'t often have visitors. What do you want? If you haven\'t any business, I\'ve reading to get back to.',
-                  answers: [
-                      {
-                          answerLabel: 'Attack',
-                          next: {
-                              type: 'information',
-                              title: 'Orbeck of Vinheim',
-                              message: 'Is that how it is? Then we\'re through and done! Enjoy your long sleep!',
-                              next: {
-                                  type: 'information',
-                                  message: 'Place any miniature in this location and use the following behavior card, this is Orbeck of Vinheim',
-                                  next: {
-                                      type: 'spawn',
-                                      message: '',
-                                      spawnPoint: 'specialSpawn2',
-                                      spawnedEnemies: [{
-                                          enemyId: 'hollow_soldier', name: 'Orbeck of Vinheim', health: 15, onDeathEvent: {
-                                              type: 'information',
-                                              title: 'Orbeck of Vinheim',
-                                              message: 'But, why…Is that all that I\'m worth? Curses, how could…I\'ve lost my talent… So be it… it was nice while it lasted…',
-                                              nextEncounter: {id: '3b8919e4-0737-423b-9fa1-ba0bf977d498', stepsToFind: 0},
-                                              brokeItem: true,
-                                          },
-                                          commonBehaviorCard: {
-                                              image: require('../../../assets/enemies/custom/orbeck.png'),
-                                              range: 1,
-                                              evade: 1,
-                                              defense: 1,
-                                              magicdefense: 2,
-                                              level: 8,
-                                              actions : [
-                                              {
-                                                  type: 'move',
-                                                  top: 1,
-                                                  direction: 'nearest',
-                                              },
-                                              {
-                                                  type: 'magicaldamage',
-                                                  damage: 5,
-                                                  direction: 'nearest',
-                                              },
-                                              {
-                                                  type: 'physicaldamage',
-                                                  damage: 2,
-                                                  direction: 'nearest',
-                                              }],
-                                          },
-                                      }],
-                                  },
-                              },
-                          },
-                      },
-                      {
-                          answerLabel: 'Leave',
-                          next: {
-                              type: 'information',
-                              title: 'Orbeck of Vinheim',
-                              message: 'Yes, I see. On your way, then.',
-                          },
-                      },
-                  ],
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: '3b8919e4-0737-423b-9fa1-ba0bf977d498',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'yoel part6',
-          item1: [{
-              itemId: 'npc',
-              pressEvent: {
-                  type: 'information',
-                  title: 'Yuria of Londor',
-                  message: 'Thou\'rt a Lord, art thou not? Bearer of sthe dark sigil, and our Lord of Hollows. For the time thou remain\'st our Lord, we of Londor shall serve thee. And I, of course, am also thine.',
-                  next: {
-                      type: 'information',
-                      message: 'Search and draw the common treasure Great Magic Weapon',
-                      brokeItem: true,
-                  },
-              },
-          }],
-          type: 'chained',
-      },
-      {
-          id: '41d10fbc-3b12-4e8d-9105-c0cec65ee25b',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'Lesser Titanite Deamon',
-          spawn1: [{ enemyId: 'titanite_demon', name: 'Lesser Titanite Deamon', health: 12, respawn: false, heatup: -1, onDeathEvent: {
-                  type: 'information',
-                  message: 'Search and draw from the treasure deck a Titanite Shard',
-              },
-          }],
-          type: 'common',
-      },
-      {
-          id: '54a310e3-18ae-4a97-8e61-c8faededbb42',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'Red Eye Hollow Soldier',
-          spawn1: [{ enemyId: 'hollow_soldier', name: 'Red Eye Hollow Soldier', health: 3,
-                          commonBehaviorCard: {
-                              image: require('../../../assets/enemies/custom/armoredhollow.png'),
-                              range: 0,
-                              evade: 1,
-                              defense: 1,
-                              magicdefense: 1,
-                              level: 6,
-                              repeat: 2,
-                              actions : [
-                              {
-                                  type: 'move',
-                                  top: 1,
-                                  direction: 'nearest',
-                              },
-                              {
-                                  type: 'physicaldamage',
-                                  damage: 4,
-                                  direction: 'nearest',
-                              }],
-                          },
-                          onDeathEvent: {
-                              type: 'randomEvent',
-                              successValue: 15,
-                              successEvent: {
-                                  type: 'information',
-                                  message: 'Search and draw from the treasure deck the Shortsword. If you already own it then gain 2 additional souls',
-                              },
-                              failureEvent: {
-                                  type: 'information',
-                              },
-                              },
-                          }],
-          spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'large_hollow_soldier' }],
-          type: 'common',
-      },
-      {
-          id: '317c2902-be04-4c93-ab6b-bee0c659a4fe',
-          level: 2,
-          set: [EXPLORERS_EXPANSION_KEY],
-          label: 'Red Eye firebomb hollow',
-          spawn1: [{ enemyId: 'firebomb_hollow', name: 'Red Eye Firebomb Hollow', health: 4, onDeathEvent: {
-              type: 'randomEvent',
-              successValue: 15,
-              successEvent: {
-                  type: 'information',
-                  message: 'Search and draw from the treasure deck the Black Firebombs. If you already own it then gain 2 additional souls',
-              },
-              failureEvent: {
-                  type: 'information',
-              },
-              },
-          }],
-          spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'large_hollow_soldier' }],
-          type: 'common',
-      },
-      {
-          id: 'ee8f0719-e633-48a5-8739-0cdd8e172ebe',
-          level: 2,
-          set: [CORE_SET_KEY],
-          label: 'elite silver knight',
-          spawn1: [{ enemyId: 'sk_swordsman', name: 'Elite Silver Knight', health: 3, onDeathEvent: {
-                          type: 'randomEvent',
-                          successValue: 15,
-                          successEvent: {
-                              type: 'information',
-                              message: 'Search and draw from the treasure deck the Silver Knight Straight Sword. If you already own it then gain 2 additional souls',
-                          },
-                          failureEvent: {
-                              type: 'information',
-                          },
-                      },
-                      commonBehaviorCard: {
-                          image: require('../../../assets/enemies/custom/elitesilverk.png'),
-                          range: 0,
-                          evade: 2,
-                          defense: 2,
-                          magicdefense: 2,
-                          level: 6,
-                          repeat: 2,
-                          actions : [
-                          {
-                              type: 'move',
-                              top: 2,
-                              direction: 'aggro',
-                              push: 0,
-                          },
-                          {
-                              type: 'physicaldamage',
-                              damage: 6,
-                              direction: 'nearest',
-                              push: 0,
-                          }],
-                      },
-          }],
-          spawn2: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_greatbowman' }],
-          type: 'common',
-      },
-      {
-          id: '6cfb9c4f-460d-45cc-b5b4-925e675e876a',
-          level: 2,
-          set: [DARKROOT_EXPANSION_KEY],
-          label: 'Ancient stone knight',
-          spawn1: [{ enemyId: 'stone_knight', name: 'Ancient Stone Knight', health: 6, onDeathEvent: {
-                          type: 'randomEvent',
-                          successValue: 40,
-                          successEvent: {
-                              type: 'information',
-                              message: 'Search and draw from the treasure deck the Stone Greatsword. If you already own it then gain 2 additional souls',
-                          },
-                          failureEvent: {
-                              type: 'information',
-                          },
-                      },
-                      commonBehaviorCard: {
-                          image: require('../../../assets/enemies/custom/ancientstoneguardian.png'),
-                          range: 0,
-                          evade: 2,
-                          defense: 3,
-                          magicdefense: 1,
-                          level: 9,
-                          repeat: 2,
-                          actions : [
-                          {
-                              type: 'move',
-                              top: 1,
-                              direction: 'nearest',
-                          },
-                          {
-                              type: 'physicaldamage',
-                              damage: 6,
-                              direction: 'nearest',
-                              push: 0,
-                              node: true,
-                          }],
-                      },
-          }],
-          spawn2: [{ enemyId: 'plow_scarecrow' }, { enemyId: 'shears_scarecrow' }],
-          type: 'common',
-      },
-      {
-          id: 'fab17770-7506-4717-8c32-fb7b91971667',
-          level: 2,
-          set: [IRON_KEEP_EXPANSION_KEY],
-          label: 'alonne high captain',
-          spawn1: [{ enemyId: 'alonne_knight_captain', name: 'Alonne High Captain', health: 7, onDeathEvent: {
-              type: 'randomEvent',
-              successValue: 10,
-              successEvent: {
-                  type: 'information',
-                  message: 'Search and draw from the treasure deck the Alonne Captain Armour. If you already own it then gain 2 additional souls',
-              },
-              failureEvent: {
-                  type: 'information',
-              },
-              },
-          }],
-          spawn2: [{ enemyId: 'alonne_bow_knight' }, { enemyId: 'alonne_sword_knight' }],
-          type: 'common',
-      },
-      {
-          id: 'bb3a99e0-3350-400d-b444-2c54a8c8c64f',
-          level: 2,
-          set: [CUSTOM_ENEMIES_EXPANSION_KEY],
-          label: 'black knight swordsman encounter',
-          spawn1: [{ enemyId: 'black_knight_greatswordsman'}],
-          spawn2: [{ enemyId: 'hollow_soldier'}, { enemyId: 'hollow_crossbow'}],
-          soulsPerPlayer: 4,
-          type: 'common',
-      },
-      {
-          id: '6c106d7b-bd0d-48fa-8ae7-01fa942491c2',
-          level: 3,
-          set: [CUSTOM_ENEMIES_EXPANSION_KEY],
-          label: 'havel encounter',
-          spawn1: [{ enemyId: 'havel_the_rock', onDeathEvent: {
-              type: 'wideRandomEvent',
-              events: [
-                  {
-                      event:{
-                          type: 'information',
-                          message: 'Search and draw from the treasure deck the Havel Armour. If you already own it then gain 2 additional souls',
-                          probability: 10,
-                      },
-                  },
-                  {
-                      event:{
-                          type: 'information',
-                          message: 'Search and draw from the treasure deck the Havel Shield. If you already own it then gain 2 additional souls',
-                          probability: 10,
-                      },
-                  },
-                  {
-                      event:{
-                          type: 'information',
-                      },
-                      probability: 80,
-                  },
-              ]},
-          }],
-          type: 'common',
-      },
-      {
-          id: '02c3d611-729c-48cd-ad97-718107378399',
-          level: 2,
-          set: [CUSTOM_ENEMIES_EXPANSION_KEY],
-          label: 'darkwraith',
-          spawn1: [{ enemyId: 'darkwraith', onDeathEvent: {
-                      type: 'randomEvent',
-                      successValue: 15,
-                      successEvent: {
-                          type: 'information',
-                          message: 'Search and draw from the treasure deck the Dark Armour. If you already own it then gain 2 additional souls',
-                      },
-                      failureEvent: {
-                          type: 'information',
-                      },
-                  },
-                  }],
-          spawn2: [{ enemyId: 'hollow_soldier'}, { enemyId: 'hollow_crossbow'}],
-          type: 'common',
-      },
-]
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: 'a43cb504-f107-4857-9fab-2c3c5e90bfd9',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'yoel part3',
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Yoel of Londor',
+                message: 'Bearer of the Darksign, let your true strength shine…',
+                next: {
+                    type: 'question',
+                    title: 'Yoel of Londor',
+                    message: 'Spend 1 spark to let one players to move one Stat from base to tier 1 to tier 2?',
+                    answers: [
+                        {
+                            answerLabel: 'Draw out true strength',
+                            next: {
+                                type: 'information',
+                                title: 'Yoel of Londor',
+                                message: 'Ahh, you have attained ample strength. All will soon be clear, my good Lord…',
+                                next: {
+                                    type: 'information',
+                                    message: '',
+                                    nextEncounter: { id: '828b73a1-accb-448f-a6f9-07a7ffd8e5f5', stepsToFind: 3 },
+                                    brokeItem: true,
+                                },
+                            },
+                        },
+                        {
+                            answerLabel: 'Leave',
+                            next: {
+                                type: 'information',
+                                title: 'Yoel of Londor',
+                                message: 'Be safe, Champion of Ash.',
+                            },
+                        },
+                    ],
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: '828b73a1-accb-448f-a6f9-07a7ffd8e5f5',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'yoel part4',
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Yuria of Londor',
+                message: '…Oh, prithee…art thou good Yoel\'s master? I am Yuria of Londor, a close friend of his. Thanks to thee, Yoel\'s soul is redeem\'d. Allow me to express my gratitude, in his stead.',
+                next: {
+                    type: 'information',
+                    message: 'Search and draw the common treasure Soul Arrow',
+                    nextEncounter: { id: '35c12acf-b6a0-4c6c-a16c-068f1b1d23ae', stepsToFind: 3 },
+                    brokeItem: true,
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: '35c12acf-b6a0-4c6c-a16c-068f1b1d23ae',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'yoel part5',
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                id: 'a33dcaf6-fd2d-48bf-8f60-765301ef6cd5',
+                type: 'information',
+                title: 'Yuria of Londor',
+                message: 'Oh, good Hollow. I\'m afraid I must say… A mage called Orbeck of Vinheim is a cause of much consternation. He proclaimeth himself Lord of Hollows. If left alone, he may one day imperil thy rule. Fall to this matter yarely, else we are unraveled. Decisiveness is the mark of a true monarch…',
+                brokeItem: true,
+            },
+        }],
+        item2: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'question',
+                title: 'Orbeck of Vinheim',
+                message: 'Well, this is unexpected. I don\'t often have visitors. What do you want? If you haven\'t any business, I\'ve reading to get back to.',
+                answers: [
+                    {
+                        answerLabel: 'Attack',
+                        next: {
+                            type: 'information',
+                            title: 'Orbeck of Vinheim',
+                            message: 'Is that how it is? Then we\'re through and done! Enjoy your long sleep!',
+                            next: {
+                                type: 'information',
+                                message: 'Place any miniature in this location and use the following behavior card, this is Orbeck of Vinheim',
+                                next: {
+                                    type: 'spawn',
+                                    message: '',
+                                    spawnPoint: 'specialSpawn2',
+                                    spawnedEnemies: [{
+                                        enemyId: 'hollow_soldier', name: 'Orbeck of Vinheim', health: 15, onDeathEvent: {
+                                            type: 'information',
+                                            title: 'Orbeck of Vinheim',
+                                            message: 'But, why…Is that all that I\'m worth? Curses, how could…I\'ve lost my talent… So be it… it was nice while it lasted…',
+                                            nextEncounter: { id: '3b8919e4-0737-423b-9fa1-ba0bf977d498', stepsToFind: 0 },
+                                            brokeItem: true,
+                                        },
+                                        commonBehaviorCard: {
+                                            image: require('../../../assets/enemies/custom/orbeck.png'),
+                                            range: 1,
+                                            evade: 1,
+                                            defense: 1,
+                                            magicdefense: 2,
+                                            level: 8,
+                                            actions: [
+                                                {
+                                                    type: 'move',
+                                                    top: 1,
+                                                    direction: 'nearest',
+                                                },
+                                                {
+                                                    type: 'magicaldamage',
+                                                    damage: 5,
+                                                    direction: 'nearest',
+                                                },
+                                                {
+                                                    type: 'physicaldamage',
+                                                    damage: 2,
+                                                    direction: 'nearest',
+                                                }],
+                                        },
+                                    }],
+                                },
+                            },
+                        },
+                    },
+                    {
+                        answerLabel: 'Leave',
+                        next: {
+                            type: 'information',
+                            title: 'Orbeck of Vinheim',
+                            message: 'Yes, I see. On your way, then.',
+                        },
+                    },
+                ],
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: '3b8919e4-0737-423b-9fa1-ba0bf977d498',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'yoel part6',
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Yuria of Londor',
+                message: 'Thou\'rt a Lord, art thou not? Bearer of sthe dark sigil, and our Lord of Hollows. For the time thou remain\'st our Lord, we of Londor shall serve thee. And I, of course, am also thine.',
+                next: {
+                    type: 'information',
+                    message: 'Search and draw the common treasure Great Magic Weapon',
+                    brokeItem: true,
+                },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: '41d10fbc-3b12-4e8d-9105-c0cec65ee25b',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'Lesser Titanite Deamon',
+        spawn1: [{
+            enemyId: 'titanite_demon', name: 'Lesser Titanite Deamon', health: 12, respawn: false, heatup: [], onDeathEvent: {
+                type: 'information',
+                message: 'Search and draw from the treasure deck a Titanite Shard',
+            },
+        }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '54a310e3-18ae-4a97-8e61-c8faededbb42',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'Red Eye Hollow Soldier',
+        spawn1: [{
+            enemyId: 'hollow_soldier', name: 'Red Eye Hollow Soldier', health: 3,
+            commonBehaviorCard: {
+                image: require('../../../assets/enemies/custom/armoredhollow.png'),
+                range: 0,
+                evade: 1,
+                defense: 1,
+                magicdefense: 1,
+                level: 6,
+                repeat: 2,
+                actions: [
+                    {
+                        type: 'move',
+                        top: 1,
+                        direction: 'nearest',
+                    },
+                    {
+                        type: 'physicaldamage',
+                        damage: 4,
+                        direction: 'nearest',
+                    }],
+            },
+            onDeathEvent: {
+                type: 'randomEvent',
+                successValue: 15,
+                successEvent: {
+                    type: 'information',
+                    message: 'Search and draw from the treasure deck the Shortsword. If you already own it then gain 2 additional souls',
+                },
+                failureEvent: {
+                    type: 'information',
+                },
+            },
+        }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'large_hollow_soldier' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '317c2902-be04-4c93-ab6b-bee0c659a4fe',
+        level: 2,
+        set: [EXPLORERS_EXPANSION_KEY],
+        label: 'Red Eye firebomb hollow',
+        spawn1: [{
+            enemyId: 'firebomb_hollow', name: 'Red Eye Firebomb Hollow', health: 4, onDeathEvent: {
+                type: 'randomEvent',
+                successValue: 15,
+                successEvent: {
+                    type: 'information',
+                    message: 'Search and draw from the treasure deck the Black Firebombs. If you already own it then gain 2 additional souls',
+                },
+                failureEvent: {
+                    type: 'information',
+                },
+            },
+        }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'large_hollow_soldier' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'ee8f0719-e633-48a5-8739-0cdd8e172ebe',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'elite silver knight',
+        spawn1: [{
+            enemyId: 'sk_swordsman', name: 'Elite Silver Knight', health: 3, onDeathEvent: {
+                type: 'randomEvent',
+                successValue: 15,
+                successEvent: {
+                    type: 'information',
+                    message: 'Search and draw from the treasure deck the Silver Knight Straight Sword. If you already own it then gain 2 additional souls',
+                },
+                failureEvent: {
+                    type: 'information',
+                },
+            },
+            commonBehaviorCard: {
+                image: require('../../../assets/enemies/custom/elitesilverk.png'),
+                range: 0,
+                evade: 2,
+                defense: 2,
+                magicdefense: 2,
+                level: 6,
+                repeat: 2,
+                actions: [
+                    {
+                        type: 'move',
+                        top: 2,
+                        direction: 'aggro',
+                        push: 0,
+                    },
+                    {
+                        type: 'physicaldamage',
+                        damage: 6,
+                        direction: 'nearest',
+                        push: 0,
+                    }],
+            },
+        }],
+        spawn2: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_greatbowman' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '6cfb9c4f-460d-45cc-b5b4-925e675e876a',
+        level: 2,
+        set: [DARKROOT_EXPANSION_KEY],
+        label: 'Ancient stone knight',
+        spawn1: [{
+            enemyId: 'stone_knight', name: 'Ancient Stone Knight', health: 6, onDeathEvent: {
+                type: 'randomEvent',
+                successValue: 40,
+                successEvent: {
+                    type: 'information',
+                    message: 'Search and draw from the treasure deck the Stone Greatsword. If you already own it then gain 2 additional souls',
+                },
+                failureEvent: {
+                    type: 'information',
+                },
+            },
+            commonBehaviorCard: {
+                image: require('../../../assets/enemies/custom/ancientstoneguardian.png'),
+                range: 0,
+                evade: 2,
+                defense: 3,
+                magicdefense: 1,
+                level: 9,
+                repeat: 2,
+                actions: [
+                    {
+                        type: 'move',
+                        top: 1,
+                        direction: 'nearest',
+                    },
+                    {
+                        type: 'physicaldamage',
+                        damage: 6,
+                        direction: 'nearest',
+                        push: 0,
+                        node: true,
+                    }],
+            },
+        }],
+        spawn2: [{ enemyId: 'plow_scarecrow' }, { enemyId: 'shears_scarecrow' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'fab17770-7506-4717-8c32-fb7b91971667',
+        level: 2,
+        set: [IRON_KEEP_EXPANSION_KEY],
+        label: 'alonne high captain',
+        spawn1: [{
+            enemyId: 'alonne_knight_captain', name: 'Alonne High Captain', health: 7, onDeathEvent: {
+                type: 'randomEvent',
+                successValue: 10,
+                successEvent: {
+                    type: 'information',
+                    message: 'Search and draw from the treasure deck the Alonne Captain Armour. If you already own it then gain 2 additional souls',
+                },
+                failureEvent: {
+                    type: 'information',
+                },
+            },
+        }],
+        spawn2: [{ enemyId: 'alonne_bow_knight' }, { enemyId: 'alonne_sword_knight' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'bb3a99e0-3350-400d-b444-2c54a8c8c64f',
+        level: 3,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        label: 'black knight greatswordsman encounter',
+        spawn1: [{ enemyId: 'black_knight_greatswordsman' }, { enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        soulsPerPlayer: 4,
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'b2499ba9-23c9-4b68-9e09-c99cfdb2a4f2',
+        level: 3,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        label: 'black knight axeman encounter',
+        spawn1: [{ enemyId: 'black_knight_greataxeman' }, { enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        soulsPerPlayer: 4,
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'bee9d6d8-9676-4507-8a29-12e409569b5b',
+        level: 2,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        label: 'black knight swordsman encounter',
+        spawn1: [{ enemyId: 'black_knight_swordsman' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        soulsPerPlayer: 4,
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'bfa1e4be-0f70-46a5-9887-75f635fd2e9d',
+        level: 2,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        label: 'black knight halberdier encounter',
+        spawn1: [{ enemyId: 'black_knight_halberdier' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        soulsPerPlayer: 4,
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '6c106d7b-bd0d-48fa-8ae7-01fa942491c2',
+        level: 3,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        label: 'havel encounter',
+        spawn1: [{
+            enemyId: 'havel_the_rock', onDeathEvent: {
+                type: 'wideRandomEvent',
+                events: [
+                    {
+                        event: {
+                            type: 'information',
+                            message: 'Search and draw from the treasure deck the Havel Armour. If you already own it then gain 2 additional souls',
+                        },
+                        probability: 10,
+                    },
+                    {
+                        event: {
+                            type: 'information',
+                            message: 'Search and draw from the treasure deck the Havel Shield. If you already own it then gain 2 additional souls',
+                        },
+                        probability: 10,
+                    },
+                    {
+                        event: {
+                            type: 'information',
+                        },
+                        probability: 80,
+                    },
+                ],
+            },
+        }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: '02c3d611-729c-48cd-ad97-718107378399',
+        level: 2,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        label: 'darkwraith',
+        spawn1: [{
+            enemyId: 'darkwraith', onDeathEvent: {
+                type: 'randomEvent',
+                successValue: 15,
+                successEvent: {
+                    type: 'information',
+                    message: 'Search and draw from the treasure deck the Dark Armour. If you already own it then gain 2 additional souls',
+                },
+                failureEvent: {
+                    type: 'information',
+                },
+            },
+        }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        type: COMMON_ENCOUNTERS_KEY,
+    },
+    {
+        id: 'c3e306a3-f3b8-4ac9-8fa0-7ea26c6d388e',
+        level: 2,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        label: 'rosaria encounter 1',
+        spawn1: [{ enemyId: 'cathedral_knight' }],
+        spawn2: [{ enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'question',
+                title: 'Rosaria, Mother of Rebirth',
+                //this encounter appear only this time
+                brokeEncounter: { id: 'c3e306a3-f3b8-4ac9-8fa0-7ea26c6d388e', isBroken: true, scope: 'campaign' },
+                message: 'Do you want to offer yourself to Rosaria? Doing so every player can reallocating their stats.',
+                answers: [
+                    {
+                        answerLabel: 'Yes',
+                        next: {
+                            type: 'information',
+                            //broke the sirris encounter, since you are now enemies
+                            brokeItem: true,
+                            brokeEncounter: { id: '95fb93b5-17b7-40a2-9513-acecd26c3e72', isBroken: true, scope: 'campaign' },
+                            nextEncounter: { id: 'fadef482-89e4-4732-a2ae-8fa6568deb3d', stepsToFind: 5 },
+                        },
+                    },
+                    {
+                        answerLabel: 'No',
+                        next: {
+                            type: 'information',
+                            brokeItem: true,
+                        },
+                    },
+                ],
+            },
+        }],
+        type: 'quest',
+    },
+    {
+        id: 'fadef482-89e4-4732-a2ae-8fa6568deb3d',
+        level: 2,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        label: 'rosaria encounter 2',
+        onEnterEvent: {
+            type: 'information',
+            title: 'Sirris of the Sunless Realms',
+            message: 'Yes, I see, another errant Finger you\'ve become. Very well. I will cut each Finger from the hand.',
+            id: 'f5595fb2-6d8f-49b4-a4b9-909f55e75183',
+            next: {
+                type: 'information',
+                //show this message only the first time
+                brokeEvent: { id: 'f5595fb2-6d8f-49b4-a4b9-909f55e75183', isBroken: true, scope: 'campaign' },
+            },
+        },
+        spawn1: [{
+            enemyId: 'sirris', onDeathEvent: {
+                type: 'information',
+                title: 'Sirris of the Sunless Realms',
+                message: 'Forgive me, granddad...',
+                brokeEncounter: { id: 'fadef482-89e4-4732-a2ae-8fa6568deb3d', isBroken: true, scope: 'campaign' },
+            },
+        }],
+        type: 'chained',
+    },
+    {
+        id: '6e06fae2-acfd-48b2-8eaf-a9d6ee4390b3',
+        label: 'Kirk Invasions 1',
+        soulsPerPlayer: 2,
+        spawn1: [{
+            enemyId: 'kirk_knight_of_thorns', onDeathEvent: {
+                type: 'information',
+                title: 'Invader Banished',
+                message: 'Obtain the item Spike Shield',
+                brokeEncounter: { id: '6e06fae2-acfd-48b2-8eaf-a9d6ee4390b3', isBroken: true, scope: 'campaign' },
+                nextEncounter: { id: '7f6b2138-f855-4620-a338-654c680bd8b7', stepsToFind: 5 },
+            },
+        }],
+        onEnterEvent: {
+            id: '55c4a220-156c-4cfa-9183-121eef980bb2',
+            type: 'information',
+            message: 'You have been invaded by the Dark Spirit Kirk Knight of Thorns',
+            brokeEvent: { id: '55c4a220-156c-4cfa-9183-121eef980bb2', isBroken: true },
+        },
+        level: 2,
+        set: [PHANTOMS_EXPANSION_KEY],
+        type: 'quest',
+        item1: [{ itemId: 'chest' }],
+        item2: [{ itemId: 'gravestone' }],
+    },
+    {
+        id: '7f6b2138-f855-4620-a338-654c680bd8b7',
+        label: 'Kirk Invasions 2',
+        soulsPerPlayer: 3,
+        spawn1: [{
+            enemyId: 'kirk_knight_of_thorns', health: 16, onDeathEvent: {
+                type: 'information',
+                message: 'Invader Banished',
+                brokeEncounter: { id: '7f6b2138-f855-4620-a338-654c680bd8b7', isBroken: true, scope: 'campaign' },
+                nextEncounter: { id: 'b86276ac-a4e8-4194-b8a8-71e9ed45d6c7', stepsToFind: 5 },
+            },
+        }],
+        onEnterEvent: {
+            id: '2f636d09-2468-471d-a9bc-cb31314dc548',
+            type: 'information',
+            message: 'You have been invaded by the Dark Spirit Kirk Knight of Thorns',
+            brokeEvent: { id: '2f636d09-2468-471d-a9bc-cb31314dc548', isBroken: true },
+        },
+        level: 2,
+        set: [PHANTOMS_EXPANSION_KEY],
+        type: 'chained',
+        item2: [{ itemId: 'gravestone' }],
+    },
+    {
+        id: 'b86276ac-a4e8-4194-b8a8-71e9ed45d6c7',
+        label: 'Kirk Invasions 3',
+        soulsPerPlayer: 4,
+        spawn1: [{
+            enemyId: 'kirk_knight_of_thorns', health: 20, onDeathEvent: {
+                type: 'information',
+                title: 'Invader Banished',
+                brokeEncounter: { id: 'b86276ac-a4e8-4194-b8a8-71e9ed45d6c7', isBroken: true, scope: 'campaign' },
+                nextEncounter: { id: 'e4177324-e9fe-41af-a073-7fb3641b3295', stepsToFind: 1 },
+            },
+        }],
+        onEnterEvent: {
+            id: '2f3070d8-5893-4d22-85c6-8cd9c9a876a2',
+            type: 'information',
+            message: 'You have been invaded by the Dark Spirit Kirk Knight of Thorns',
+            brokeEvent: { id: '2f3070d8-5893-4d22-85c6-8cd9c9a876a2', isBroken: true },
+        },
+        level: 2,
+        set: [PHANTOMS_EXPANSION_KEY],
+        type: 'chained',
+        item1: [{ itemId: 'chest' }],
+    },
+    {
+        id: 'e4177324-e9fe-41af-a073-7fb3641b3295',
+        label: 'Kirk Invasions 4',
+        level: 2,
+        set: [PHANTOMS_EXPANSION_KEY],
+        type: 'chained',
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'question',
+                message: 'You found a body, do you want to inspect it?',
+                answers: [
+                    {
+                        answerLabel: 'Yes',
+                        next: {
+                            type: 'information',
+                            brokeItem: true,
+                            title: 'Item Found',
+                            message: 'Search and obtain the item Armour of Thorns',
+                        },
+                    },
+                    {
+                        answerLabel: 'No',
+                    },
+                ],
+            },
+        }],
+    },
+    {
+        id: 'e7ac63f1-bb89-4e9a-8f1c-e42a4d0a00c3',
+        label: 'Lucatiel 1',
+        spawn1: [{ enemyId: 'hollow_soldier' }],
+        spawn2: [{ enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        level: 1,
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Lucatiel of Mirrah',
+                message: 'You are an odd one. I\'ve always made a point of avoiding people. While you\'ve made a point of engaging me. Normally, people keep a safe distance when they see this mask.',
+                next: {
+                    type: 'information',
+                    title: 'Lucatiel of Mirrah',
+                    message: 'But you…I am called Lucatiel. From the land of Mirrah, to the far east. across the mountains. They say Drangleic brims with powerful souls. And so I came to claim my share. But what a strange place…Even the rumours did not prepare me. But what a strange place…Even the rumours did not prepare me.',
+                    brokeEncounter: { id: 'e7ac63f1-bb89-4e9a-8f1c-e42a4d0a00c3', isBroken: true, scope: 'campaign' },
+                    nextEncounter: { id: '932494c2-33ee-407f-b55b-03e4ca74075a', stepsToFind: 1, dungeonsToFind: 1 },
+                },
+            },
+        }],
+        item2: [{ itemId: 'gravestone' }],
+        set: [PHANTOMS_EXPANSION_KEY, CUSTOM_ENEMIES_EXPANSION_KEY],
+        type: 'quest',
+    },
+    {
+        id: '932494c2-33ee-407f-b55b-03e4ca74075a',
+        label: 'Lucatiel 2',
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'large_hollow_soldier' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        level: 2,
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Lucatiel of Mirrah',
+                message: 'I thought that might be you. You haven\'t changed a bit, have you? Heh heh. The longer I am here, the more madness I discover. A wretched place, indeed, but not without traces of its former glory. What could have caused such degradation?',
+                next: {
+                    type: 'information',
+                    title: 'Lucatiel of Mirrah',
+                    message: 'Our land of Mirrah is surrounded by enemies, and constantly at war. I was raised to wield a sword from birth. Life was hard, but I never gave it a second thought. I had swift success on the battlefield, and quickly attained respectable stature. And then I…And then I came here… to…',
+                    next: {
+                        type: 'information',
+                        title: 'Lucatiel of Mirrah',
+                        message: 'Have you heard of the Undead? These poor souls affected by the curse. An Undead gradually loses his humanity, until his wits degrade completely. Finally, he turns Hollow, and preys upon others. And a Hollow can never be human again. One can skirt this wicked fate only with the help of the souls found here. Assuming, of course, that the legends are true. I can only hope…that they are.',
+                        brokeItem: true,
+                        nextEncounter: { id: '7c9c92db-7eca-4116-ab51-5b3e83375d7e', stepsToFind: 4 },
+                    },
+                },
+            },
+        }],
+        set: [PHANTOMS_EXPANSION_KEY, CUSTOM_ENEMIES_EXPANSION_KEY],
+        type: 'chained',
+    },
+    {
+        id: '7c9c92db-7eca-4116-ab51-5b3e83375d7e',
+        label: 'Lucatiel 3',
+        spawn1: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }],
+        spawn2: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'sk_greatbowman' }],
+        level: 2,
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Lucatiel of Mirrah',
+                message: 'Still on the road, are you? Sorry to have burdened you so. I\'ve found my thoughts growing hazy. My memories are fading, oldest first. The curse is doing its work upon me.',
+                next: {
+                    type: 'information',
+                    title: 'Lucatiel of Mirrah',
+                    message: 'I had an older brother. We learned to fence together. He became the most decorated swordsman in all of Mirrah. I never even compared to him. In fact, I never beat him, not once. But then, one day…he was gone, lost without a trace. Now I\'m certain. That he was taken, by the curse. Soon, I may forget even about him…',
+                    next: {
+                        type: 'information',
+                        title: 'Lucatiel of Mirrah',
+                        message: 'I\'m sorry…to burden you with talk of my fate. I suppose I\'ve grown weary these days. If you require assistance, I will help you. I come from Mirrah, a land of knights. My sword is always ready. Don\'t hesitate to call upon me. Whatever happens, I won\'t be missed…',
+                        brokeItem: true,
+                        nextEncounter: { id: '09962637-e8bd-41b7-97c2-fa8bede67536', stepsToFind: 0 },
+                    },
+                },
+            },
+        }],
+        set: [PHANTOMS_EXPANSION_KEY, CUSTOM_ENEMIES_EXPANSION_KEY],
+        type: 'chained',
+    },
+    {
+        id: '09962637-e8bd-41b7-97c2-fa8bede67536',
+        label: 'Lucatiel 4',
+        spawn1: [{ enemyId: 'sk_greatbowman' }, { enemyId: 'sk_swordsman' }],
+        spawn2: [{ enemyId: 'sk_swordsman' }],
+        level: 2,
+        item1: [{
+            itemId: 'summon',
+            pressEvent: {
+                type: 'question',
+                title: 'Summon Sign',
+                message: 'Do you want to summon Lucatiel of Mirrah?',
+                answers: [
+                    {
+                        answerLabel: 'Yes',
+                        next: {
+                            type: 'information',
+                            title: 'Summon Sign',
+                            message: 'You can use Lucatiel of Mirrah as summon in any encounters until she die or the next boss is defeated. You don\'t lose any soul when Lucatiel is summoned like this. Lucatiel doesn\'t recover her health at the end of an encounter.',
+                            brokeItem: true,
+                            nextEncounter: { id: '54dcfd48-0157-493a-a83e-8df94d576596', stepsToFind: 1, dungeonsToFind: 1 },
+                        },
+                    },
+                    {
+                        answerLabel: 'No',
+                        //without next nothing happen, simply the message popup is closed
+                    },
+                ],
+            },
+        }],
+        set: [PHANTOMS_EXPANSION_KEY, CUSTOM_ENEMIES_EXPANSION_KEY],
+        type: 'chained',
+    },
+    {
+        id: '54dcfd48-0157-493a-a83e-8df94d576596',
+        label: 'Lucatiel 5',
+        spawn1: [{ enemyId: 'sentinel' }, { enemyId: 'sk_greatbowman' }],
+        spawn2: [{ enemyId: 'large_hollow_soldier' }],
+        level: 3,
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Lucatiel of Mirrah',
+                message: 'Who are you…Oh…No, forgive me… I know you…Yes, of course. How goes your journey? I know not what you seek in this far-away land… But I pray for your safety.',
+                next: {
+                    type: 'information',
+                    title: 'Lucatiel of Mirrah',
+                    message: 'My name is Lucatiel. I beg of you, remember my name. For I may not myself…',
+                    brokeItem: true,
+                    nextEncounter: { id: 'eec45966-4c47-4c10-9222-520627c98e32', stepsToFind: 2 },
+                },
+            },
+        }],
+        set: [PHANTOMS_EXPANSION_KEY, CUSTOM_ENEMIES_EXPANSION_KEY],
+        type: 'chained',
+    },
+    {
+        id: 'eec45966-4c47-4c10-9222-520627c98e32',
+        label: 'Lucatiel 6',
+        spawn1: [{ enemyId: 'hollow_soldier' }, {
+            enemyId: 'aslatiel', respawn: false, onDeathEvent: {
+                type: 'information',
+                title: 'Invader Banished',
+                message: 'Add 3 souls to the pool',
+            },
+        }],
+        spawn2: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        onEnterEvent: {
+            id: 'fde2e6ed-fabe-4954-b97e-bbdd54b0b0c0',
+            type: 'information',
+            message: 'You have been invaded by the Dark Spirit Aslatiel of Mirrah',
+            next: {
+                type: 'information',
+                message: 'You can use the Lucatiel of Mirrah miniature as substitution for Aslatiel of Mirrah during this encounter',
+                brokeEvent: { id: 'fde2e6ed-fabe-4954-b97e-bbdd54b0b0c0', isBroken: true },
+            },
+        },
+        level: 3,
+        item2: [{ itemId: 'chest' }],
+        set: [PHANTOMS_EXPANSION_KEY, CUSTOM_ENEMIES_EXPANSION_KEY],
+        type: 'chained',
+    },
+    {
+        id: '5df84abc-258b-4905-8fb8-061a9470c648',
+        label: 'Hawkwood 1',
+        spawn1: [{ enemyId: 'hollow_soldier' }],
+        spawn2: [{ enemyId: 'hollow_crossbow' }, { enemyId: 'hollow_crossbow' }],
+        level: 1,
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Hawkwood the Deserter',
+                message: 'Ahhh, another one, roused from the sleep of death? Well, you\'re not alone. We Unkindled are worthless. Can\'t even die right. Gives me conniptions. And they\'d have us seek the Lords of Cinder, and return them to their moulding thrones. But we\'re talking true legends with the mettle to link the fire. We\'re not fit to lick their boots. Don\'t you think?',
+                brokeItem: true,
+                nextEncounter: { id: '939e7d8e-657d-4af2-bad3-9ffa3b740724', stepsToFind: 3 },
+                brokeEncounter: { id: '5df84abc-258b-4905-8fb8-061a9470c648', isBroken: true, scope: 'campaign' },
+            },
+        }],
+        set: [PHANTOMS_EXPANSION_KEY, CHARS_EXPANSION_KEY],
+        type: 'quest',
+    },
+    {
+        id: '939e7d8e-657d-4af2-bad3-9ffa3b740724',
+        label: 'Hawkwood 2',
+        spawn1: [{ enemyId: 'large_hollow_soldier' }],
+        spawn2: [{ enemyId: 'large_hollow_soldier' }],
+        level: 2,
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Hawkwood the Deserter',
+                message: 'Ooh, yet to give in, eh? Good. The Fire Keeper must be twitching with delight.\nBut what do you really know about these Lords of Cinder, these supposed legends? Let\'s take Aldrich, for one. A right and proper cleric, only, he developed a habit of devouring men. He ate so many that he bloated like a drowned pig, then softened into sludge, so they stuck him in the Cathedral of the Deep.\nAnd they made him a Lord of Cinder.  Not for virtue, but for might. Such is a lord, I suppose. But here I ask. Do we have a sodding chance?',
+                brokeItem: true,
+                nextEncounter: { id: '43004abc-f690-4159-9191-735443141146', stepsToFind: 1, dungeonsToFind: 1 },
+            },
+        }],
+        item2: [{ itemId: 'chest' }],
+        set: [PHANTOMS_EXPANSION_KEY, CHARS_EXPANSION_KEY],
+        type: 'chained',
+    },
+    {
+        id: '43004abc-f690-4159-9191-735443141146',
+        label: 'Hawkwood 3',
+        spawn1: [{ enemyId: 'sk_greatbowman' }, { enemyId: 'sk_greatbowman' }],
+        spawn2: [{ enemyId: 'sentinel' }, { enemyId: 'sk_swordsman' }],
+        level: 3,
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Hawkwood the Deserter',
+                message: 'You haven\'t given up yet? Then you\'re a brasher than I thought. You can make better use of this. I don\'t need it. Not now I\'ve flown the coop.',
+                next: {
+                    type: 'information',
+                    message: 'Search and draw the thief class transposed treasure Hawkwood\'s Shield, If you already own it then gain 3 additional souls. Any player can equip this shield if they meet the Stats requirements.',
+                    brokeItem: true,
+                    nextEncounter: { id: 'b9fdc6fd-49fc-44ed-ad69-16198478b6e2', stepsToFind: 3 },
+                },
+            },
+        }],
+        item2: [{ itemId: 'gravestone' }],
+        set: [PHANTOMS_EXPANSION_KEY, CHARS_EXPANSION_KEY],
+        type: 'chained',
+    },
+    {
+        id: 'b9fdc6fd-49fc-44ed-ad69-16198478b6e2',
+        label: 'Hawkwood 4',
+        spawn5: [{
+            enemyId: 'invader_brylex', respawn: false, name: 'Hawkwood the Deserter', onDeathEvent: {
+                type: 'information',
+                title: 'Invader Banished',
+                message: 'Add 3 souls to the pool',
+            },
+
+        }],
+        onEnterEvent: {
+            id: 'd7f8f1f0-3bb3-4470-9c2a-b69d4880df6a',
+            type: 'information',
+            message: 'You have been invaded by the Hawkwood the Deserter.\nYou can use the invader miniature and behavior cards of Invader Brylex during this encounter',
+            next: {
+                type: 'information',
+                message: 'Place the invader on the centre node of the tile if that node is unoccupied. If that node is occupied, then place the invader on any unoccupied node that is at least two nodes away from the entry nodes beside the door that is aligned with the tile the party moved from.',
+                brokeEvent: { id: 'd7f8f1f0-3bb3-4470-9c2a-b69d4880df6a', isBroken: true },
+            },
+        },
+        level: 3,
+        item2: [{ itemId: 'safe_chest' }],
+        set: [PHANTOMS_EXPANSION_KEY, CHARS_EXPANSION_KEY],
+        type: INVADER_ENCOUNTERS_KEY,
+    },
+
+
+    //secret encounter, this should be used only when defining an encounter of a secret room, using them as standard encounter can have unexpected behaviors
+    {
+        id: '0976318f-8a51-4c58-b656-2de8f628c59f',
+        level: 3,
+        set: [CUSTOM_ENEMIES_EXPANSION_KEY],
+        label: 'gwyndolin encounter',
+        soulsPerPlayer: 3,
+        item2: [{
+            itemId: 'npc_gwyndolin',
+            pressEvent: {
+                type: 'question',
+                message: 'Halt! This is the tomb of the Great Lord Gwyn. Tarnished, it shall not be, by the feet of men. If thou art a true disciple of the Dark Sun, cast aside thine ire, hear the voice of mineself, Gwyndolin, and kneel before me.',
+                answers: [
+                    {
+                        answerLabel: 'Attack',
+                        next: {
+                            type: 'information',
+                            title: 'Dark Sun Gwyndolin',
+                            message: 'What foolishnes...Why trespasseth upon the Great Lord\'s tomb, whilst thou art a disciple of the Dark Sun? Mark the words of mineself, Gwyndolin! Thou shalt not go unpunished!',
+                            next: {
+                                type: 'information',
+                                message: 'You can use any miniboss miniature as replacement for the actual boss during this encounter.',
+                                next: {
+                                    type: 'spawn',
+                                    message: '',
+                                    spawnPoint: 'specialSpawn2',
+                                    spawnedEnemies: [{
+                                        enemyId: 'gwyndolin', respawn: false, onDeathEvent: {
+                                            type: 'information',
+                                            title: 'Dark Sun Gwyndolin',
+                                            message: 'O Heretic, swathed in Dark...An eternal curse upon thee...',
+                                            brokeItem: true,
+                                            brokeEncounter: { id: '0976318f-8a51-4c58-b656-2de8f628c59f', isBroken: true, scope: 'campaign' },
+                                            next: {
+                                                type: 'information',
+                                                message: 'Search and draw the legendary treasure Sunlight Straight Sword, If you already own it then gain 3 additional souls',
+                                            },
+                                        },
+                                    }],
+                                },
+                            },
+                        },
+                    },
+                    {
+                        answerLabel: 'Kneel',
+                        next: {
+                            type: 'question',
+                            title: 'Dark Sun Gwyndolin',
+                            message: 'O Disciple of the Dark Sun. Thou hast journeyed far; hear my voice. If thou shalt swear by the Covenant, to become A shadow of Father Gwyn and Sister Gwynevere, A blade that shall hunt the foes of our Lords; Then I shalt protect thee, safeguarding thy person with the power of the Darkmoon.',
+                            answers: [
+                                {
+                                    answerLabel: 'Attack',
+                                    next: {
+                                        type: 'information',
+                                        title: 'Dark Sun Gwyndolin',
+                                        message: 'What foolishnes...Why trespasseth upon the Great Lord\'s tomb, whilst thou art a disciple of the Dark Sun? Mark the words of mineself, Gwyndolin! Thou shalt not go unpunished!',
+                                        next: {
+                                            type: 'information',
+                                            message: 'You can use any miniboss miniature as replacement for the actual boss during this encounter.',
+                                            next: {
+                                                type: 'spawn',
+                                                message: '',
+                                                spawnPoint: 'specialSpawn2',
+                                                spawnedEnemies: [{
+                                                    enemyId: 'gwyndolin', respawn: false, onDeathEvent: {
+                                                        type: 'information',
+                                                        title: 'Dark Sun Gwyndolin',
+                                                        message: 'O Heretic, swathed in Dark...An eternal curse upon thee...',
+                                                        brokeItem: true,
+                                                        brokeEncounter: { id: '0976318f-8a51-4c58-b656-2de8f628c59f', isBroken: true, scope: 'campaign' },
+                                                        next: {
+                                                            type: 'information',
+                                                            message: 'Search and draw the legendary treasure Sunlight Straight Sword, If you already own it then gain 3 additional souls',
+                                                        },
+                                                    },
+                                                }],
+                                            },
+                                        },
+                                    },
+                                },
+                                {
+                                    answerLabel: 'Join the Covenant',
+                                    next: {
+                                        brokeItem: true,
+                                        brokeEncounter: { id: '0976318f-8a51-4c58-b656-2de8f628c59f', isBroken: true, scope: 'campaign' },
+                                        type: 'information',
+                                        message: 'Search and draw the common treasure Great Magic Weapon, If you already own it then gain 3 additional souls',
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: '7c8b1cf8-977a-4cff-929b-f2bd54c816c9',
+        level: 2,
+        set: [CORE_SET_KEY, CHARS_EXPANSION_KEY],
+        label: 'Titanite Deamon',
+        spawn1: [{
+            enemyId: 'titanite_demon', respawn: false, onDeathEvent: {
+                type: 'information',
+                message: 'Search and draw the common treasure Havel\'s Armour, If you already own it then gain 3 additional souls',
+                brokeEncounter: { id: '7c8b1cf8-977a-4cff-929b-f2bd54c816c9', isBroken: true, scope: 'campaign' },
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: '1cfa32f0-5ae0-4264-892b-bd0782162d0c',
+        level: 1,
+        set: [CORE_SET_KEY, EXPLORERS_EXPANSION_KEY],
+        label: 'Havel',
+        spawn1: [{
+            enemyId: 'havel_the_rock', respawn: false, onDeathEvent: {
+                type: 'information',
+                message: 'Search and draw the common treasure Havel\'s Greatshield, If you already own it then gain 3 additional souls',
+                brokeEncounter: { id: '1cfa32f0-5ae0-4264-892b-bd0782162d0c', isBroken: true, scope: 'campaign' },
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: '5c77178e-838e-463f-b972-96cd12a30a0b',
+        level: 3,
+        set: [CORE_SET_KEY],
+        label: 'Havel Mimic',
+        spawn1: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }],
+        spawn2: [{ enemyId: 'sk_swordsman' }],
+        item1: [{
+            itemId: 'chest',
+            pressEvent: {
+                type: 'question',
+                message: 'Do you want to open the chest?',
+                answers: [
+                    {
+                        answerLabel: 'yes',
+                        next: {
+                            type: 'spawn',
+                            message: 'The chest transform into a mimic. Choose the player nearest to the chest (if more players are at the same distance choose one), place it on a node adjacent to the chast and place 3 damages on him',
+                            spawnPoint: 'specialSpawn1',
+                            spawnedEnemies: [{
+                                enemyId: 'voracious_mimic', onDeathEvent: {
+                                    type: 'information',
+                                    message: 'Search and draw the legendary treasure Dragon Tooth, If you already own it then gain 3 additional souls',
+                                    brokeItem: true,
+                                    brokeEncounter: { id: '5c77178e-838e-463f-b972-96cd12a30a0b', isBroken: true, scope: 'campaign' },
+                                },
+                            }],
+                        },
+                    },
+                    {
+                        answerLabel: 'no',
+                        //without next nothing happen, simply the message popup is closed
+                    },
+                ],
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: 'ccbca071-d37d-419f-a316-c1e638cb7d22',
+        level: 2,
+        set: [DARKROOT_EXPANSION_KEY],
+        label: 'crystal shield Mimic',
+        spawn1: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }],
+        spawn2: [{ enemyId: 'sk_swordsman' }],
+        item1: [{
+            itemId: 'chest',
+            pressEvent: {
+                type: 'question',
+                message: 'Do you want to open the chest?',
+                answers: [
+                    {
+                        answerLabel: 'yes',
+                        next: {
+                            type: 'spawn',
+                            message: 'The chest transform into a mimic. Choose the player nearest to the chest (if more players are at the same distance choose one), place it on a node adjacent to the chast and place 3 damages on him',
+                            spawnPoint: 'specialSpawn1',
+                            spawnedEnemies: [{
+                                enemyId: 'hungry_mimic', onDeathEvent: {
+                                    type: 'information',
+                                    message: 'Search and draw the common treasure Crystal Shield, If you already own it then gain 3 additional souls',
+                                    brokeItem: true,
+                                    brokeEncounter: { id: 'ccbca071-d37d-419f-a316-c1e638cb7d22', isBroken: true, scope: 'campaign' },
+                                },
+                            }],
+                        },
+                    },
+                    {
+                        answerLabel: 'no',
+                        //without next nothing happen, simply the message popup is closed
+                    },
+                ],
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: '767cc6f6-9f1c-4624-8c56-717bf8decf85',
+        level: 1,
+        set: [CORE_SET_KEY],
+        label: 'trap',
+        item1: [{
+            itemId: 'chest',
+            pressEvent: {
+                type: 'question',
+                message: 'Do you want to open the chest?',
+                answers: [
+                    {
+                        answerLabel: 'yes',
+                        next: {
+                            type: 'spawn',
+                            message: 'It\'s a trap',
+                            spawnPoint: 'spawn1',
+                            brokeItem: true,
+                            spawnedEnemies: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+                            next: {
+                                type: 'spawn',
+                                spawnPoint: 'spawn2',
+                                spawnedEnemies: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+                            },
+                        },
+                    },
+                    {
+                        answerLabel: 'no',
+                        //without next nothing happen, simply the message popup is closed
+                    },
+                ],
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: '41fac855-49c9-4f85-b40a-9fae0ff205d8',
+        level: 1,
+        set: [CORE_SET_KEY],
+        label: 'silver knights room',
+        spawn1: [{ enemyId: 'sk_swordsman' }, { enemyId: 'sk_swordsman' }, { enemyId: 'sk_greatbowman' }],
+        spawn2: [{ enemyId: 'sk_swordsman' }],
+        item1: [{
+            itemId: 'chest',
+            pressEvent: {
+                type: 'information',
+                message: 'Search and draw the common treasure Silver Knight Straight Sword, If you already own it then gain 3 additional souls',
+                brokeItem: true,
+                brokeEncounter: { id: '41fac855-49c9-4f85-b40a-9fae0ff205d8', isBroken: true, scope: 'campaign' },
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: 'd9b004b7-1584-44c7-b2eb-7afc4e6fc500',
+        level: 1,
+        set: [CORE_SET_KEY],
+        label: 'eastus flask fragment',
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }, { enemyId: 'hollow_crossbow' }],
+        spawn2: [{ enemyId: 'large_hollow_soldier' }],
+        item1: [{
+            itemId: 'chest',
+            pressEvent: {
+                type: 'information',
+                message: 'You have found an Eastus Flask Fragment: every player with an empty eastus flask can restore it now, otherwise it can be restored immediatly after its next use (only one time).',
+                brokeItem: true,
+                brokeEncounter: { id: 'd9b004b7-1584-44c7-b2eb-7afc4e6fc500', isBroken: true, scope: 'campaign' },
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: '448d4fa6-aae9-4a34-872c-cba15e7fca42',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'boreal knight',
+        spawn1: [{
+            enemyId: 'boreal_knight', health: 20, onDeathEvent: {
+                type: 'wideRandomEvent',
+                brokeEncounter: { id: '448d4fa6-aae9-4a34-872c-cba15e7fca42', isBroken: true, scope: 'campaign' },
+                events: [
+                    {
+                        event: {
+                            type: 'information',
+                            message: 'Search and draw the boss treasure Irithyll Rapier, If you already own it then gain 3 additional souls',
+                        },
+                        probability: 10,
+                    },
+                    {
+                        event: {
+                            type: 'information',
+                            message: 'Search and draw the boss treasure Outrider Armour. If you already own it then gain 2 additional souls',
+                        },
+                        probability: 10,
+                    },
+                    {
+                        event: {
+                            type: 'information',
+                            message: 'Search and draw the boss treasure Irithyll Straight Sword. If you already own it then gain 2 additional souls',
+                        },
+                        probability: 10,
+                    },
+                ],
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: '4ee5d7a0-f0ee-431b-a279-599f5c873e93',
+        level: 2,
+        set: [CORE_SET_KEY],
+        label: 'winged knight',
+        spawn1: [{
+            enemyId: 'winged_knight', health: 18, onDeathEvent: {
+                type: 'wideRandomEvent',
+                brokeEncounter: { id: '4ee5d7a0-f0ee-431b-a279-599f5c873e93', isBroken: true, scope: 'campaign' },
+                events: [
+                    {
+                        event: {
+                            type: 'information',
+                            message: 'Search and draw the boss treasure Winged Knight Halberd, If you already own it then gain 3 additional souls',
+                        },
+                        probability: 10,
+                    },
+                    {
+                        event: {
+                            type: 'information',
+                            message: 'Search and draw the boss treasure Winged Knight Twin Axes. If you already own it then gain 2 additional souls',
+                        },
+                        probability: 10,
+                    },
+                    {
+                        event: {
+                            type: 'information',
+                            message: 'Search and draw the boss treasure Winged Knight Armour. If you already own it then gain 2 additional souls',
+                        },
+                        probability: 10,
+                    },
+                ],
+            },
+        }],
+        type: 'secret',
+    },
+    {
+        id: 'b72d74d5-9f64-4fb0-bcf8-54382e828067',
+        title: 'Lightless Passage',
+        level: 2,
+        set: [CORE_SET_KEY],
+        spawn1: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }, { enemyId: 'large_hollow_soldier' }],
+        item1: [{ itemId: 'barrel', pressEvent: {
+            type: 'spawn',
+            message: 'An undead was inside the barrel. Don\'t reset your player damage/stamina status before this fight',
+            spawnPoint: 'specialSpawn1',
+            spawnedEnemies: [{
+                enemyId: 'hollow_soldier', health: 6, name: 'Red Eye Hollow Soldier', onDeathEvent: {
+                    type: 'information',
+                    message: 'Search and draw the common treasure Claymore, If you already own it then gain 3 additional souls',
+                    brokeItem: true,
+                    brokeEncounter: { id: 'b72d74d5-9f64-4fb0-bcf8-54382e828067', isBroken: true, scope: 'campaign' },
+                },
+            }],
+        }}],
+        type: 'secret',
+    },
+    {
+        id: '91441c93-682b-46df-964f-e09fa36e6738',
+        title: 'Laurentius encounter',
+        level: 1,
+        set: [CORE_SET_KEY],
+        onEnterEvent: {
+            type: 'information',
+            title: '???',
+            message: '...You!...Yes, you!...Here, over here!...Please...You must help me…',
+            id: '19459d41-b332-490d-a9a6-9923dfa224d8',
+            next: {
+                type: 'information',
+                //show this message only the first time
+                brokeEvent: { id: '19459d41-b332-490d-a9a6-9923dfa224d8', isBroken: true, scope: 'campaign' },
+            },
+        },
+        spawn1: [{ enemyId: 'large_hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        spawn2: [{ enemyId: 'hollow_soldier' }],
+        item1: [{ itemId: 'barrel', pressEvent: {
+            type: 'information',
+            title: 'Laurentius of the Great Swamp',
+            message: 'Th-thank you. I would have been their supper without you. Being eaten alive! I shudder to think. Thank you, thank you dearly. I am Laurentius, of the Great Swamp. I will not forget my debt to you.',
+            brokeItem: true,
+            brokeEncounter: { id: '91441c93-682b-46df-964f-e09fa36e6738', isBroken: true, scope: 'campaign' },
+            next: {
+                type: 'information',
+                title: 'Laurentius of the Great Swamp',
+                message: 'I have my Pyromancy of the Great Swamp, so I can usually manage, with a bit of care. Oh, yeah, by the way, er, I can share my spell with you. I think you have a knack for it. All you need are the materials. I\'d be pleased to help you.',
+                next: {
+                    type: 'information',
+                    message: 'Search and draw the common treasure Fireball, If you already own it then gain 3 additional souls',
+                },
+            },
+        }}],
+        type: 'secret',
+    },
+];
