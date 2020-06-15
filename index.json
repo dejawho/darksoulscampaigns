@@ -139,5 +139,16 @@
 	"resource": "playingwithfire.json",
 	"minVersion": "1.5.3",
 	"id": "2b6dab89-920d-42de-b0dc-66a0204a2835"
+},
+{
+	"title": "Cursed Brothers",
+	"description": "NOTE: This campaign require at least the version 1.6.6 of the application.\nBring the prince to his throne",
+	"difficulty": 3,
+	"set": ["core", "guardian_dragon", "custom_enemies_expansions", "asylumDemon"],
+	"dungeons": 3,
+	"timestamp": 1592054935,
+	"resource": "cursedbrothers.json",
+	"minVersion": "1.6.6",
+	"id": "f770f343-be81-424b-8396-be0238b55eb0"
 }
 ]
