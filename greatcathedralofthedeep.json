@@ -1,0 +1,210 @@
+{
+	"title": "Great Cathedral of the Deep",
+	"description": "A quest where you will have to follow multiple paths to explore the Cathedral of the Deep",
+	"set": ["custom_enemies_expansions", "asylumDemon", "darkroot_expansion"],
+	"encounters": [
+		{
+			"id": "e0183f24-d78e-445c-bd38-37af247e3817",
+			"level": 2,
+			"set": ["core", "custom_enemies_expansions"],
+			"spawn1": [{ "enemyId": "cathedral_knight" }, { "enemyId": "hollow_soldier" }],
+			"spawn2": [{ "enemyId": "hollow_crossbow" }],
+			"item1": [{ "itemId": "barrel" }]
+		},
+		{
+			"id": "62301aae-1991-4018-aec3-2a3d718772c6",
+			"level": 3,
+			"set": ["core", "custom_enemies_expansions"],
+			"spawn1": [{ "enemyId": "cathedral_knight" }, { "enemyId": "large_hollow_soldier" }],
+			"spawn2": [{ "enemyId": "hollow_crossbow" }, { "enemyId": "hollow_crossbow" }],
+			"item1": [{ "itemId": "safe_chest" }]
+		},
+		{
+			"id": "023183c9-38c4-4185-8bba-e75549e99f78",
+			"level": 3,
+			"set": ["core", "custom_enemies_expansions"],
+			"spawn1": [{ "enemyId": "cathedral_knight" }, { "enemyId": "deacon_devout" }],
+			"spawn2": [{ "enemyId": "deacon_priest" }, { "enemyId": "deacon_devout" }],
+			"item1": [{ "itemId": "gravestone" }]
+		},
+		{
+			"id": "94266e96-c3cf-4596-b511-677740612dd5",
+			"level": 4,
+			"set": ["core", "custom_enemies_expansions"],
+			"spawn1": [{ "enemyId": "sk_swordsman" }, { "enemyId": "deacon_devout" }],
+			"spawn2": [{ "enemyId": "sentinel" }, { "enemyId": "hollow_crossbow" }],
+			"spawn3": [{ "enemyId": "deacon_priest" }, { "enemyId": "deacon_priest" }],
+			"spawn4": [{ "enemyId": "sk_swordsman" },{ "enemyId": "sk_greatbowman" }, { "enemyId": "deacon_priest" }],
+			"item1": [{ "itemId": "chest" }],
+			"item2": [{ "itemId": "barrel" }],
+			"item3": [{ "itemId": "gravestone" }],
+			"item4": [{ "itemId": "gravestone" }]
+		}
+	],
+	"paths": {
+		"id": "9974cf9b-0a2a-4bd0-a007-950748a136ad",
+		"type": "message",
+		"title": "Additional Rules",
+		"message": "In this campaign ignore the rule to add the Legendary and Transposed treasure into your items deck until further instructed",
+		"next": {
+			"id": "10504740-336d-4e50-b83c-8de939458b4a",
+			"type": "all",
+			"title": "Outside of the Cathedral",
+			"message": "You see the cathedral of the deep in the distance. Complete all sections to proceed with your journey. You can complete them in any order.\nWhich section do you want to do now?",
+			"choices": [
+				{
+					"id": "612ad05f-ca38-485e-9358-810f0ecf9c6a",
+					"type": "dungeon",
+					"label": "Graveyard",
+					"dungeonId": "a764214c-74e3-4549-bb5a-bd7a78767407"
+				},
+				{
+					"id": "62edc711-7f18-4688-8039-b2d7740efaef",
+					"type": "dungeon",
+					"label": "The Roofs",
+					"dungeonId": "08d10a19-ade0-4946-a972-d93bb0eb86f3"
+				}
+			],
+			"next": {
+				"id": "1642fec6-f72b-4204-a948-e6cce384504d",
+				"type": "message",
+				"title": "Cathedral Entrance",
+				"message": "You have been able to enter the cathedral and now you can hear the sound of a colossal figure in the distance...",
+				"next": {
+					"id": "ccb217c9-6afe-4907-ba61-b0e9e90f4e8e",
+					"type": "dungeon",
+					"dungeonId": "938f9d86-04c3-467a-9fb0-6017f1908ffb",
+					"next": {
+						"id": "b3e4bac7-852c-4c7a-95de-f55798704459",
+						"type": "message",
+						"title": "Cathedral Entrance",
+						"message": "Augment the treasure deck by adding the transposed and legendary treasure cards as described in ‘Setup After the Mini Boss’ on p 9 of the Dark Souls™: The Board Game rulebook.\nThen add to your reserve an additonal 4 Souls per person and draw 4 random treasure cards.",
+						"next": {
+							"type": "choice",
+							"id": "2841f3d3-c508-478f-84ee-3a2946935c55",
+							"title": "Inside of the Cathedral",
+							"message": "You're standing in the middle of a crossroad. The left path is guarded by the strongest Cathedral Knights, the right one is guarded by a strong warrior coming from the Boreal Valley. Which path do you want to take?",
+							"choices": [
+								{
+									"id": "6f86e150-f928-42c2-a02b-552553fb7cb8",
+									"type": "dungeon",
+									"label": "Left",
+									"dungeonId": "ea2672d3-e830-40dd-a4ff-be96814131c6",
+									"next": {
+										"id": "a721f591-acb7-4f77-a210-b2b06c4d2cc2",
+										"type": "message",
+										"title": "Inside of the Cathedral",
+										"message": "While you travel into the depths of the cathedral you feel an ancient darkness growing stronger...",
+										"next": {
+											"id": "2f6a6f4a-cf5d-4bfe-abc2-8acdff2940e7",
+											"type": "dungeon",
+											"dungeonId": "d3663e5e-808d-4dc7-ab3e-cc163df7732f",
+											"next": {
+												"id": "90d5a401-0c0a-4a9d-b83b-49b647779050",
+												"type": "message",
+												"title": "Saint's Grave",
+												"message": "You are entering the deepest room of the cathedral, the place where a lord of cinder was resting. \nBefore to proceed add to your reserve an additonal 4 Souls per person and draw 4 random treasure cards.",
+												"next": {
+													"id": "7791f172-a3b7-4764-8d64-8c20fda00a05",
+													"type": "dungeon",
+													"dungeonId": "e7432eb0-1fd6-45d9-a56b-007488d27ee0"
+												}
+											}
+										}
+									}
+								},
+								{
+									"id": "536a4c50-9d92-4786-9fd2-3e21121631de",
+									"type": "dungeon",
+									"label": "Right",
+									"dungeonId": "7db62d10-fbbb-4106-b0fc-1a91ea2ea134",
+									"next": {
+										"id": "2bdf3567-0ff6-4f93-a1a9-c90db7b75202",
+										"type": "message",
+										"title": "Inside of the Cathedral",
+										"message": "While you travel into the depths of the cathedral you feel an ancient darkness growing stronger...",
+										"next": {
+											"id": "8df52e19-4272-4134-879a-9aac0bc373ed",
+											"type": "dungeon",
+											"dungeonId": "d3663e5e-808d-4dc7-ab3e-cc163df7732f",
+											"next": {
+												"id": "9f909f20-7422-45ba-a000-613f93895d18",
+												"type": "message",
+												"title": "Saint's Grave",
+												"message": "You are entering the deepest room of the cathedral, the place where a lord of cinder was resting. \nBefore to proceed add to your reserve an additonal 4 Souls per person and draw 4 random treasure cards.",
+												"next": {
+													"id": "93ca24cd-6ea3-43a5-8ba4-06b5b264ce72",
+													"type": "dungeon",
+													"dungeonId": "e7432eb0-1fd6-45d9-a56b-007488d27ee0"
+												}
+											}
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	},
+	"dungeons": [
+		{
+			"id": "a764214c-74e3-4549-bb5a-bd7a78767407",
+			"type": "random",
+			"bossEncounterId": "b07791a4-aa8f-4258-aa55-dc3d49a2a3be",
+			"excludedBiomes": ["castle_new", "iron_keep"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1","tematic_random_lv2", "tematic_random_lv2"]
+		},
+		{
+			"id": "08d10a19-ade0-4946-a972-d93bb0eb86f3",
+			"type": "random",
+			"bossEncounterId": "ad20c9e4-f478-4b6f-a420-3905a95398dc",
+			"excludedBiomes": ["castle_new", "iron_keep", "darkroot_basin"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2"]
+		},
+		{
+			"id": "938f9d86-04c3-467a-9fb0-6017f1908ffb",
+			"type": "random",
+			"bossEncounterId": "bc6c9bd4-476d-444d-a1ea-c93ee6bf3c6a",
+			"excludedBiomes": ["iron_keep", "darkroot_basin"],
+			"excludedSets": ["darkroot_expansion"],
+			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv2"]
+		},
+		{
+			"id": "ea2672d3-e830-40dd-a4ff-be96814131c6",
+			"type": "random",
+			"bossEncounterId": "93d8d8b3-a59c-4b1a-85f6-065af779bb52",
+			"excludedBiomes": ["iron_keep", "darkroot_basin", "castle_old"],
+			"excludedSets": ["darkroot_expansion", "ironkeep_expansion", "custom_enemies_expansions"],
+			"commonEncountersIds": ["023183c9-38c4-4185-8bba-e75549e99f78", "tematic_random_lv3", "6e06fae2-acfd-48b2-8eaf-a9d6ee4390b3"]
+		},
+		{
+			"id": "7db62d10-fbbb-4106-b0fc-1a91ea2ea134",
+			"type": "random",
+			"bossEncounterId": "f2a31d07-c50d-4e6b-bf00-4fece41f8e50",
+			"excludedBiomes": ["iron_keep", "darkroot_basin", "castle_old"],
+			"excludedSets": ["darkroot_expansion", "ironkeep_expansion", "custom_enemies_expansions"],
+			"commonEncountersIds": ["e0183f24-d78e-445c-bd38-37af247e3817", "c3e306a3-f3b8-4ac9-8fa0-7ea26c6d388e", "tematic_random_lv3"]
+		},
+		{
+			"id": "d3663e5e-808d-4dc7-ab3e-cc163df7732f",
+			"type": "random",
+			"bossEncounterId": "f1944bb4-8c4d-437e-8c97-d857da93241e",
+			"excludedBiomes": ["iron_keep", "darkroot_basin"],
+			"excludedSets": ["darkroot_expansion", "ironkeep_expansion", "custom_enemies_expansions"],
+			"commonEncountersIds": ["62301aae-1991-4018-aec3-2a3d718772c6", "tematic_random_lv3", "tematic_random_lv3"]
+		},
+		{
+			"id": "e7432eb0-1fd6-45d9-a56b-007488d27ee0",
+			"type": "random",
+			"bossEncounterId": "0a24c3eb-6a10-4019-bd61-f109cc227fe3",
+			"preBossEncounterId": "94266e96-c3cf-4596-b511-677740612dd5",
+			"excludedBiomes": ["iron_keep", "darkroot_basin"],
+			"excludedSets": ["darkroot_expansion", "ironkeep_expansion"],
+			"commonEncountersIds": ["tematic_random_lv3", "tematic_random_lv3", "tematic_random_lv3"]
+		}
+
+	]
+}

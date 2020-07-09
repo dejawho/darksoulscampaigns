@@ -150,5 +150,16 @@
 	"resource": "cursedbrothers.json",
 	"minVersion": "1.6.6",
 	"id": "f770f343-be81-424b-8396-be0238b55eb0"
+},
+{
+	"title": "Great Cathedral of the Deep",
+	"description": "NOTE: This campaign require at least the version 1.7.2 of the application.\nA quest where you will have to follow multiple paths to explore the Cathedral of the Deep",
+	"difficulty": 4,
+	"set": ["core", "custom_enemies_expansions", "asylumDemon", "darkroot_expansion"],
+	"dungeons": 6,
+	"timestamp": 1594292351,
+	"resource": "greatcathedralofthedeep.json",
+	"minVersion": "1.7.2",
+	"id": "425e10d7-0939-44c6-9ab2-234328195e16"
 }
 ]
