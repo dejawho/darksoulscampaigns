@@ -167,7 +167,7 @@
 		{
 			"id": "938f9d86-04c3-467a-9fb0-6017f1908ffb",
 			"type": "random",
-			"bossEncounterId": "bc6c9bd4-476d-444d-a1ea-c93ee6bf3c6a",
+			"bossEncounterId": "00453e4d-3f36-4423-a026-00833f18989a",
 			"excludedBiomes": ["iron_keep", "darkroot_basin"],
 			"excludedSets": ["darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv2"]

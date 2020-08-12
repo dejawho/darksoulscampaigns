@@ -43,7 +43,7 @@
 		{
 			"type": "random",
 			"introMessage": "In these final days of fire many attempt to wait out the end of the world. Prince Lothric, “The Last hope in the line” is one such entity, but when the time came for Lothric to assume his duty as a Lord of Cinder he refused. Instead, he left the castle with his brother and relocated to a faraway palace where they intended to watch the flame die out. \nFor the fate of the world these brothers must give their ashes to the fire... even if it means by force.",
-			"bossEncounterId": "bc6c9bd4-476d-444d-a1ea-c93ee6bf3c6a",
+			"bossEncounterId": "00453e4d-3f36-4423-a026-00833f18989a",
 			"excludedBiomes": ["darkroot_basin", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2"]
@@ -64,7 +64,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "304dc3ff-f2df-40c2-8e44-a3511d454f0e",
+			"bossEncounterId": "4a04f854-aece-4c07-b40b-88423772e108",
 			"excludedBiomes": ["iron_keep", "darkroot_basin"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv3", "tematic_random_lv3", "tematic_random_lv3"]

@@ -4,8 +4,9 @@
 	"difficulty": 4,
 	"set": ["old_iron_king", "darkroot_iron_tiles", "explorers_expansion", "ironkeep_expansion", "phatnoms_expansion"],
 	"dungeons": 4,
-	"timestamp": 1577760090,
+	"timestamp": 1597236414,
 	"resource": "ironkingcampaign.json",
+	"minVersion": "1.7.9",
 	"id": "728714d6-0fb8-43fc-b5ed-4ef23b06c030"
 },
 {
@@ -36,9 +37,9 @@
 	"difficulty": 4,
 	"set": ["core", "asylumDemon"],
 	"dungeons": 5,
-	"timestamp": 1586826832,
+	"timestamp": 1597236414,
 	"resource": "demonhunting.json",
-	"minVersion": "1.5.0",
+	"minVersion": "1.7.9",
 	"id": "5110a326-4e83-4613-adde-bed51aa564dd"
 },
 {
@@ -47,9 +48,9 @@
 	"difficulty": 4,
 	"set": ["core", "vordt_of_the_boreal_valley", "phatnoms_expansion"],
 	"dungeons": 4,
-	"timestamp": 1586885403,
+	"timestamp": 1597236414,
 	"resource": "treasureoftheicecave.json",
-	"minVersion": "1.5.0",
+	"minVersion": "1.7.9",
 	"id": "17bfb365-e6c8-4606-acda-468ff7acccb9"
 },
 {
@@ -58,9 +59,9 @@
 	"difficulty": 4,
 	"set": ["core", "gaping_dragon", "guardian_dragon", "asylumDemon", "kalameet"],
 	"dungeons": 6,
-	"timestamp": 1586885403,
+	"timestamp": 1597236414,
 	"resource": "demonsanddragons.json",
-	"minVersion": "1.5.0",
+	"minVersion": "1.7.9",
 	"id": "214cf336-bf4f-43c2-9978-3236dd9f16fb"
 },
 {
@@ -80,9 +81,9 @@
 	"difficulty": 3,
 	"set": ["core", "kalameet"],
 	"dungeons": 4,
-	"timestamp": 1586885403,
+	"timestamp": 1597236414,
 	"resource": "bathedinflame.json",
-	"minVersion": "1.5.0",
+	"minVersion": "1.7.9",
 	"id": "94ab0cb7-f7dd-4724-9c1d-c9ce74831b27"
 },
 {
@@ -91,9 +92,9 @@
 	"difficulty": 4,
 	"set": ["core", "old_iron_king", "explorers_expansion", "phatnoms_expansion", "ironkeep_expansion"],
 	"dungeons": 4,
-	"timestamp": 1588068704,
+	"timestamp": 1597236414,
 	"resource": "gobeyonddeath.json",
-	"minVersion": "1.5.0",
+	"minVersion": "1.7.9",
 	"id": "a9197862-9352-4cce-bdc9-8b04a54502b9"
 },
 {
@@ -102,9 +103,9 @@
 	"difficulty": 4,
 	"set": ["core", "gaping_dragon", "darkroot_expansion"],
 	"dungeons": 5,
-	"timestamp": 1586885403,
+	"timestamp": 1597236414,
 	"resource": "intothedepths.json",
-	"minVersion": "1.5.0",
+	"minVersion": "1.7.9",
 	"id": "17a7c9c4-0fa1-46b7-91b2-c5d50a388db1"
 },
 {
@@ -146,9 +147,9 @@
 	"difficulty": 3,
 	"set": ["core", "guardian_dragon", "custom_enemies_expansions", "asylumDemon"],
 	"dungeons": 3,
-	"timestamp": 1592054935,
+	"timestamp": 1597236414,
 	"resource": "cursedbrothers.json",
-	"minVersion": "1.6.6",
+	"minVersion": "1.7.9",
 	"id": "f770f343-be81-424b-8396-be0238b55eb0"
 },
 {
@@ -157,9 +158,9 @@
 	"difficulty": 4,
 	"set": ["core", "custom_enemies_expansions", "asylumDemon", "darkroot_expansion"],
 	"dungeons": 6,
-	"timestamp": 1594292351,
+	"timestamp": 1597236414,
 	"resource": "greatcathedralofthedeep.json",
-	"minVersion": "1.7.2",
+	"minVersion": "1.7.9",
 	"id": "425e10d7-0939-44c6-9ab2-234328195e16"
 }
 ]

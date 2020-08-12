@@ -7,7 +7,7 @@
 	"dungeons": [
 		{
 			"type": "random",
-			"bossEncounterId": "bc6c9bd4-476d-444d-a1ea-c93ee6bf3c6a",
+			"bossEncounterId": "00453e4d-3f36-4423-a026-00833f18989a",
 			"introMessage": "Each player may increase two stats from Base to Tier 1 and may then increase one stat from Tier 1 to Tier 2.",
 			"excludedBiomes": ["darkroot_basin", "iron_keep", "castle_new"],
 			"excludedSets": ["ironkeep_expansion"],
@@ -23,7 +23,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "304dc3ff-f2df-40c2-8e44-a3511d454f0e",
+			"bossEncounterId": "4a04f854-aece-4c07-b40b-88423772e108",
 			"introMessage": "Each player may increase one stat from Tier 1 to Tier 2 and may then increase one stat from Tier 2 to Tier 3.",
 			"excludedBiomes": ["darkroot_basin", "castle_old"],
 			"excludedSets": ["darkroot_expansion"],
@@ -31,7 +31,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "d7257e75-2649-45a3-ba74-87726d8c60ec",
+			"bossEncounterId": "8e5318b9-68b2-4e6d-a083-2fb29daf2dba",
 			"introMessage": "Each player may increase one stat from Tier 1 to Tier 2 and may then increase one stat from Tier 2 to Tier 3.",
 			"excludedBiomes": ["iron_keep", "castle_new", "darkroot_basin"],
 			"excludedSets": ["ironkeep_expansion"],
@@ -39,7 +39,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "addca633-7866-43c7-a551-64ebf3f6375e",
+			"bossEncounterId": "42ec8c3b-9fda-433a-bd4d-4058ad3011fb",
 			"introMessage": "Each player may increase two stats from Tier 2 to Tier 3.",
 			"excludedBiomes": ["darkroot_basin", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion", "explorers_expansion", "phatnoms_expansion"],
@@ -47,7 +47,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "6ca5a4c6-32cf-4ecd-9fd7-5cd3b76e8a2f",
+			"bossEncounterId": "477f0c93-d91a-4e8e-ade6-17cf796172a7",
 			"excludedBiomes": ["darkroot_basin", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion", "explorers_expansion", "phatnoms_expansion"],
 			"commonEncountersIds": []

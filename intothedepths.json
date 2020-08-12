@@ -47,7 +47,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "d7257e75-2649-45a3-ba74-87726d8c60ec",
+			"bossEncounterId": "8e5318b9-68b2-4e6d-a083-2fb29daf2dba",
 			"preBossEncounterId": "5338ace3-6a48-47f7-b51c-c6597f2027af",
 			"excludedBiomes": ["iron_keep", "castle_new"],
 			"excludedSets": ["ironkeep_expansion"],

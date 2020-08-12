@@ -51,7 +51,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "6ca5a4c6-32cf-4ecd-9fd7-5cd3b76e8a2f",
+			"bossEncounterId": "477f0c93-d91a-4e8e-ade6-17cf796172a7",
 			"excludedBiomes": ["iron_keep", "castle_new"],
 			"excludedSets": ["ironkeep_expansion", "explorers_expansion"],
 			"commonEncountersIds": ["tematic_darkroot_lv3", "tematic_darkroot_lv3"]

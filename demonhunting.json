@@ -31,7 +31,7 @@
 		{
 			"type": "random",
 			"introMessage": "Think now to the beginning of your pilgrimage, those first faltering steps along the path of your destiny.\nRemember that cold and forgotten place under cloudy grey skies, a forsaken gaol far from the eyes and realms of mortals.\nIn your haste to escape you might not have heeded the faint echoes of footsteps remaining after the fall of the Asylum Demon, but rest assured that deep in the darkness the kindred of your vanquished foe yet remain.\nDare you return to face a more formidable adversary, the stray brother to the cursed creature which you defeated to become Chosen?",
-			"bossEncounterId": "bc6c9bd4-476d-444d-a1ea-c93ee6bf3c6a",
+			"bossEncounterId": "00453e4d-3f36-4423-a026-00833f18989a",
 			"excludedBiomes": ["darkroot_basin", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1"]
@@ -52,7 +52,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "addca633-7866-43c7-a551-64ebf3f6375e",
+			"bossEncounterId": "42ec8c3b-9fda-433a-bd4d-4058ad3011fb",
 			"excludedBiomes": ["darkroot_basin", "iron_keep", "castle_new"],
 			"excludedSets": ["darkroot_expansion", "ironkeep_expansion"],
 			"commonEncountersIds": ["tematic_random_lv2", "tematic_random_lv3"]

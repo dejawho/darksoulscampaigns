@@ -62,7 +62,7 @@
 		{
 			"type": "random",
 			"introMessage": "Finally, should you overcome his challenge, you shall meet your true adversary—none other than the Old Iron King himself.",
-			"bossEncounterId": "f59098e4-104e-4597-922b-5d1d70b5ca90",
+			"bossEncounterId": "b13a168d-26fe-4f8c-a55c-2dc815be187d",
 			"preBossEncounterId": "d82b5c6f-0265-40e0-b396-32b6530ba214",
 			"excludedBiomes": ["darkroot_basin", "castle_old"],
 			"excludedSets": ["darkroot_expansion"],

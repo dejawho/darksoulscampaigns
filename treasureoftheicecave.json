@@ -55,7 +55,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "91fb6b0e-f510-473c-8830-ecadb320ee7e",
+			"bossEncounterId": "aae67bae-cb63-4acd-8e57-7dd8d78e5de1",
 			"preBossEncounterId": "5a611a4a-607f-4168-8d0e-74ac33cb1c22",
 			"excludedBiomes": ["darkroot_basin", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
