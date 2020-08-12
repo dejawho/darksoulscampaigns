@@ -36,25 +36,25 @@ secret: these are the encounters you can find in a secret room (behind an illuso
 .2.
 
 
-Encounter in this app support events. Events are executed when an item, like a chest or a barrel, is pressed. Also the enemy on their death can trigger an event. There 
-are 4 type of event and they can be chained to create complex sequence of actions.
-The event types are spawn, information, random and question. They are all pretty self explanatory except random, but I will explain them one by one. 
+Encounter in this app support events. Events are executed in various situations, the most common are: when an item is pressed, an enemy is killed or a player enter into a room. There are 8 type of event and they can be chained to create complex sequence of actions.
+The event types are spawn, information, question, randomEvent, wideRandomEvent, checkFlag, killEnemyEvent, eventList. First half of this events are easy and self explanatory, the last half are more complex.
 Each event in its definition has the type of the event and its own parameters, among this parameters some are common for example the type who define the type of 
 the event is common to everyone.
-Also there are other three really important parameters to create complex encounter and quest:
+Some really important common parameters to create complex encounter and quest:
 
--next: when the parameter next is set with the value of another event it will be execute that event after the current one
+-next: when the parameter next is set with the value of another event it will be execute that event after the current one. Note that on events with more branches like question or random events every branch can have its next event
 
 -brokeItem: when this is set to an event the event will destroy the item who generated this event, think for example to a chest, you want to destroy it after it was opened
 
--brokeEncounter : {id: unique_id_of_an_encounter, isBroken: true or false} set an encounter with a specific id broken or not. An encounter broken is never executed when entering into a room, instead a new random encounter is chosen to replace it
+-brokeEncounter : {id: unique_id_of_an_encounter, isBroken: true or false} set an encounter with a specific id broken or not. An encounter broken is never executed when entering into a room, instead a new random encounter is chosen to replace it. You can specify this like in the example or as an array of the same elements to broke more encounters at onece.
 
--brokeEvent : {id: unique_id_of_an_event, isBroken: true or false} Similar to brokeEncounter but for event, set an event with a specific id broken or not. A broken event is never executed, and also all his child events are skipped too.
+-brokeEvent : {id: unique_id_of_an_event, isBroken: true or false} Similar to brokeEncounter but for event, set an event with a specific id broken or not. A broken event is never executed, and also all his child events are skipped too. You can specify this like in the example or as an array of the same elements to broke more events at onece.
 
 -nextEncounter: this will get the id of an encounter and will force the next encounter the player will discover by entering into a non boss room, optionally you can specify this in extended form nextEncounter: {id: '0cfc4d49-85a9-45a9-8b50-a61a874e82bc', stepsToFind: 2, dungeonsToFind: 1} where the id is always the id of the encounter to force and stepsToFind is the number of tile to discover to trigger the encounter, the steps are counted even by going to another dungeon on the same saveslot, so it could happen that the event trigger after the bossfight and the start of another dungeon. For this reason there is also the dungeonsToFind that works simular to the stepsToFind and is decreased only when continuing your game after the boss defeat. When using the compact form and specifying only the id the steps and dungeons defaults to 0, so the encounter will be forced on the next tile. 
 
 -keepResult: afcd085d-ac4e-4e63-81c2-dfa406b3c2d3 //optional, keep result of the question, random event and wide random event, used when we want that a result stay the same after every spark
 
+-setFlag: create a variable with a value, a typical falg is set with something with setFlag: {flagName: 'myflag', flagValue: 5}. This variable can be read with the checkFlag event, to take a different behavior depending on the flag value. You can specify this like in the example or as an array of the same elements to set more flags at onece.
 
 
 -INFORMATION EVENT PARAMETERS-
@@ -488,6 +488,107 @@ Another example is this encounter that spawn a random invader when the player en
     },
 }
 
+-CHECK FLAG EVENT PARAMETERS-
+
+A check flag event is an event with various branches and one is taken depending on the value of a flag, an example is 
+
+    {
+        id: '054a365d-7b4a-4f42-b324-6a5c4dace8a7',
+        level: 1,
+        set: [CORE_SET_KEY],
+        label: 'oscar encounter',
+        onEnterEvent: {
+            id: '16e1d151-9cca-404b-98b4-55ef548adeca',
+            type: 'checkFlag',
+            flagName: 'isOscarHollow',
+            events: [
+                {
+                    event: {
+                        ...event with flag value true
+                    },
+                    flagValue: true,
+                },
+		  {
+                    event: {
+                        ...event with flag value false
+                    },
+                    flagValue: false,
+                },
+            ],
+        },
+        spawn1: [{ enemyId: 'hollow_soldier' }, { enemyId: 'hollow_soldier' }],
+        spawn2: [{ enemyId: 'hollow_crossbow' }],
+        item1: [{
+            itemId: 'npc',
+            pressEvent: {
+                type: 'information',
+                title: 'Oscar from Astora',
+                message: '…Oh, you… You\'re no Hollow, eh? …Thank goodness…I\'m done for, I\'m afraid……I\'ll die soon, then lose my sanity…',
+                next: {
+                    type: 'question',
+                    title: 'Oscar from Astora',
+                    message: '…I wish to ask something of you…You and I, we\'re both Undead… Hear me out, will you?',
+                    answers: [
+                        {
+                            answerLabel: 'Yes',
+                            next: {
+                                type: 'information',
+                                title: 'Oscar from Astora',
+                                message: '…Regrettably, I have failed in my mission…But perhaps you can keep the torch lit…There is an old saying in my family…Thou who art Undead, art chosen.\nHere, take this…An Estus Flask, an Undead favourite.',
+                                next: {
+                                    type: 'information',
+                                    title: 'Oscar from Astora',
+                                    message: 'Players can flip their eastus flask token on the unused side',
+                                    brokeItem: true,
+				    setFlag: {name: 'isOscarHollow', value: false},
+                                    brokeEncounter: { id: '054a365d-7b4a-4f42-b324-6a5c4dace8a7', isBroken: true, scope: 'campaign' },
+                                },
+                            },
+                        },
+                        {
+                            answerLabel: 'No',
+                            next: {
+                                type: 'information',
+                                title: 'Oscar from Astora',
+                                message: '… Yes, I see… Perhaps I was too hopeful… Hah hah… Please, leave me be… I have not long to live, and I may harm you after death… Now, go…',
+                                //set the flag, the next time we will return in this tile oscar will be hollow
+                                setFlag: {name: 'isOscarHollow', value: true},
+                                brokeItem: true,
+                            },
+                        },
+                    ],
+                },
+            },
+        }],
+        type: QUEST_ENCOUNTERS_KEY,
+    },
+
+In this case the flag value is set when pressing an element and depending to the answer to a question, the second time the player enter the tile depending on the flag value something different can happen. The type of the flag can also be a number or a string, so there is no limit to the number of branches.
+
+-EVENT LIST PARAMETERS-
+
+This is the simplier of the events, it is just a list of event that are executed one after another at the same time without using nested structures of events. The structure of this is
+
+type: 'eventsList',
+events: [
+	{
+		...event1
+	},
+	{
+		..event2
+	}
+	....
+]
+
+-KILL ENEMY PARAMETERS- 
+
+As the name suggest this will kill 1 or all enemy of a specific type on the same tile, it is pretty simple
+
+{
+ 	type: 'killEnemyEvent',
+        all: true, //if should be killed only one enemy or all
+        enemyId: 'abyssLegionaire', //the type of the enemy to kill
+}
 
 .3.
 
