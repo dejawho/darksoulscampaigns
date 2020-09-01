@@ -12,11 +12,11 @@
 				"type": "spawn",
 				"id": "b04874a9-9332-47bb-a1cd-508086139f58",
 				"spawnPoint": "spawn1",
-				"spawnedEnemies": [{"enemyId": "gargoyle", "onDeathEvent": {
+				"spawnedEnemies": [{"enemyId": "gargoyle2", "onDeathEvent": {
 					"type": "spawn",
 					"message": "Another Gargoyle has arrived",
 					"spawnPoint": "spawn1",
-					"spawnedEnemies": [{"enemyId": "gargoyle", "onDeathEvent": {
+					"spawnedEnemies": [{"enemyId": "gargoyle2", "onDeathEvent": {
 						"type": "information",
 						"message": "",
 						"brokeEvent": {"id": "b04874a9-9332-47bb-a1cd-508086139f58", "isBroken": true}
@@ -38,7 +38,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "a6c6a301-a2b0-447f-937e-943a5a5dee32",
+			"bossEncounterId": "7e2d1d2b-2e2d-4dea-aa32-e25433a18c26",
 			"introMessage": "Arriving here was difficult and you will find that the same is also true on Sen’s Fortress, the ancient proving grounds of the gods, where mighty titanite demons roam endlessly amongst numerous traps and pitfalls.",
 			"excludedBiomes": ["iron_keep", "darkroot_basin"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],

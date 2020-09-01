@@ -40,7 +40,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "ad20c9e4-f478-4b6f-a420-3905a95398dc",
+			"bossEncounterId": "b7e764e4-8ce9-4af4-baa8-837981f5826b",
 			"excludedBiomes": ["darkroot_basin", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
 			"outroMessage": "Add to your Treasure Deck the Transposed and Legendary treasure Treasures as described in ‘Setup After the Mini Boss’ section of the manual",

@@ -14,7 +14,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "a9182125-6431-4028-affb-c8a39aa160ff",
+			"bossEncounterId": "ad62afd8-be72-4595-ae88-6fcdd131e622",
 			"introMessage": "Yet as you approach the blasted and damned walls of the Iron Keep, you may grow reluctant to leave, for the path ahead will only prove more dangerous.",
 			"excludedBiomes": ["darkroot_basin", "castle_old"],
 			"excludedSets": ["darkroot_expansion"],
@@ -22,7 +22,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "22e991db-ef4b-4d08-b1ac-49b3f8705561",
+			"bossEncounterId": "39d15a9c-9445-424f-ad72-8269c3059836",
 			"introMessage": "You have reached the Brume Tower, your final location standing atop the bleakest wasteland imaginable. It is here that your last adversary, a figure of myth and legend, awaits",
 			"excludedBiomes": ["darkroot_basin", "castle_old"],
 			"excludedSets": ["darkroot_expansion"],

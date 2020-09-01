@@ -7,14 +7,14 @@
 		{
 			"type": "random",
 			"introMessage": "The Kingdom of Lothric is the beginning of the journey for all Ashen Ones, after the awakening of your kind by the tolling bells. It is here that you will receive the blessing of Iudex Gundyr and be passed the Coiled Sword, so that you may rekindle the bon­re and take the ­rst steps along the path of your destiny.",
-			"bossEncounterId": "2ad0b575-79c8-4f96-8a4e-bbb2b588280a",
+			"bossEncounterId": "3cfcfe43-ffcf-49e7-bbd3-d290b0e387ed",
 			"excludedBiomes": ["iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2"]
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "ad20c9e4-f478-4b6f-a420-3905a95398dc",
+			"bossEncounterId": "b7e764e4-8ce9-4af4-baa8-837981f5826b",
 			"introMessage": "Lothric was once a proud city, renowned to be noble and true, its knights and priests courageous and wise. Its ruler was King Oceiros, today known as the Consumed King, his madness the cause for the fall of this once-grand place. Now Lothric is ruled only by the undead, corpses that refuse to relinquish their hold over the world of the living, endlessly wandering the battlements and city walls and spilling into the streets of the Undead Settlement beyond.",
 			"excludedBiomes": ["iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
@@ -22,7 +22,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "f2a31d07-c50d-4e6b-bf00-4fece41f8e50",
+			"bossEncounterId": "f6fbbd24-4166-4bd7-a868-b843bea79738",
 			"introMessage": "The undead here are not alone, however, for amongst them can be found the corrupted guardians of old. The greatest and most deadly of their number are the powerful Winged Knights, their holy vows forgotten. These are joined by Outrider Knights from the Boreal Valley, driven to insanity by the Eyes of the Pontiff and now little more than mindless beasts. If you are to continue your journey into Lothric, you must defeat not only these poor, tortured souls, but also the most powerful denizen of the High Walls: the dreaded Dancer of the Boreal Valley",
 			"excludedBiomes": ["iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],

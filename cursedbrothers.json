@@ -50,14 +50,14 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "ad20c9e4-f478-4b6f-a420-3905a95398dc",
+			"bossEncounterId": "b7e764e4-8ce9-4af4-baa8-837981f5826b",
 			"excludedBiomes": ["darkroot_basin", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2"]
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "f2a31d07-c50d-4e6b-bf00-4fece41f8e50",
+			"bossEncounterId": "f6fbbd24-4166-4bd7-a868-b843bea79738",
 			"excludedBiomes": ["darkroot_basin", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion", "darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv3", "tematic_random_lv3"]

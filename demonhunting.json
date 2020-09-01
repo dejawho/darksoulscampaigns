@@ -12,11 +12,11 @@
 				"type": "spawn",
 				"id": "b93024ab-7473-47a3-bf2c-c4bd00977fde",
 				"spawnPoint": "spawn1",
-				"spawnedEnemies": [{"enemyId": "gargoyle", "onDeathEvent": {
+				"spawnedEnemies": [{"enemyId": "gargoyle2", "onDeathEvent": {
 					"type": "spawn",
 					"message": "Another Gargoyle has arrived",
 					"spawnPoint": "spawn1",
-					"spawnedEnemies": [{"enemyId": "gargoyle", "onDeathEvent": {
+					"spawnedEnemies": [{"enemyId": "gargoyle2", "onDeathEvent": {
 						"type": "information",
 						"message": "",
 						"brokeEvent": {"id": "b93024ab-7473-47a3-bf2c-c4bd00977fde", "isBroken": true}
@@ -45,7 +45,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "a6c6a301-a2b0-447f-937e-943a5a5dee32",
+			"bossEncounterId": "7e2d1d2b-2e2d-4dea-aa32-e25433a18c26",
 			"excludedBiomes": ["darkroot_basin", "iron_keep", "castle_new"],
 			"excludedSets": ["ironkeep_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2"]

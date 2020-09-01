@@ -17,7 +17,7 @@
 		{
 			"type": "random",
 			"introMessage": "Barely past Threshold Bridge shall be your first challenge, the vile Smelter Demon, a creature as responsible for the destruction of this land as the folly of its ruler is.",
-			"bossEncounterId": "a9182125-6431-4028-affb-c8a39aa160ff",
+			"bossEncounterId": "ad62afd8-be72-4595-ae88-6fcdd131e622",
 			"excludedBiomes": ["darkroot_basin", "castle_old"],
 			"excludedSets": ["darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2", "tematic_random_lv3"]
@@ -41,7 +41,7 @@
 				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
 				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
 				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"room9_a","encounterId":"tematic_iron_keep_lv3"},"exits":[{"direction":"RIGHT","id":"left"},{"direction":"BOTTOM","id":"top"}]},{"tile":{"id":"room10_a","encounterId":"tematic_iron_keep_lv3"},"exits":[{"direction":"TOP","id":"left"},{"direction":"RIGHT","id":"top"},{"direction":"LEFT","id":"bottom"}]},null,null,null,null,null,null,null,null,null,null,null,null,null],
-				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"room12_a","encounterId":"tematic_iron_keep_lv2"},"exits":[{"direction":"BOTTOM","id":"left"},{"direction":"RIGHT","id":"bottom"},{"direction":"TOP","id":"right"}]},{"tile":{"id":"bonfire2_a"},"exits":[{"direction":"LEFT","id":"left"},{"direction":"TOP","id":"top"}]},{"tile":{"id":"boss2_a","encounterId":"884e6212-b5ca-4e22-81e0-53791259ef54"},"exits":[{"direction":"LEFT","id":"bottom"}],"isBossRoom":true},null,null,null,null,null,null,null,null,null,null,null,null,null],
+				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"tile":{"id":"room12_a","encounterId":"tematic_iron_keep_lv2"},"exits":[{"direction":"BOTTOM","id":"left"},{"direction":"RIGHT","id":"bottom"},{"direction":"TOP","id":"right"}]},{"tile":{"id":"bonfire2_a"},"exits":[{"direction":"LEFT","id":"left"},{"direction":"TOP","id":"top"}]},{"tile":{"id":"boss2_a","encounterId":"ca3d1fea-0b96-4127-a75f-207089a5a310"},"exits":[{"direction":"LEFT","id":"bottom"}],"isBossRoom":true},null,null,null,null,null,null,null,null,null,null,null,null,null],
 				[null,null,null,null,null,null,null,null,null,null,null,null,null,{"reservedSpace": true},{"tile":{"id":"megaboss_old_iron_king_a","encounterId":"dee3cbcc-6190-4532-b363-9f1ecaf7bc22"},"exits":[{"direction":"LEFT","id":"bottom"}, {"direction":"RIGHT","id":"top"}]},{"reservedSpace": true},null,null,null,null,null,null,null,null,null,null,null,null,null,null],
 				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"reservedSpace": true},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
 				[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],

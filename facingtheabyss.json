@@ -53,14 +53,14 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "b2f42026-31d0-40b3-ab4f-3fb05e4ed0d5",
+			"bossEncounterId": "ed8607f0-b8fb-4755-bb69-7bff8943db35",
 			"excludedBiomes": ["castle_new", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv3", "tematic_random_lv3"]
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "f1944bb4-8c4d-437e-8c97-d857da93241e",
+			"bossEncounterId": "0d18a234-5b00-450a-868e-a178170e074f",
 			"excludedBiomes": ["castle_new", "iron_keep"],
 			"excludedSets": ["ironkeep_expansion"],
 			"commonEncountersIds": ["tematic_random_lv2", "tematic_random_lv3", "tematic_random_lv3", "tematic_random_lv3"]

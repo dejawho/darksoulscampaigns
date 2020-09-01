@@ -159,7 +159,7 @@
 		{
 			"id": "08d10a19-ade0-4946-a972-d93bb0eb86f3",
 			"type": "random",
-			"bossEncounterId": "ad20c9e4-f478-4b6f-a420-3905a95398dc",
+			"bossEncounterId": "b7e764e4-8ce9-4af4-baa8-837981f5826b",
 			"excludedBiomes": ["castle_new", "iron_keep", "darkroot_basin"],
 			"excludedSets": ["darkroot_expansion"],
 			"commonEncountersIds": ["tematic_random_lv1", "tematic_random_lv1", "tematic_random_lv2", "tematic_random_lv2"]
@@ -183,7 +183,7 @@
 		{
 			"id": "7db62d10-fbbb-4106-b0fc-1a91ea2ea134",
 			"type": "random",
-			"bossEncounterId": "f2a31d07-c50d-4e6b-bf00-4fece41f8e50",
+			"bossEncounterId": "f6fbbd24-4166-4bd7-a868-b843bea79738",
 			"excludedBiomes": ["iron_keep", "darkroot_basin", "castle_old"],
 			"excludedSets": ["darkroot_expansion", "ironkeep_expansion", "custom_enemies_expansions"],
 			"commonEncountersIds": ["e0183f24-d78e-445c-bd38-37af247e3817", "c3e306a3-f3b8-4ac9-8fa0-7ea26c6d388e", "tematic_random_lv3"]
@@ -191,7 +191,7 @@
 		{
 			"id": "d3663e5e-808d-4dc7-ab3e-cc163df7732f",
 			"type": "random",
-			"bossEncounterId": "f1944bb4-8c4d-437e-8c97-d857da93241e",
+			"bossEncounterId": "0d18a234-5b00-450a-868e-a178170e074f",
 			"excludedBiomes": ["iron_keep", "darkroot_basin"],
 			"excludedSets": ["darkroot_expansion", "ironkeep_expansion", "custom_enemies_expansions"],
 			"commonEncountersIds": ["62301aae-1991-4018-aec3-2a3d718772c6", "tematic_random_lv3", "tematic_random_lv3"]

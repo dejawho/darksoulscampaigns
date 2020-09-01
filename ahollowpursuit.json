@@ -62,7 +62,7 @@
 		},
 		{
 			"type": "random",
-			"bossEncounterId": "884e6212-b5ca-4e22-81e0-53791259ef54",
+			"bossEncounterId": "ca3d1fea-0b96-4127-a75f-207089a5a310",
 			"excludedBiomes": ["darkroot_basin", "castle_new"],
 			"excludedSets": ["darkroot_expansion"],
 			"commonEncountersIds": ["tematic_iron_keep_lv2", "tematic_iron_keep_lv3", "tematic_iron_keep_lv3", "tematic_random_lv3"]
