@@ -27,7 +27,7 @@
 					"message": "A figure emerges from the darkness",
 					"spawnPoint": "spawn1",
 					"id": "99993601-8730-44d8-9802-99c7ada8c6a3",
-					"spawnedEnemies": [{"enemyId": "the_pursuer2", "respawn": false, "health": 16, "heatup": -1, "onDeathEvent": {
+					"spawnedEnemies": [{"enemyId": "the_pursuer2", "respawn": false, "health": 16, "heatup": [], "onDeathEvent": {
 							"type": "information",
 							"message": "You gain 3 additional souls",
 							"brokeEvent": {"id": "99993601-8730-44d8-9802-99c7ada8c6a3", "isBroken": true}
