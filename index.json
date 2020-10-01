@@ -4,9 +4,9 @@
 	"difficulty": 4,
 	"set": ["old_iron_king", "darkroot_iron_tiles", "explorers_expansion", "ironkeep_expansion", "phatnoms_expansion"],
 	"dungeons": 4,
-	"timestamp": 1598840538,
+	"timestamp": 1601590819,
 	"resource": "ironkingcampaign.json",
-	"minVersion": "1.8.0",
+	"minVersion": "1.8.8",
 	"id": "728714d6-0fb8-43fc-b5ed-4ef23b06c030"
 },
 {

@@ -61,9 +61,29 @@
 					"message": "A figure emerges from the darkness",
 					"spawnPoint": "spawn1",
 					"id": "d3ac7aac-5251-4885-b0a7-66ea995c32ba",
-					"spawnedEnemies": [{"enemyId": "the_pursuer2", "respawn": false, "health": 20, "onDeathEvent": {
-							"type": "information",
-							"message": "Search and draw boss treasure Pursuer's Ultragreatsword, or 3 souls if you already own it",
+					"spawnedEnemies": [{"enemyId": "the_pursuer2", "respawn": false, "health": 20, "heatup": [], "onDeathEvent": {
+							"type": "checkFlag",
+							"flagName": "_inventoryContent",
+							"events": [
+								{
+									"event": {
+										"type": "information",
+										"message": "Add 3 Souls to the pool"
+									},
+									"flagValue": "7056dcd1-f619-45d6-88ca-de458ea3bff4"
+								},
+								{
+									"event": {
+										"type": "information",
+										"message": "You received the Pursuer's Ultragreatsword, it has been added to your Inventory.",
+										"next": {
+											"type": "addTreasure",
+											"treasureId": "7056dcd1-f619-45d6-88ca-de458ea3bff4"
+										}
+									},
+									"flagValue": "default"
+								}
+							],
 							"brokeEvent": {"id": "d3ac7aac-5251-4885-b0a7-66ea995c32ba", "isBroken": true}
 						}
 					}]
@@ -96,8 +116,28 @@
 					"spawnPoint": "spawn1",
 					"id": "3df65f7d-da83-41b5-8dbd-d3679b9d1813",
 					"spawnedEnemies": [{"enemyId": "the_pursuer2", "respawn": false, "health": 24, "onDeathEvent": {
-							"type": "information",
-							"message": "Search and draw boss treasure Pursuer's Ultragreatshield, or 3 souls if you already own it",
+							"type": "checkFlag",
+							"flagName": "_inventoryContent",
+							"events": [
+								{
+									"event": {
+										"type": "information",
+										"message": "Add 3 Souls to the pool"
+									},
+									"flagValue": "8a18271d-d5ed-4a4e-8739-3dac1dd0bf2e"
+								},
+								{
+									"event": {
+										"type": "information",
+										"message": "You received the Pursuer's Ultragreatshield, it has been added to your Inventory.",
+										"next": {
+											"type": "addTreasure",
+											"treasureId": "8a18271d-d5ed-4a4e-8739-3dac1dd0bf2e"
+										}
+									},
+									"flagValue": "default"
+								}
+							],
 							"brokeEvent": {"id": "3df65f7d-da83-41b5-8dbd-d3679b9d1813", "isBroken": true}
 						}
 					}]
@@ -130,8 +170,28 @@
 					"spawnPoint": "spawn1",
 					"id": "82498bde-c127-4bd6-8f2e-94a6b1f6d94d",
 					"spawnedEnemies": [{"enemyId": "the_pursuer2", "respawn": false, "health": 28, "onDeathEvent": {
-							"type": "information",
-							"message": "Search and draw boss treasure Ring of Blades, or 3 souls if you already own it",
+							"type": "checkFlag",
+							"flagName": "_inventoryContent",
+							"events": [
+								{
+									"event": {
+										"type": "information",
+										"message": "Add 3 Souls to the pool"
+									},
+									"flagValue": "d512a23e-0186-49de-8337-689c32bb6e85"
+								},
+								{
+									"event": {
+										"type": "information",
+										"message": "You received the Ring of Blades, it has been added to your Inventory.",
+										"next": {
+											"type": "addTreasure",
+											"treasureId": "d512a23e-0186-49de-8337-689c32bb6e85"
+										}
+									},
+									"flagValue": "default"
+								}
+							],
 							"brokeEvent": {"id": "82498bde-c127-4bd6-8f2e-94a6b1f6d94d", "isBroken": true}
 						}
 					}]
