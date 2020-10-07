@@ -6,7 +6,7 @@
 	"dungeons": 4,
 	"timestamp": 1601590819,
 	"resource": "ironkingcampaign.json",
-	"minVersion": "1.8.8",
+	"minVersion": "1.8.11",
 	"id": "728714d6-0fb8-43fc-b5ed-4ef23b06c030"
 },
 {
@@ -37,9 +37,9 @@
 	"difficulty": 4,
 	"set": ["core", "asylumDemon"],
 	"dungeons": 5,
-	"timestamp": 1598840538,
+	"timestamp": 1602067430,
 	"resource": "demonhunting.json",
-	"minVersion": "1.8.0",
+	"minVersion": "1.8.11",
 	"id": "5110a326-4e83-4613-adde-bed51aa564dd"
 },
 {
@@ -81,9 +81,9 @@
 	"difficulty": 3,
 	"set": ["core", "kalameet"],
 	"dungeons": 4,
-	"timestamp": 1598840538,
+	"timestamp": 1602067430,
 	"resource": "bathedinflame.json",
-	"minVersion": "1.8.0",
+	"minVersion": "1.8.11",
 	"id": "94ab0cb7-f7dd-4724-9c1d-c9ce74831b27"
 },
 {
@@ -103,9 +103,9 @@
 	"difficulty": 4,
 	"set": ["core", "gaping_dragon", "darkroot_expansion"],
 	"dungeons": 5,
-	"timestamp": 1598840538,
+	"timestamp": 1602067430,
 	"resource": "intothedepths.json",
-	"minVersion": "1.8.0",
+	"minVersion": "1.8.11",
 	"id": "17a7c9c4-0fa1-46b7-91b2-c5d50a388db1"
 },
 {
@@ -147,9 +147,9 @@
 	"difficulty": 3,
 	"set": ["core", "guardian_dragon", "custom_enemies_expansions", "asylumDemon"],
 	"dungeons": 3,
-	"timestamp": 1598840538,
+	"timestamp": 1602067430,
 	"resource": "cursedbrothers.json",
-	"minVersion": "1.8.0",
+	"minVersion": "1.8.11",
 	"id": "f770f343-be81-424b-8396-be0238b55eb0"
 },
 {

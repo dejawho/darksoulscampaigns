@@ -19,7 +19,12 @@
 					"spawnPoint": "spawn1",
 					"spawnedEnemies": [{"enemyId": "lothric_lorian_v2", "onDeathEvent": {
 						"type": "information",
-						"brokeEvent": {"id": "90c383b6-eb7e-44b0-a7da-99f42673c123", "isBroken": true}
+						"brokeEvent": {"id": "90c383b6-eb7e-44b0-a7da-99f42673c123", "isBroken": true},
+						"message": "The following Boss Treasures have been added to your inventory: Lorian's Greatsword, Lorian's Armour",
+						"next": {
+							"type": "addTreasure",
+							"treasureId": ["c87c3606-9c4a-4356-ab12-950294cd13c5", "2fa51c57-2af6-4601-ae5c-7c3d9fb056c2"]
+						}
 					}}]
 				}}],
 				"next": {

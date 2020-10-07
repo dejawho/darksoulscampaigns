@@ -7,7 +7,57 @@
 			"id": "ecc21586-1e52-4822-a176-221838705104",
 			"level": 3,
 			"set": ["gaping_dragon"],
-			"spawn1": [{ "enemyId": "dragonslayer_ornstein" }, { "enemyId": "executioner_smough" }],
+			"spawn1": [{ "enemyId": "dragonslayer_ornstein", "onDeathEvent": {
+						"type": "checkFlag",
+						"flagName": "bossKilled",
+						"events": [
+							{
+								"event": {
+									"type": "information",
+									"setFlag": [{ "name": "bossKilled", "value": 1 }]
+								},
+								"flagValue": 0
+							},
+							{
+								"event": {
+									"type": "information",
+									"message": "The following Boss Treasures have been added to your inventory: Dragonslayer Spear, Dragonslayer Armour, Smough's Hammer, Smough's Armour",
+									"next": {
+										"type": "addTreasure",
+										"treasureId": ["f5d4b76c-ecd5-457a-808e-a06f7ea503f1", "21cf5884-39de-4028-bffe-d235fc35ee3d", "33808bae-620f-4519-9b16-97a96ede1c27", "d5040dc1-20f6-4234-91a5-305fdc5a786e"]
+									}
+								},
+								"flagValue": 1
+							}
+						]
+					}
+				},
+				{ "enemyId": "executioner_smough", "onDeathEvent": {
+						"type": "checkFlag",
+						"flagName": "bossKilled",
+						"events": [
+							{
+								"event": {
+									"type": "information",
+									"setFlag": [{ "name": "bossKilled", "value": 1 }]
+								},
+								"flagValue": 0
+							},
+							{
+								"event": {
+									"type": "information",
+									"message": "The following Boss Treasures have been added to your inventory: Dragonslayer Spear, Dragonslayer Armour, Smough's Hammer, Smough's Armour",
+									"next": {
+										"type": "addTreasure",
+										"treasureId": ["f5d4b76c-ecd5-457a-808e-a06f7ea503f1", "21cf5884-39de-4028-bffe-d235fc35ee3d", "33808bae-620f-4519-9b16-97a96ede1c27", "d5040dc1-20f6-4234-91a5-305fdc5a786e"]
+									}
+								},
+								"flagValue": 1
+							}
+						]
+					}
+				}
+			],
 			"label": "Ornstain Smough Revenge",
 			"encountersDifficulty": [0, 0.2, 0.8, 0],
 			"prebossTile": "megaboss_gaping_dragon_a",

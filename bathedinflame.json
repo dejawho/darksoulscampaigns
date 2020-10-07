@@ -18,8 +18,12 @@
 					"spawnPoint": "spawn1",
 					"spawnedEnemies": [{"enemyId": "gargoyle2", "onDeathEvent": {
 						"type": "information",
-						"message": "",
-						"brokeEvent": {"id": "d6cb57ee-dfde-45b4-ae51-888c8b41f1b9", "isBroken": true}
+						"brokeEvent": {"id": "d6cb57ee-dfde-45b4-ae51-888c8b41f1b9", "isBroken": true},
+						"message": "The following Boss Treasures have been added to your inventory: Gargoyle Tail Axe, Gargoyle's Halberd, Gargoyle's Shield",
+						"next": {
+							"type": "addTreasure",
+							"treasureId": ["1285cfd9-f2f4-4ca1-8421-da77f4b7bea0", "91e1dacc-a455-43ce-9aac-23851de348f8", "0413af01-18bc-4187-a807-a1878c6ac069"]
+						}
 					}}]
 				}}]
 			},
